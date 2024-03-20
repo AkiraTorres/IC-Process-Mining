@@ -7506,6 +7506,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="n">data</span> <span class="o">=</span> <span class="s2">"./data/see_course2060_12-11_to_11-12_logs_filtered.csv"</span>
 </pre></div>
@@ -7696,19 +7697,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">first_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1573527600"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1574218500"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12841"</span><span class="p">)</span>
-<span class="n">first_logs</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"see_course2060_first_activity_logs.csv"</span><span class="p">)</span>
-
-<span class="n">second_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1574132400"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1574823300"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12842"</span><span class="p">)</span>
-<span class="n">second_logs</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"see_course2060_second_activity_logs.csv"</span><span class="p">)</span>
-
-<span class="n">third_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1574737200"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1575428100"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12843"</span><span class="p">)</span>
-<span class="n">third_logs</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"see_course2060_third_activity_logs.csv"</span><span class="p">)</span>
-
-<span class="n">fourth_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1575342000"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1576032900"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12844"</span><span class="p">)</span>
-<span class="n">fourth_logs</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"see_course2060_fourth_activity_logs.csv"</span><span class="p">)</span>
-
-<span class="n">first_access</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"userid"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"component == 'core'"</span><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'userid'</span><span class="p">])</span>
-<span class="n">first_access</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"first_access_logs.csv"</span><span class="p">)</span>
+<span class="c1"># first_logs.to_csv("see_course2060_first_activity_logs.csv")</span>
 </pre></div>
 </div>
 </div>
@@ -7861,6 +7850,66 @@ a.anchor-link {
 </tbody>
 </table>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">second_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1574132400"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1574823300"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12842"</span><span class="p">)</span>
+<span class="c1"># second_logs.to_csv("see_course2060_second_activity_logs.csv")</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">third_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1574737200"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1575428100"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12843"</span><span class="p">)</span>
+<span class="c1"># third_logs.to_csv("see_course2060_third_activity_logs.csv")</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">fourth_logs</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &gt;= 1575342000"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"t &lt;= 1576032900"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"assignment_id == 12844"</span><span class="p">)</span>
+<span class="c1"># fourth_logs.to_csv("see_course2060_fourth_activity_logs.csv")</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">first_access</span> <span class="o">=</span> <span class="n">all_logs_data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"userid"</span><span class="p">)</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"component == 'core'"</span><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'userid'</span><span class="p">])</span>
+<span class="c1"># first_access.to_csv("first_access_logs.csv")</span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -8101,6 +8150,317 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
 <img alt="No description has been provided for this image" class="" src="data:image/png;base64,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"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="concat-first_access-and-first_logs">concat first_access and first_logs<a class="anchor-link" href="#concat-first_access-and-first_logs">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">first_logs</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">first_logs</span><span class="p">,</span> <span class="n">first_access</span><span class="p">]))</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"userid"</span><span class="p">)</span>
+<span class="n">first_logs</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>userid</th>
+<th>t</th>
+<th>component</th>
+<th>action</th>
+<th>target</th>
+<th>objectid</th>
+<th>objecttable</th>
+<th>courseid</th>
+<th>relateduserid</th>
+<th>extra_info</th>
+<th>crud</th>
+<th>assignment_id</th>
+</tr>
+<tr>
+<th>id</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>164924144</th>
+<td>239</td>
+<td>1573601523</td>
+<td>mod_quiz</td>
+<td>viewed</td>
+<td>course_module</td>
+<td>12841.0</td>
+<td>quiz</td>
+<td>2060</td>
+<td>NaN</td>
+<td>N;</td>
+<td>r</td>
+<td>12841.0</td>
+</tr>
+<tr>
+<th>166009625</th>
+<td>239</td>
+<td>1574119557</td>
+<td>mod_quiz</td>
+<td>viewed</td>
+<td>course_module</td>
+<td>12841.0</td>
+<td>quiz</td>
+<td>2060</td>
+<td>NaN</td>
+<td>N;</td>
+<td>r</td>
+<td>12841.0</td>
+</tr>
+<tr>
+<th>166009742</th>
+<td>239</td>
+<td>1574119579</td>
+<td>mod_quiz</td>
+<td>started</td>
+<td>attempt</td>
+<td>2376980.0</td>
+<td>quiz_attempts</td>
+<td>2060</td>
+<td>239.0</td>
+<td>N;</td>
+<td>c</td>
+<td>12841.0</td>
+</tr>
+<tr>
+<th>166013674</th>
+<td>239</td>
+<td>1574120255</td>
+<td>mod_quiz</td>
+<td>submitted</td>
+<td>attempt</td>
+<td>2376980.0</td>
+<td>quiz_attempts</td>
+<td>2060</td>
+<td>239.0</td>
+<td>a:2:{s:11:"submitterid";s:3:"239";s:6:"quizid"...</td>
+<td>u</td>
+<td>12841.0</td>
+</tr>
+<tr>
+<th>166013786</th>
+<td>239</td>
+<td>1574120267</td>
+<td>mod_quiz</td>
+<td>viewed</td>
+<td>course_module</td>
+<td>12841.0</td>
+<td>quiz</td>
+<td>2060</td>
+<td>NaN</td>
+<td>N;</td>
+<td>r</td>
+<td>12841.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Preparing-database-to-data-mining">Preparing database to data mining<a class="anchor-link" href="#Preparing-database-to-data-mining">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mapping</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"./data/event_mapping.csv"</span><span class="p">)</span> <span class="c1">#, index_col="class")</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># return the apropriated class for the identified event</span>
+<span class="k">def</span> <span class="nf">event_mapping</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="n">mapped</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[(</span><span class="n">mapping</span><span class="o">.</span><span class="n">component</span> <span class="o">==</span> <span class="n">event</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">mapping</span><span class="o">.</span><span class="n">action</span> <span class="o">==</span> <span class="n">event</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">mapping</span><span class="o">.</span><span class="n">target</span> <span class="o">==</span> <span class="n">event</span><span class="p">[</span><span class="mi">2</span><span class="p">])]</span>
+    <span class="k">return</span> <span class="n">mapped</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># return a sequence of catalogued events based on a dataframe of events</span>
+<span class="k">def</span> <span class="nf">generate_sequence_from_df</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">event_mapping</span><span class="p">([</span><span class="n">x</span><span class="o">.</span><span class="n">component</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">action</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">target</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># make the database ready for GSP and prefix datamining algoritms</span>
+<span class="k">def</span> <span class="nf">prepare_database</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">events_by_user</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">total_users</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">unique_users</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'userid'</span><span class="p">])</span>
+    <span class="n">unique_users</span> <span class="o">=</span> <span class="n">unique_users</span><span class="p">[</span><span class="s1">'userid'</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">userid</span> <span class="ow">in</span> <span class="n">unique_users</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">userid</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="n">user</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">events_by_user</span><span class="p">]:</span>
+            <span class="n">new_user</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"key"</span><span class="p">:</span> <span class="n">userid</span><span class="p">,</span> <span class="s2">"events"</span><span class="p">:</span> <span class="n">generate_sequence_from_df</span><span class="p">(</span><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">userid</span> <span class="o">==</span> <span class="n">userid</span><span class="p">)])}</span>
+            <span class="n">events_by_user</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_user</span><span class="p">)</span>
+            <span class="n">total_users</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'ready.json'</span><span class="p">,</span> <span class="s1">'w+'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">([</span><span class="n">user</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">events_by_user</span><span class="p">],</span> <span class="n">file</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">events_by_user</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">event_by_user</span> <span class="o">=</span> <span class="n">prepare_database</span><span class="p">(</span><span class="n">first_logs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">event_by_user</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[{'key': 239,
+  'events': ['assignment_vis',
+   'assignment_vis',
+   'assignment_try',
+   'assignment_sub',
+   'assignment_vis',
+   'course_vis']},
+ {'key': 275,
+  'events': ['assignment_try',
+   'assignment_sub',
+   'course_vis',
+   'assignment_vis',
+   'assignment_vis',
+   'assignment_vis']},
+ {'key': 438,
+  'events': ['assignment_vis',
+   'assignment_vis',
+   'course_vis',
+   'assignment_vis',
+   'assignment_vis',
+   'assignment_try',
+   'assignment_sub',
+   'assignment_vis']}]</pre>
 </div>
 </div>
 </div>
