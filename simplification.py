@@ -14,7 +14,7 @@ def save_to_csv(list_of_dataframes):
         df["data"].to_csv(f"{df['name']}.csv")
 
 
-def event_mapping(event, time: int, is_temp_fold: bool = False):
+def event_mapping(event, time: int, params: dict):
     mapped = mapping[
         (mapping.component == event[0])
         & (mapping.action == event[1])
@@ -22,8 +22,12 @@ def event_mapping(event, time: int, is_temp_fold: bool = False):
     ]
     e = mapped["class"].iloc[0]
     result = e
-    if is_temp_fold:
-        tf = (time - 1573527600) / (1574218500 - 1573527600) * 100
+    if params["tf"]:
+        tf = (
+            (time - params["initial_date"])
+            / (params["final_date"] - params["initial_date"])
+            * 100
+        )
         e = e + "_START" if tf <= 50 else e + "_END"
         result = {"event": e, "time": time}
 
@@ -35,7 +39,7 @@ def event_mapping(event, time: int, is_temp_fold: bool = False):
 def generate_sequence_from_df(df, params: dict):
     e = list(
         df.apply(
-            lambda x: event_mapping([x.component, x.action, x.target], x.t),
+            lambda x: event_mapping([x.component, x.action, x.target], x.t, params),
             axis=1,
         )
     )
@@ -90,7 +94,7 @@ def generate_sequence_from_df(df, params: dict):
 def generate_sequence_from_df_with_temporal_folding(df, params: dict):
     e = list(
         df.apply(
-            lambda x: event_mapping([x.component, x.action, x.target], x.t, True),
+            lambda x: event_mapping([x.component, x.action, x.target], x.t, params),
             axis=1,
         )
     )
