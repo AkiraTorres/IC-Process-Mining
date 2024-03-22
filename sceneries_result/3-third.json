@@ -1,0 +1,379 @@
+[
+  {
+    "1_sequences": [
+      {
+        "sequence": [
+          "assignment_vis_START"
+        ],
+        "total": 627
+      },
+      {
+        "sequence": [
+          "resource_vis_START"
+        ],
+        "total": 935
+      },
+      {
+        "sequence": [
+          "assignment_try_END"
+        ],
+        "total": 1689
+      },
+      {
+        "sequence": [
+          "assignment_sub_END"
+        ],
+        "total": 1845
+      },
+      {
+        "sequence": [
+          "resource_vis_END"
+        ],
+        "total": 1302
+      },
+      {
+        "sequence": [
+          "assignment_sub_START"
+        ],
+        "total": 351
+      },
+      {
+        "sequence": [
+          "assignment_try_START"
+        ],
+        "total": 547
+      },
+      {
+        "sequence": [
+          "assignment_vis_END"
+        ],
+        "total": 947
+      },
+      {
+        "sequence": [
+          "forum_vis_END"
+        ],
+        "total": 563
+      },
+      {
+        "sequence": [
+          "forum_vis_START"
+        ],
+        "total": 394
+      },
+      {
+        "sequence": [
+          "forum_participation_END"
+        ],
+        "total": 179
+      }
+    ]
+  },
+  {
+    "2_sequences": [
+      {
+        "sequence": [
+          "assignment_try_END",
+          "assignment_sub_END"
+        ],
+        "total": 1349
+      },
+      {
+        "sequence": [
+          "assignment_try_END",
+          "resource_vis_END"
+        ],
+        "total": 224
+      },
+      {
+        "sequence": [
+          "assignment_try_START",
+          "assignment_sub_START"
+        ],
+        "total": 276
+      },
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "assignment_sub_END"
+        ],
+        "total": 193
+      },
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "assignment_try_END"
+        ],
+        "total": 361
+      },
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "assignment_vis_END"
+        ],
+        "total": 311
+      },
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "forum_vis_END"
+        ],
+        "total": 192
+      },
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "resource_vis_END"
+        ],
+        "total": 489
+      },
+      {
+        "sequence": [
+          "assignment_vis_START",
+          "assignment_vis_START"
+        ],
+        "total": 191
+      },
+      {
+        "sequence": [
+          "assignment_vis_START",
+          "resource_vis_START"
+        ],
+        "total": 256
+      },
+      {
+        "sequence": [
+          "forum_participation_END",
+          "forum_vis_END"
+        ],
+        "total": 167
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "assignment_try_END"
+        ],
+        "total": 254
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "assignment_vis_END"
+        ],
+        "total": 176
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "forum_participation_END"
+        ],
+        "total": 179
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "forum_vis_END"
+        ],
+        "total": 397
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "resource_vis_END"
+        ],
+        "total": 226
+      },
+      {
+        "sequence": [
+          "forum_vis_START",
+          "forum_vis_START"
+        ],
+        "total": 263
+      },
+      {
+        "sequence": [
+          "forum_vis_START",
+          "resource_vis_START"
+        ],
+        "total": 176
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "assignment_sub_END"
+        ],
+        "total": 245
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "assignment_try_END"
+        ],
+        "total": 740
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "assignment_vis_END"
+        ],
+        "total": 338
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "forum_vis_END"
+        ],
+        "total": 285
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "resource_vis_END"
+        ],
+        "total": 507
+      },
+      {
+        "sequence": [
+          "resource_vis_START",
+          "assignment_try_START"
+        ],
+        "total": 284
+      },
+      {
+        "sequence": [
+          "resource_vis_START",
+          "assignment_vis_START"
+        ],
+        "total": 197
+      },
+      {
+        "sequence": [
+          "resource_vis_START",
+          "forum_vis_START"
+        ],
+        "total": 251
+      },
+      {
+        "sequence": [
+          "resource_vis_START",
+          "resource_vis_START"
+        ],
+        "total": 423
+      }
+    ]
+  },
+  {
+    "3_sequences": [
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "assignment_try_END",
+          "assignment_sub_END"
+        ],
+        "total": 285
+      },
+      {
+        "sequence": [
+          "assignment_vis_END",
+          "resource_vis_END",
+          "resource_vis_END"
+        ],
+        "total": 189
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "assignment_try_END",
+          "assignment_sub_END"
+        ],
+        "total": 194
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "forum_vis_END",
+          "forum_participation_END"
+        ],
+        "total": 173
+      },
+      {
+        "sequence": [
+          "forum_vis_END",
+          "forum_vis_END",
+          "forum_vis_END"
+        ],
+        "total": 288
+      },
+      {
+        "sequence": [
+          "forum_vis_START",
+          "forum_vis_START",
+          "forum_vis_START"
+        ],
+        "total": 196
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "assignment_try_END",
+          "assignment_sub_END"
+        ],
+        "total": 612
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "forum_vis_END",
+          "forum_vis_END"
+        ],
+        "total": 181
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "resource_vis_END",
+          "assignment_try_END"
+        ],
+        "total": 232
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "resource_vis_END",
+          "resource_vis_END"
+        ],
+        "total": 229
+      },
+      {
+        "sequence": [
+          "resource_vis_START",
+          "resource_vis_START",
+          "resource_vis_START"
+        ],
+        "total": 193
+      }
+    ]
+  },
+  {
+    "4_sequences": [
+      {
+        "sequence": [
+          "forum_vis_END",
+          "forum_vis_END",
+          "forum_vis_END",
+          "forum_vis_END"
+        ],
+        "total": 205
+      },
+      {
+        "sequence": [
+          "resource_vis_END",
+          "resource_vis_END",
+          "assignment_try_END",
+          "assignment_sub_END"
+        ],
+        "total": 186
+      }
+    ]
+  }
+]

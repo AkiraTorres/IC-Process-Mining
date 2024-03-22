@@ -1,0 +1,602 @@
+[
+  {
+    "1_sequences": [
+      {
+        "sequence": [
+          "resource_vis"
+        ],
+        "total": 1829
+      },
+      {
+        "sequence": [
+          "assignment_vis"
+        ],
+        "total": 2085
+      },
+      {
+        "sequence": [
+          "assignment_try"
+        ],
+        "total": 2085
+      },
+      {
+        "sequence": [
+          "assignment_sub"
+        ],
+        "total": 2085
+      },
+      {
+        "sequence": [
+          "forum_vis"
+        ],
+        "total": 748
+      },
+      {
+        "sequence": [
+          "forum_participation"
+        ],
+        "total": 227
+      }
+    ]
+  },
+  {
+    "2_sequences": [
+      {
+        "sequence": [
+          "assignment_sub",
+          "assignment_vis"
+        ],
+        "total": 239
+      },
+      {
+        "sequence": [
+          "assignment_try",
+          "assignment_sub"
+        ],
+        "total": 1229
+      },
+      {
+        "sequence": [
+          "assignment_try",
+          "assignment_vis"
+        ],
+        "total": 626
+      },
+      {
+        "sequence": [
+          "assignment_try",
+          "resource_vis"
+        ],
+        "total": 355
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_sub"
+        ],
+        "total": 864
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 2062
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_vis"
+        ],
+        "total": 849
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "resource_vis"
+        ],
+        "total": 741
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "forum_vis"
+        ],
+        "total": 280
+      },
+      {
+        "sequence": [
+          "forum_participation",
+          "forum_vis"
+        ],
+        "total": 209
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "assignment_vis"
+        ],
+        "total": 533
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_participation"
+        ],
+        "total": 227
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 524
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "resource_vis"
+        ],
+        "total": 393
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis"
+        ],
+        "total": 1545
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "forum_vis"
+        ],
+        "total": 510
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis"
+        ],
+        "total": 876
+      }
+    ]
+  },
+  {
+    "3_sequences": [
+      {
+        "sequence": [
+          "assignment_try",
+          "assignment_vis",
+          "assignment_sub"
+        ],
+        "total": 390
+      },
+      {
+        "sequence": [
+          "assignment_try",
+          "resource_vis",
+          "assignment_vis"
+        ],
+        "total": 177
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_try",
+          "assignment_sub"
+        ],
+        "total": 1214
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_try",
+          "assignment_vis"
+        ],
+        "total": 620
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_try",
+          "resource_vis"
+        ],
+        "total": 351
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_vis",
+          "assignment_sub"
+        ],
+        "total": 227
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 503
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_vis",
+          "assignment_vis"
+        ],
+        "total": 317
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_vis",
+          "resource_vis"
+        ],
+        "total": 244
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 179
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "resource_vis",
+          "assignment_vis"
+        ],
+        "total": 381
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "resource_vis",
+          "resource_vis"
+        ],
+        "total": 317
+      },
+      {
+        "sequence": [
+          "forum_participation",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 168
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 326
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_participation",
+          "forum_vis"
+        ],
+        "total": 205
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "assignment_vis"
+        ],
+        "total": 300
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_participation"
+        ],
+        "total": 219
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 396
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "resource_vis"
+        ],
+        "total": 224
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "resource_vis",
+          "resource_vis"
+        ],
+        "total": 199
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis",
+          "assignment_sub"
+        ],
+        "total": 208
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 1099
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis",
+          "assignment_vis"
+        ],
+        "total": 363
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 338
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "assignment_vis"
+        ],
+        "total": 654
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "forum_vis"
+        ],
+        "total": 293
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "resource_vis"
+        ],
+        "total": 424
+      }
+    ]
+  },
+  {
+    "4_sequences": [
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_try",
+          "assignment_vis",
+          "assignment_sub"
+        ],
+        "total": 388
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_try",
+          "resource_vis",
+          "assignment_vis"
+        ],
+        "total": 176
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "assignment_vis",
+          "assignment_try",
+          "assignment_sub"
+        ],
+        "total": 282
+      },
+      {
+        "sequence": [
+          "assignment_vis",
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 242
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "assignment_vis",
+          "assignment_try",
+          "assignment_sub"
+        ],
+        "total": 182
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_participation",
+          "forum_vis"
+        ],
+        "total": 194
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "assignment_vis"
+        ],
+        "total": 196
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_participation"
+        ],
+        "total": 183
+      },
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 300
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try",
+          "assignment_sub"
+        ],
+        "total": 646
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try",
+          "assignment_vis"
+        ],
+        "total": 336
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 227
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 403
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 207
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "resource_vis",
+          "assignment_vis"
+        ],
+        "total": 296
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "resource_vis",
+          "resource_vis"
+        ],
+        "total": 188
+      }
+    ]
+  },
+  {
+    "5_sequences": [
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 224
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try",
+          "assignment_vis",
+          "assignment_sub"
+        ],
+        "total": 228
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 174
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try",
+          "assignment_sub"
+        ],
+        "total": 233
+      },
+      {
+        "sequence": [
+          "resource_vis",
+          "resource_vis",
+          "resource_vis",
+          "assignment_vis",
+          "assignment_try"
+        ],
+        "total": 182
+      }
+    ]
+  },
+  {
+    "6_sequences": [
+      {
+        "sequence": [
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis",
+          "forum_vis"
+        ],
+        "total": 171
+      }
+    ]
+  }
+]
