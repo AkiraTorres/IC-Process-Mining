@@ -14,16 +14,17 @@ def save_to_csv(list_of_dataframes):
         df["data"].to_csv(f"{df['name']}.csv")
 
 
-def event_mapping(event, time: int, params: dict):
+def event_mapping(event, t: int, params: dict):
     mapped = mapping[(mapping.component == event[0]) & (mapping.action == event[1]) & (mapping.target == event[2])]
     e = mapped["class"].iloc[0]
-    result = e
+    result = {"event": e, "time": t}
     if params["tf"]:
-        tf = (time - params["initial_date"]) / (params["final_date"] - params["initial_date"]) * 100
-        e = e + "_START" if tf <= 50 else e + "_END"
-        result = {"event": e, "time": time}
+        tf = params["initial_date"] + (params["final_date"] - params["initial_date"]) / 2
+        # tf = (time - params["initial_date"]) / (params["final_date"] - params["initial_date"]) * 100
+        e = e + "_START" if t <= tf else e + "_END"
+        result = {"event": e, "time": t}
 
-    return {"event": e, "time": time}
+    return result
 
 
 # return a sequence of catalogued events based on a dataframe of events
@@ -47,23 +48,39 @@ def generate_sequence_from_df(df, params: dict):
     if not events:
         return None
 
-    for i in range(len(events)):
-        try:
-            if params["coalescing_repeating"]:
-                while events[i] == events[i + 1]:
+    if params["coalescing_repeating"]:
+        remove_indexes = []
+        for i in range(len(events)):
+            try:
+                if events[i]["event"] == events[i + 1]["event"]:
                     if events[i]["event"] == "assignment_sub" or events[i]["event"] == "assignment_sub":
-                        events.pop(i)
+                        remove_indexes.append(i)
                     else:
-                        events.pop(i + 1)
-            if params["coalescing_hidden"]:
+                        remove_indexes.append(i + 1)
+            except IndexError:
+                pass
+        # get index list in reverse order
+        remove_indexes = sorted(remove_indexes, reverse=True)
+        # drop elements in place
+        for index in remove_indexes:
+            del events[index]
+    if params["coalescing_hidden"]:
+        remove_indexes = []
+        for i in range(len(events)):
+            try:
                 if events[i]["event"] == "assignment_vis" and events[i + 1]["event"] == "assignment_try":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_vis" and events[i + 1]["event"] == "assignment_sub":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_try" and events[i + 1]["event"] == "assignment_sub":
-                    events.pop(i)
-        except IndexError:
-            pass
+                    remove_indexes.append(i)
+            except IndexError:
+                pass
+        # get index list in reverse order
+        remove_indexes = sorted(remove_indexes, reverse=True)
+        # drop elements in place
+        for index in remove_indexes:
+            del events[index]
     return events
 
 
@@ -85,33 +102,46 @@ def generate_sequence_from_df_with_temporal_folding(df, params: dict):
             events.append(event)
     events = list(reversed(events))
 
-    if not events:
-        return None
+    if params["coalescing_repeating"]:
+        remove_indexes = []
+        for i in range(len(events) - 1):
+            if events[i]["event"] == events[i + 1]["event"]:
+                if events[i]["event"] == "assignment_sub_START" or events[i]["event"] == "assignment_sub_END":
+                    remove_indexes.append(i)
+                else:
+                    remove_indexes.append(i + 1)
+        # get index list in reverse order
+        remove_indexes = sorted(remove_indexes, reverse=True)
+        # drop elements in place
+        for index in remove_indexes:
+            del events[index]
 
-    for i in range(len(events)):
-        try:
-            if params["coalescing_repeating"]:
-                while events[i] == events[i + 1]:
-                    if events[i]["event"] == "assignment_sub_START" or events[i]["event"] == "assignment_sub_END":
-                        events.pop(i)
-                    else:
-                        events.pop(i + 1)
-
-            if params["coalescing_hidden"]:
+    if params["coalescing_hidden"]:
+        remove_indexes = []
+        for i in range(len(events)):
+            try:
                 if events[i]["event"] == "assignment_vis_START" and events[i + 1]["event"] == "assignment_try_START":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_vis_START" and events[i + 1]["event"] == "assignment_sub_START":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_try_START" and events[i + 1]["event"] == "assignment_sub_START":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_vis_END" and events[i + 1]["event"] == "assignment_try_END":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_vis_END" and events[i + 1]["event"] == "assignment_sub_END":
-                    events.pop(i)
+                    remove_indexes.append(i)
                 elif events[i]["event"] == "assignment_try_END" and events[i + 1]["event"] == "assignment_sub_END":
-                    events.pop(i)
-        except IndexError:
-            pass
+                    remove_indexes.append(i)
+            except IndexError:
+                pass
+        # get index list in reverse order
+        remove_indexes = sorted(remove_indexes, reverse=True)
+
+        # drop elements in place
+        for index in remove_indexes:
+            # events.pop(index)
+            del events[index]
+
     return events
 
 
@@ -142,12 +172,16 @@ def prepare_database(df, params: dict, grade_df=None) -> list:
     return events_by_user
 
 
-def partitioning(init_date, final_date, assignment_id, grade_df=None):
+def partitioning(params, grade_df=None):
+    init_date = params["initial_date"]
+    final_date = params["final_date"]
+    assignment_id = params["assignment_id"]
     grades = None
     activity_logs = (
         all_logs_data.sort_values("t")
-        .query("t >= 1573527600 & t <= 1574218500")
-        .query("`assignment_id` == 12841 | component != 'core' & component != 'mod_page'")
+        .query(f"t >= {init_date} & t <= {final_date}")
+        .query(f"assignment_id == {assignment_id} | component != 'core' & component != 'mod_page'")
+        # .query(f"t >= 1573527600 & t <= 1574218500")
     )
 
     first_access = all_logs_data.sort_values("t").drop_duplicates(subset=["userid"])
@@ -155,7 +189,7 @@ def partitioning(init_date, final_date, assignment_id, grade_df=None):
 
     if grade_df is not None:
         grades = grade_df.query(f"id == {assignment_id}")
-        # .query(f"timeopen >= {init_date} & timeclose <= {final_date}"))  # ["userid", "student_grade", "max_grade"]
+        # .query(f"time_open >= {init_date} & time_close <= {final_date}"))  # ["userid", "student_grade", "max_grade"]
 
     return [first_access, activity_logs, grades]
 
@@ -167,15 +201,15 @@ def classify_events(activity, first_access):
 # parametrization
 def read_params(argv: list) -> dict:
     params = {
-        "tf": False,
-        "path": "sceneries/test",
+        "tf": True,
+        "path": "sceneries/1-first",
         "grade_path": "./data/see_course2060_quiz_grades.csv",
         "activity": 1,
-        "initial_date": 1574218500,
-        "final_date": 1573527600,
+        "initial_date": 1573527600,
+        "final_date": 1574218500,
         "assignment_id": 12841,
-        "coalescing_repeating": False,
-        "coalescing_hidden": False,
+        "coalescing_repeating": True,
+        "coalescing_hidden": True,
     }
 
     if False and len(argv) == 1:
@@ -233,20 +267,47 @@ def read_params(argv: list) -> dict:
 
 
 def main(params: dict):
-    start = time.time()
-    grade_df = None
-    if params["grade_path"]:
-        grade_df = pd.read_csv(params["grade_path"])
-    first_access, activity, grades = partitioning(
-        params["initial_date"], params["final_date"], params["assignment_id"], grade_df
-    )
-    activity = classify_events(activity, first_access)
+    activities_details = [
+        {"initial_date": 1573527600, "final_date": 1574218500, "assignment_id": 12841},
+        # {"initial_date": 1574132400, "final_date": 1574823300, "assignment_id": 12842},
+        # {"initial_date": 1574737200, "final_date": 1575428100, "assignment_id": 12843},
+        # {"initial_date": 1575342000, "final_date": 1576032900, "assignment_id": 12844},
+    ]
+    for activity in range(1, len(activities_details) + 1):
+        params["activity"] = activity
+        params["initial_date"] = activities_details[activity - 1]["initial_date"]
+        params["final_date"] = activities_details[activity - 1]["final_date"]
+        params["assignment_id"] = activities_details[activity - 1]["assignment_id"]
 
-    events_by_user = prepare_database(activity, params, grades)
+        grade_df = None
+        sceneries_names = [
+            {"path": "1-first", "tf": True, "coalescing_repeating": True, "coalescing_hidden": True},
+            {"path": "2-second", "tf": True, "coalescing_repeating": True, "coalescing_hidden": False},
+            {"path": "3-third", "tf": True, "coalescing_repeating": False, "coalescing_hidden": True},
+            {"path": "4-fourth", "tf": True, "coalescing_repeating": False, "coalescing_hidden": False},
+            {"path": "5-fifth", "tf": False, "coalescing_repeating": True, "coalescing_hidden": True},
+            {"path": "6-sixth", "tf": False, "coalescing_repeating": True, "coalescing_hidden": False},
+            {"path": "7-seventh", "tf": False, "coalescing_repeating": False, "coalescing_hidden": True},
+            {"path": "8-eighth", "tf": False, "coalescing_repeating": False, "coalescing_hidden": False},
+        ]
+        for scenery in sceneries_names:
+            start = time.time()
+            params["tf"] = scenery["tf"]
+            params["coalescing_repeating"] = scenery["coalescing_repeating"]
+            params["coalescing_hidden"] = scenery["coalescing_hidden"]
+            params["path"] = f"sceneries/{params["activity"]}/{scenery['path']}"
 
-    with open("./" + params["path"] + ".json", "w+") as file:
-        json.dump(events_by_user, file, indent=2, default=lambda o: str(o))
-    print(f"Execution time, {params["path"]}: ", time.time() - start)
+            if params["grade_path"]:
+                grade_df = pd.read_csv(params["grade_path"])
+            first_access, activity, grades = partitioning(params, grade_df)
+            activity = classify_events(activity, first_access)
+
+            events_by_user = prepare_database(activity, params, grades)
+
+            with open("./" + params["path"] + ".json", "w+") as file:
+                json.dump(events_by_user, file, indent=2, default=lambda o: str(o))
+            print(f"Execution time, {params["path"]}: {(time.time() - start):.2f}")
+        print()
 
 
 if __name__ == "__main__":
