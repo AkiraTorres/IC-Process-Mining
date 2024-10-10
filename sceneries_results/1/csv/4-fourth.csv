@@ -1,626 +1,615 @@
-sequence_size;sequence;total;total_time_span;avg_time_span;i_support;s_support;ids;grade_avg;grade_median;grade_mode;max_grade
-1;resource_vis_START;935;633923;400412.0128342246;43611;935;935;1.42 (+- 0.50);1.5;1.5;2
-1;assignment_vis_START;866;633907;388165.9110854503;36789;866;866;1.38 (+- 0.52);1.5;1.5;2
-1;assignment_vis_END;1844;633943;273493.50054229936;117106;1844;1844;1.38 (+- 0.52);1.5;1.5;2
-1;assignment_try_END;1700;633943;255287.99647058823;62978;1700;1700;1.37 (+- 0.52);1.5;1.5;2
-1;assignment_sub_END;1845;633943;273536.81517615175;88930;1845;1845;1.38 (+- 0.52);1.5;1.5;2
-1;resource_vis_END;1302;633852;248969.73963133642;65010;1302;1302;1.40 (+- 0.51);1.5;1.5;2
-1;assignment_try_START;551;633822;318072.6987295826;11103;551;551;1.36 (+- 0.52);1.5;1.5;2
-1;assignment_sub_START;351;633500;211429.59259259258;2730;351;351;1.34 (+- 0.55);1.5;1.5;2
-1;forum_vis_START;394;633918;417059.37563451775;14338;394;394;1.43 (+- 0.49);1.5;1.5;2
-1;forum_vis_END;563;633726;331323.1651865009;49405;563;563;1.41 (+- 0.50);1.5;1.5;2
-1;forum_participation_END;179;633086;375942.843575419;3977;179;179;1.44 (+- 0.46);1.5;1.5;2
-2;resource_vis_START>assignment_vis_START;550;633822;350789.30363636365;8202;550;550;1.42 (+- 0.51);1.5;1.5;2
-2;resource_vis_START>resource_vis_START;501;633838;408826.09580838325;9484;501;501;1.40 (+- 0.51);1.5;1.5;2
-2;resource_vis_START>assignment_vis_END;729;633923;495192.51989026065;23156;729;729;1.42 (+- 0.50);1.5;1.5;2
-2;resource_vis_START>assignment_try_END;611;633923;497790.39607201307;12238;611;611;1.41 (+- 0.51);1.5;1.5;2
-2;resource_vis_START>assignment_sub_END;730;633923;494998.29589041095;19983;730;730;1.42 (+- 0.50);1.5;1.5;2
-2;resource_vis_START>resource_vis_END;408;633832;512550.6004901961;7424;408;408;1.39 (+- 0.52);1.5;1.5;2
-2;resource_vis_START>assignment_try_START;387;633822;299716.2816537468;3241;387;387;1.41 (+- 0.51);1.5;1.5;2
-2;resource_vis_START>assignment_sub_START;297;633500;212169.6632996633;1123;297;297;1.40 (+- 0.52);1.5;1.5;2
-2;resource_vis_START>forum_vis_START;308;633575;422495.0551948052;4166;308;308;1.44 (+- 0.49);1.5;1.5;2
-2;resource_vis_START>forum_vis_END;291;632743;494571.793814433;7090;291;291;1.43 (+- 0.51);1.5;1.5;2
-2;assignment_vis_START>resource_vis_START;372;633832;397808.31451612903;3207;372;372;1.39 (+- 0.52);1.5;1.5;2
-2;assignment_vis_START>assignment_vis_END;625;633907;516143.2848;19926;625;625;1.39 (+- 0.52);1.5;1.5;2
-2;assignment_vis_START>assignment_try_END;481;633907;524443.1018711019;7906;481;481;1.37 (+- 0.54);1.5;1.5;2
-2;assignment_vis_START>assignment_sub_END;626;633907;515883.32587859425;16113;626;626;1.38 (+- 0.52);1.5;1.5;2
-2;assignment_vis_START>assignment_vis_START;483;633907;380329.19461697724;8291;483;483;1.35 (+- 0.54);1.5;1.5;2
-2;assignment_vis_START>assignment_try_START;551;633822;318072.6987295826;5937;551;551;1.36 (+- 0.52);1.5;1.5;2
-2;assignment_vis_START>assignment_sub_START;351;633500;211429.59259259258;1811;351;351;1.34 (+- 0.55);1.5;1.5;2
-2;assignment_vis_START>resource_vis_END;408;633832;527634.5759803922;7558;408;408;1.38 (+- 0.51);1.5;1.5;2
-2;assignment_vis_START>forum_vis_END;225;633463;510360.9555555555;1628;225;225;1.41 (+- 0.53);1.5;1.5;2
-2;assignment_vis_START>forum_vis_START;185;633575;430489.15675675677;185;185;185;1.39 (+- 0.52);1.5;1.5;2
-2;assignment_vis_END>assignment_try_END;1700;633943;255287.99647058823;37760;1700;1700;1.37 (+- 0.52);1.5;1.5;2
-2;assignment_vis_END>assignment_sub_END;1844;633943;273493.50054229936;59475;1844;1844;1.38 (+- 0.52);1.5;1.5;2
-2;assignment_vis_END>resource_vis_END;711;633852;273210.85794655414;17046;711;711;1.40 (+- 0.51);1.5;1.5;2
-2;assignment_vis_END>assignment_vis_END;1189;633943;291084.85786375107;44316;1189;1189;1.38 (+- 0.51);1.5;1.5;2
-2;assignment_vis_END>forum_vis_END;307;632929;341431.3941368078;5380;307;307;1.38 (+- 0.50);1.5;1.5;2
-2;assignment_try_END>assignment_sub_END;1700;633943;255287.99647058823;32339;1700;1700;1.37 (+- 0.52);1.5;1.5;2
-2;assignment_try_END>resource_vis_END;323;633852;265765.7151702786;2412;323;323;1.36 (+- 0.53);1.5;1.5;2
-2;assignment_try_END>assignment_vis_END;712;633927;270188.17837078654;12600;712;712;1.38 (+- 0.51);1.5;1.5;2
-2;assignment_try_END>assignment_try_END;189;632845;237601.8201058201;1512;189;189;1.35 (+- 0.55);1.5;1.5;2
-2;resource_vis_END>assignment_vis_END;1265;633852;250588.4205533597;37888;1265;1265;1.40 (+- 0.51);1.5;1.5;2
-2;resource_vis_END>assignment_sub_END;1302;633852;248969.73963133642;33156;1302;1302;1.40 (+- 0.51);1.5;1.5;2
-2;resource_vis_END>assignment_try_END;1069;633843;229513.2871842844;19824;1069;1069;1.41 (+- 0.51);1.5;1.5;2
-2;resource_vis_END>resource_vis_END;632;633843;271697.3101265823;17660;632;632;1.37 (+- 0.53);1.5;1.5;2
-2;resource_vis_END>forum_vis_END;348;633086;308978.6235632184;7674;348;348;1.43 (+- 0.49);1.5;1.5;2
-2;assignment_try_START>assignment_vis_START;307;633822;356431.8436482085;2508;307;307;1.35 (+- 0.54);1.5;1.5;2
-2;assignment_try_START>assignment_sub_START;351;633500;211429.59259259258;1575;351;351;1.34 (+- 0.55);1.5;1.5;2
-2;assignment_try_START>assignment_vis_END;310;633822;521599.7774193548;4434;310;310;1.35 (+- 0.52);1.5;1.5;2
-2;assignment_try_START>resource_vis_END;192;633747;531430.5416666666;1496;192;192;1.31 (+- 0.51);1.5;1.5;2
-2;assignment_try_START>assignment_sub_END;311;633822;521058.97106109327;4006;311;311;1.35 (+- 0.51);1.5;1.5;2
-2;forum_vis_START>resource_vis_START;223;632750;411138.134529148;760;223;223;1.45 (+- 0.50);1.5;1.5;2
-2;forum_vis_START>assignment_vis_START;221;633865;378069.17647058825;221;221;221;1.42 (+- 0.51);1.5;1.5;2
-2;forum_vis_START>resource_vis_END;197;633093;491443.31979695434;772;197;197;1.45 (+- 0.50);1.5;1.5;2
-2;forum_vis_START>assignment_vis_END;324;633918;486467.9537037037;7104;324;324;1.44 (+- 0.48);1.5;1.5;2
-2;forum_vis_START>assignment_try_END;276;633918;485875.77898550726;3472;276;276;1.45 (+- 0.49);1.5;1.5;2
-2;forum_vis_START>forum_vis_END;209;633086;490185.1052631579;2928;209;209;1.44 (+- 0.49);1.5;1.5;2
-2;forum_vis_START>assignment_sub_END;324;633918;486467.9537037037;6724;324;324;1.44 (+- 0.48);1.5;1.5;2
-2;forum_vis_START>forum_vis_START;291;633732;414027.03092783503;5147;291;291;1.47 (+- 0.47);1.5;1.5;2
-2;forum_vis_END>forum_vis_END;425;633726;352224.91529411764;24418;425;425;1.43 (+- 0.47);1.5;1.5;2
-2;forum_vis_END>forum_participation_END;179;633086;375942.843575419;2764;179;179;1.44 (+- 0.46);1.5;1.5;2
-2;forum_vis_END>assignment_vis_END;559;633726;332534.4114490161;27246;559;559;1.41 (+- 0.49);1.5;1.5;2
-2;forum_vis_END>assignment_sub_END;563;633726;331323.1651865009;24984;563;563;1.41 (+- 0.50);1.5;1.5;2
-2;forum_vis_END>assignment_try_END;459;633086;318875.61437908496;13146;459;459;1.42 (+- 0.49);1.5;1.5;2
-2;forum_vis_END>resource_vis_END;319;633569;318444.9937304075;5172;319;319;1.41 (+- 0.50);1.5;1.5;2
-2;forum_participation_END>forum_vis_END;169;632823;375912.9881656805;1352;169;169;1.44 (+- 0.47);1.5;1.5;2
-2;forum_participation_END>assignment_vis_END;179;633086;375942.843575419;2078;179;179;1.44 (+- 0.46);1.5;1.5;2
-2;forum_participation_END>assignment_sub_END;179;633086;375942.843575419;2078;179;179;1.44 (+- 0.46);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>resource_vis_START;176;633747;412352.2443181818;176;176;176;1.36 (+- 0.55);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>assignment_vis_END;352;633822;510358.23863636365;3284;352;352;1.41 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>assignment_try_END;250;633822;519623.644;1000;250;250;1.39 (+- 0.54);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>assignment_sub_END;353;633822;509913.6232294618;3043;353;353;1.41 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>assignment_try_START;381;633822;301379.53543307085;1610;381;381;1.41 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>assignment_vis_START;293;633822;372513.0034129693;1079;293;293;1.38 (+- 0.54);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>assignment_sub_START;287;633500;216321.6550522648;555;287;287;1.41 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>assignment_vis_START>resource_vis_END;219;633747;525311.1917808219;854;219;219;1.37 (+- 0.54);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>assignment_vis_END;397;633838;493228.05793450883;4312;397;397;1.40 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>assignment_try_END;327;633838;494713.33639143733;2706;327;327;1.40 (+- 0.54);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>assignment_sub_END;398;633838;492876.75376884424;4058;398;398;1.40 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>assignment_vis_START;286;633747;362912.4510489511;1014;286;286;1.37 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>assignment_try_START;173;633673;305192.5722543353;345;173;173;1.40 (+- 0.48);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>resource_vis_END;226;633747;507898.95132743364;1560;226;226;1.36 (+- 0.53);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>forum_vis_END;190;632743;495770.16315789474;758;190;190;1.43 (+- 0.50);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>resource_vis_START;290;633838;405064.88275862066;1860;290;290;1.36 (+- 0.53);1.5;1.5;2
-3;resource_vis_START>resource_vis_START>forum_vis_START;198;633123;420105.9696969697;198;198;198;1.43 (+- 0.50);1.5;1.5;2
-3;resource_vis_START>assignment_vis_END>assignment_try_END;611;633923;497790.39607201307;6388;611;611;1.41 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>assignment_vis_END>assignment_sub_END;729;633923;495192.51989026065;11578;729;729;1.42 (+- 0.50);1.5;1.5;2
-3;resource_vis_START>assignment_vis_END>resource_vis_END;231;633495;520241.09523809527;894;231;231;1.39 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>assignment_vis_END>assignment_vis_END;463;633923;509391.5183585313;5502;463;463;1.41 (+- 0.50);1.5;1.5;2
-3;resource_vis_START>assignment_try_END>assignment_sub_END;611;633923;497790.39607201307;6119;611;611;1.41 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>assignment_try_END>assignment_vis_END;248;633789;508947.6612903226;992;248;248;1.39 (+- 0.48);1.5;1.5;2
-3;resource_vis_START>resource_vis_END>assignment_vis_END;395;633832;514369.4075949367;3878;395;395;1.39 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>resource_vis_END>assignment_sub_END;408;633832;512550.6004901961;3712;408;408;1.39 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>resource_vis_END>assignment_try_END;308;633832;514118.63636363635;1898;308;308;1.39 (+- 0.53);1.5;1.5;2
-3;resource_vis_START>resource_vis_END>resource_vis_END;213;633747;516291.93896713614;830;213;213;1.34 (+- 0.57);1.5;1.5;2
-3;resource_vis_START>assignment_try_START>assignment_vis_START;202;633822;351331.7673267327;402;202;202;1.37 (+- 0.54);1.5;1.5;2
-3;resource_vis_START>assignment_try_START>assignment_sub_START;271;633500;215053.48708487084;539;271;271;1.41 (+- 0.52);1.5;1.5;2
-3;resource_vis_START>assignment_try_START>assignment_vis_END;199;633822;518464.9849246231;790;199;199;1.38 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>assignment_try_START>assignment_sub_END;200;633822;517639.705;792;200;200;1.38 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>forum_vis_START>assignment_vis_END;257;633575;485010.4591439689;2018;257;257;1.44 (+- 0.49);1.5;1.5;2
-3;resource_vis_START>forum_vis_START>assignment_try_END;217;633570;483906.26267281105;868;217;217;1.44 (+- 0.50);1.5;1.5;2
-3;resource_vis_START>forum_vis_START>forum_vis_END;174;632743;490856.8103448276;694;174;174;1.44 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>forum_vis_START>assignment_sub_END;257;633575;485010.4591439689;1845;257;257;1.44 (+- 0.49);1.5;1.5;2
-3;resource_vis_START>forum_vis_START>forum_vis_START;231;633066;418917.4675324675;979;231;231;1.47 (+- 0.48);1.5;1.5;2
-3;resource_vis_START>forum_vis_END>forum_vis_END;239;632738;501150.5271966527;3228;239;239;1.45 (+- 0.49);1.5;1.5;2
-3;resource_vis_START>forum_vis_END>assignment_vis_END;289;632743;495761.1626297578;3716;289;289;1.44 (+- 0.50);1.5;1.5;2
-3;resource_vis_START>forum_vis_END>assignment_sub_END;291;632743;494571.793814433;3545;291;291;1.43 (+- 0.51);1.5;1.5;2
-3;resource_vis_START>forum_vis_END>assignment_try_END;225;632738;497578.9511111111;1652;225;225;1.45 (+- 0.50);1.5;1.5;2
-3;assignment_vis_START>resource_vis_START>assignment_vis_END;278;633832;506527.726618705;1362;278;278;1.40 (+- 0.53);1.5;1.5;2
-3;assignment_vis_START>resource_vis_START>assignment_try_END;201;633832;517919.9253731343;804;201;201;1.37 (+- 0.56);1.5;1.5;2
-3;assignment_vis_START>resource_vis_START>assignment_sub_END;279;633832;505978.91397849465;1161;279;279;1.39 (+- 0.53);1.5;1.5;2
-3;assignment_vis_START>resource_vis_START>assignment_vis_START;233;633747;364941.17596566526;233;233;233;1.38 (+- 0.54);1.5;1.5;2
-3;assignment_vis_START>resource_vis_START>resource_vis_START;214;633747;407736.96261682245;214;214;214;1.34 (+- 0.53);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_END>assignment_try_END;481;633907;524443.1018711019;4568;481;481;1.37 (+- 0.54);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_END>assignment_sub_END;625;633907;516143.2848;9963;625;625;1.39 (+- 0.52);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_END>assignment_vis_END;453;633907;524799.9470198676;6760;453;453;1.40 (+- 0.52);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_END>resource_vis_END;280;633580;532584.9535714285;1090;280;280;1.41 (+- 0.51);1.5;1.5;2
-3;assignment_vis_START>assignment_try_END>assignment_sub_END;481;633907;524443.1018711019;3953;481;481;1.37 (+- 0.54);1.5;1.5;2
-3;assignment_vis_START>assignment_try_END>assignment_vis_END;219;633789;530581.7762557077;876;219;219;1.38 (+- 0.50);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>assignment_try_START;241;633822;348065.1576763485;241;241;241;1.35 (+- 0.53);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>assignment_vis_START;251;633822;392468.8764940239;774;251;251;1.30 (+- 0.55);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>assignment_sub_START;220;633500;216441.85454545455;387;220;220;1.33 (+- 0.56);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>assignment_vis_END;332;633907;524193.0271084337;3912;332;332;1.36 (+- 0.54);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>resource_vis_END;218;633832;535039.0733944954;860;218;218;1.35 (+- 0.53);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>assignment_try_END;241;633907;536332.6597510374;1298;241;241;1.32 (+- 0.56);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>assignment_sub_END;333;633907;523680.1621621622;3312;333;333;1.35 (+- 0.54);1.5;1.5;2
-3;assignment_vis_START>assignment_vis_START>resource_vis_START;169;633832;421086.7041420118;169;169;169;1.28 (+- 0.55);1.5;1.5;2
-3;assignment_vis_START>assignment_try_START>assignment_vis_START;307;633822;356431.8436482085;1253;307;307;1.35 (+- 0.54);1.5;1.5;2
-3;assignment_vis_START>assignment_try_START>assignment_sub_START;351;633500;211429.59259259258;786;351;351;1.34 (+- 0.55);1.5;1.5;2
-3;assignment_vis_START>assignment_try_START>assignment_vis_END;310;633822;521599.7774193548;2214;310;310;1.35 (+- 0.52);1.5;1.5;2
-3;assignment_vis_START>assignment_try_START>resource_vis_END;192;633747;531430.5416666666;748;192;192;1.31 (+- 0.51);1.5;1.5;2
-3;assignment_vis_START>assignment_try_START>assignment_sub_END;311;633822;521058.97106109327;2000;311;311;1.35 (+- 0.51);1.5;1.5;2
-3;assignment_vis_START>resource_vis_END>assignment_vis_END;393;633832;529619.7709923664;3944;393;393;1.38 (+- 0.52);1.5;1.5;2
-3;assignment_vis_START>resource_vis_END>assignment_try_END;277;633832;532298.2310469314;1104;277;277;1.39 (+- 0.52);1.5;1.5;2
-3;assignment_vis_START>resource_vis_END>resource_vis_END;213;633747;529346.5305164319;830;213;213;1.33 (+- 0.55);1.5;1.5;2
-3;assignment_vis_START>resource_vis_END>assignment_sub_END;408;633832;527634.5759803922;3779;408;408;1.38 (+- 0.51);1.5;1.5;2
-3;assignment_vis_START>forum_vis_END>forum_vis_END;183;633463;514545.05464480876;732;183;183;1.44 (+- 0.49);1.5;1.5;2
-3;assignment_vis_START>forum_vis_END>assignment_vis_END;223;633463;512043.94170403585;812;223;223;1.41 (+- 0.52);1.5;1.5;2
-3;assignment_vis_START>forum_vis_END>assignment_sub_END;225;633463;510360.9555555555;814;225;225;1.41 (+- 0.53);1.5;1.5;2
-3;assignment_vis_END>assignment_try_END>assignment_sub_END;1700;633943;255287.99647058823;18880;1700;1700;1.37 (+- 0.52);1.5;1.5;2
-3;assignment_vis_END>assignment_try_END>resource_vis_END;323;633852;265765.7151702786;1206;323;323;1.36 (+- 0.53);1.5;1.5;2
-3;assignment_vis_END>assignment_try_END>assignment_vis_END;712;633927;270188.17837078654;6788;712;712;1.38 (+- 0.51);1.5;1.5;2
-3;assignment_vis_END>assignment_try_END>assignment_try_END;189;632845;237601.8201058201;756;189;189;1.35 (+- 0.55);1.5;1.5;2
-3;assignment_vis_END>resource_vis_END>assignment_vis_END;665;633852;279169.52330827067;9036;665;665;1.40 (+- 0.50);1.5;1.5;2
-3;assignment_vis_END>resource_vis_END>assignment_sub_END;711;633852;273210.85794655414;8523;711;711;1.40 (+- 0.51);1.5;1.5;2
-3;assignment_vis_END>resource_vis_END>assignment_try_END;451;633768;255186.9356984479;3594;451;451;1.42 (+- 0.51);1.5;1.5;2
-3;assignment_vis_END>resource_vis_END>resource_vis_END;345;633768;283487.3217391304;3502;345;345;1.37 (+- 0.52);1.5;1.5;2
-3;assignment_vis_END>resource_vis_END>forum_vis_END;179;632929;332478.56424581003;708;179;179;1.38 (+- 0.49);1.5;1.5;2
-3;assignment_vis_END>assignment_vis_END>assignment_sub_END;1189;633943;291084.85786375107;22158;1189;1189;1.38 (+- 0.51);1.5;1.5;2
-3;assignment_vis_END>assignment_vis_END>resource_vis_END;336;633768;314563.29761904763;2678;336;336;1.35 (+- 0.49);1.5;1.5;2
-3;assignment_vis_END>assignment_vis_END>assignment_vis_END;676;633934;303572.65680473374;11878;676;676;1.38 (+- 0.51);1.5;1.5;2
-3;assignment_vis_END>assignment_vis_END>assignment_try_END;776;633923;277729.29768041236;8840;776;776;1.37 (+- 0.53);1.5;1.5;2
-3;assignment_vis_END>assignment_vis_END>forum_vis_END;175;632929;353945.17142857146;698;175;175;1.35 (+- 0.51);1.5;1.5;2
-3;assignment_vis_END>forum_vis_END>forum_vis_END;225;632929;369731.0755555556;1592;225;225;1.42 (+- 0.47);1.5;1.5;2
-3;assignment_vis_END>forum_vis_END>assignment_vis_END;302;632929;344892.9735099338;2852;302;302;1.38 (+- 0.50);1.5;1.5;2
-3;assignment_vis_END>forum_vis_END>assignment_sub_END;307;632929;341431.3941368078;2690;307;307;1.38 (+- 0.50);1.5;1.5;2
-3;assignment_vis_END>forum_vis_END>assignment_try_END;203;632738;326375.68472906406;808;203;203;1.41 (+- 0.50);1.5;1.5;2
-3;assignment_try_END>resource_vis_END>assignment_vis_END;280;633852;276146.5071428571;1120;280;280;1.36 (+- 0.52);1.5;1.5;2
-3;assignment_try_END>resource_vis_END>assignment_sub_END;323;633852;265765.7151702786;1206;323;323;1.36 (+- 0.53);1.5;1.5;2
-3;assignment_try_END>assignment_vis_END>assignment_sub_END;712;633927;270188.17837078654;6300;712;712;1.38 (+- 0.51);1.5;1.5;2
-3;assignment_try_END>assignment_vis_END>assignment_vis_END;327;633918;264128.7981651376;1642;327;327;1.35 (+- 0.52);1.5;1.5;2
-3;assignment_try_END>assignment_vis_END>assignment_try_END;189;632845;237601.8201058201;756;189;189;1.35 (+- 0.55);1.5;1.5;2
-3;assignment_try_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;756;189;189;1.35 (+- 0.55);1.5;1.5;2
-3;resource_vis_END>assignment_vis_END>assignment_sub_END;1265;633852;250588.4205533597;18944;1265;1265;1.40 (+- 0.51);1.5;1.5;2
-3;resource_vis_END>assignment_vis_END>assignment_try_END;1059;633843;230783.0566572238;9844;1059;1059;1.41 (+- 0.51);1.5;1.5;2
-3;resource_vis_END>assignment_vis_END>resource_vis_END;258;633768;295466.20930232556;988;258;258;1.38 (+- 0.52);1.5;1.5;2
-3;resource_vis_END>assignment_vis_END>assignment_vis_END;683;633843;268463.0073206442;9454;683;683;1.40 (+- 0.50);1.5;1.5;2
-3;resource_vis_END>assignment_try_END>assignment_vis_END;408;633843;234427.52450980392;3376;408;408;1.42 (+- 0.49);1.5;1.5;2
-3;resource_vis_END>assignment_try_END>assignment_sub_END;1069;633843;229513.2871842844;9912;1069;1069;1.41 (+- 0.51);1.5;1.5;2
-3;resource_vis_END>resource_vis_END>assignment_vis_END;607;633843;273549.8863261944;9518;607;607;1.37 (+- 0.53);1.5;1.5;2
-3;resource_vis_END>resource_vis_END>assignment_sub_END;632;633843;271697.3101265823;8830;632;632;1.37 (+- 0.53);1.5;1.5;2
-3;resource_vis_END>resource_vis_END>assignment_try_END;472;633843;249112.27966101695;4334;472;472;1.38 (+- 0.53);1.5;1.5;2
-3;resource_vis_END>resource_vis_END>resource_vis_END;353;633768;283162.65439093485;3898;353;353;1.36 (+- 0.52);1.5;1.5;2
-3;resource_vis_END>resource_vis_END>forum_vis_END;210;633086;314971.79047619045;834;210;210;1.41 (+- 0.49);1.5;1.5;2
-3;resource_vis_END>forum_vis_END>forum_vis_END;252;633086;331511.7896825397;2594;252;252;1.46 (+- 0.45);1.5;1.5;2
-3;resource_vis_END>forum_vis_END>assignment_vis_END;344;633086;311546.3226744186;4002;344;344;1.43 (+- 0.48);1.5;1.5;2
-3;resource_vis_END>forum_vis_END>assignment_sub_END;348;633086;308978.6235632184;3837;348;348;1.43 (+- 0.49);1.5;1.5;2
-3;resource_vis_END>forum_vis_END>assignment_try_END;269;632322;292967.8178438662;1854;269;269;1.47 (+- 0.46);1.5;1.5;2
-3;resource_vis_END>forum_vis_END>resource_vis_END;179;632165;302621.31284916203;704;179;179;1.46 (+- 0.50);1.5;1.5;2
-3;assignment_try_START>assignment_vis_START>assignment_sub_START;167;633500;213610.16766467065;334;167;167;1.30 (+- 0.57);1.5;1.5;2
-3;assignment_try_START>assignment_vis_START>assignment_vis_END;193;633822;531652.1191709845;772;193;193;1.35 (+- 0.53);1.5;1.5;2
-3;assignment_try_START>assignment_vis_START>assignment_sub_END;193;633822;531652.1191709845;772;193;193;1.35 (+- 0.53);1.5;1.5;2
-3;assignment_try_START>assignment_vis_END>assignment_vis_END;226;633822;532089.1283185841;904;226;226;1.37 (+- 0.51);1.5;1.5;2
-3;assignment_try_START>assignment_vis_END>assignment_sub_END;310;633822;521599.7774193548;2217;310;310;1.35 (+- 0.52);1.5;1.5;2
-3;assignment_try_START>resource_vis_END>assignment_vis_END;182;633747;535744.1923076923;728;182;182;1.31 (+- 0.52);1.5;1.5;2
-3;assignment_try_START>resource_vis_END>assignment_sub_END;192;633747;531430.5416666666;748;192;192;1.31 (+- 0.51);1.5;1.5;2
-3;forum_vis_START>resource_vis_START>assignment_vis_END;179;632750;483880.9776536313;358;179;179;1.46 (+- 0.49);1.5;1.5;2
-3;forum_vis_START>resource_vis_START>assignment_sub_END;179;632750;483880.9776536313;358;179;179;1.46 (+- 0.49);1.5;1.5;2
-3;forum_vis_START>resource_vis_END>assignment_vis_END;189;633093;493661.71957671957;378;189;189;1.46 (+- 0.50);1.5;1.5;2
-3;forum_vis_START>resource_vis_END>assignment_sub_END;197;633093;491443.31979695434;386;197;197;1.45 (+- 0.50);1.5;1.5;2
-3;forum_vis_START>assignment_vis_END>assignment_vis_END;216;633918;502756.0833333333;780;216;216;1.43 (+- 0.48);1.5;1.5;2
-3;forum_vis_START>assignment_vis_END>assignment_try_END;276;633918;485875.77898550726;1736;276;276;1.45 (+- 0.49);1.5;1.5;2
-3;forum_vis_START>assignment_vis_END>assignment_sub_END;324;633918;486467.9537037037;3552;324;324;1.44 (+- 0.48);1.5;1.5;2
-3;forum_vis_START>assignment_try_END>assignment_sub_END;276;633918;485875.77898550726;1736;276;276;1.45 (+- 0.49);1.5;1.5;2
-3;forum_vis_START>forum_vis_END>forum_vis_END;181;633086;497486.8287292818;724;181;181;1.45 (+- 0.48);1.5;1.5;2
-3;forum_vis_START>forum_vis_END>assignment_vis_END;208;633086;490925.02403846156;1462;208;208;1.45 (+- 0.48);1.5;1.5;2
-3;forum_vis_START>forum_vis_END>assignment_sub_END;209;633086;490185.1052631579;1464;209;209;1.44 (+- 0.49);1.5;1.5;2
-3;forum_vis_START>forum_vis_START>assignment_vis_END;235;633093;486016.1446808511;2316;235;235;1.46 (+- 0.48);1.5;1.5;2
-3;forum_vis_START>forum_vis_START>assignment_try_END;207;633093;489079.7922705314;1500;207;207;1.46 (+- 0.49);1.5;1.5;2
-3;forum_vis_START>forum_vis_START>assignment_sub_END;235;633093;486016.1446808511;2316;235;235;1.46 (+- 0.48);1.5;1.5;2
-3;forum_vis_START>forum_vis_START>forum_vis_START;234;633536;422457.54273504275;1852;234;234;1.48 (+- 0.46);1.5;1.5;2
-3;forum_vis_START>forum_vis_START>forum_vis_END;169;633086;485313.07692307694;676;169;169;1.46 (+- 0.46);1.5;1.5;2
-3;forum_vis_END>forum_vis_END>forum_participation_END;176;633086;375061.07386363635;1372;176;176;1.44 (+- 0.46);1.5;1.5;2
-3;forum_vis_END>forum_vis_END>forum_vis_END;346;633726;360053.6936416185;12734;346;346;1.45 (+- 0.46);1.5;1.5;2
-3;forum_vis_END>forum_vis_END>assignment_vis_END;424;633726;353053.57547169813;12610;424;424;1.43 (+- 0.47);1.5;1.5;2
-3;forum_vis_END>forum_vis_END>assignment_sub_END;425;633726;352224.91529411764;12209;425;425;1.43 (+- 0.47);1.5;1.5;2
-3;forum_vis_END>forum_vis_END>assignment_try_END;349;633086;343143.9312320917;6554;349;349;1.43 (+- 0.47);1.5;1.5;2
-3;forum_vis_END>forum_vis_END>resource_vis_END;225;633569;345060.76444444444;888;225;225;1.41 (+- 0.48);1.5;1.5;2
-3;forum_vis_END>forum_participation_END>forum_vis_END;169;632823;375912.9881656805;676;169;169;1.44 (+- 0.47);1.5;1.5;2
-3;forum_vis_END>forum_participation_END>assignment_vis_END;179;633086;375942.843575419;1382;179;179;1.44 (+- 0.46);1.5;1.5;2
-3;forum_vis_END>forum_participation_END>assignment_sub_END;179;633086;375942.843575419;1382;179;179;1.44 (+- 0.46);1.5;1.5;2
-3;forum_vis_END>assignment_vis_END>assignment_sub_END;559;633726;332534.4114490161;13623;559;559;1.41 (+- 0.49);1.5;1.5;2
-3;forum_vis_END>assignment_vis_END>assignment_try_END;457;633086;320262.22757111595;6736;457;457;1.42 (+- 0.49);1.5;1.5;2
-3;forum_vis_END>assignment_vis_END>resource_vis_END;169;632823;342967.36094674555;338;169;169;1.35 (+- 0.52);1.5;1.5;2
-3;forum_vis_END>assignment_vis_END>assignment_vis_END;329;633086;353503.61094224924;4006;329;329;1.38 (+- 0.49);1.5;1.5;2
-3;forum_vis_END>assignment_try_END>assignment_sub_END;459;633086;318875.61437908496;6573;459;459;1.42 (+- 0.49);1.5;1.5;2
-3;forum_vis_END>assignment_try_END>assignment_vis_END;177;633086;343007.2768361582;706;177;177;1.43 (+- 0.45);1.5;1.5;2
-3;forum_vis_END>resource_vis_END>assignment_vis_END;311;633569;320843.347266881;2558;311;311;1.41 (+- 0.50);1.5;1.5;2
-3;forum_vis_END>resource_vis_END>assignment_try_END;230;632059;307871.7304347826;916;230;230;1.42 (+- 0.49);1.5;1.5;2
-3;forum_vis_END>resource_vis_END>resource_vis_END;185;633463;356845.0054054054;730;185;185;1.41 (+- 0.50);1.5;1.5;2
-3;forum_vis_END>resource_vis_END>assignment_sub_END;319;633569;318444.9937304075;2586;319;319;1.41 (+- 0.50);1.5;1.5;2
-3;forum_participation_END>forum_vis_END>assignment_vis_END;169;632823;375912.9881656805;676;169;169;1.44 (+- 0.47);1.5;1.5;2
-3;forum_participation_END>forum_vis_END>assignment_sub_END;169;632823;375912.9881656805;676;169;169;1.44 (+- 0.47);1.5;1.5;2
-3;forum_participation_END>assignment_vis_END>assignment_sub_END;179;633086;375942.843575419;1039;179;179;1.44 (+- 0.46);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END;250;633822;519623.644;500;250;250;1.39 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;352;633822;510358.23863636365;1642;352;352;1.41 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END;256;633822;517235.16015625;512;256;256;1.42 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_try_END>assignment_sub_END;250;633822;519623.644;500;250;250;1.39 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_vis_START;200;633822;350374.955;200;200;200;1.37 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_sub_START;268;633500;217114.83208955225;268;268;268;1.41 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_vis_END;196;633822;520931.9081632653;392;196;196;1.38 (+- 0.51);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_sub_END;197;633822;520081.53807106597;393;197;197;1.37 (+- 0.51);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END;195;633822;521079.13333333336;390;195;195;1.36 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>assignment_vis_START>assignment_sub_END;196;633822;520223.67346938775;391;196;196;1.36 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END;208;633747;528291.2259615385;416;208;208;1.38 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_START>resource_vis_END>assignment_sub_END;219;633747;525311.1917808219;427;219;219;1.37 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END;327;633838;494713.33639143733;1352;327;327;1.40 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;397;633838;493228.05793450883;2156;397;397;1.40 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END;265;633838;504893.8301886792;530;265;265;1.38 (+- 0.51);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_try_END>assignment_sub_END;327;633838;494713.33639143733;1353;327;327;1.40 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_try_START;172;633673;303434.0581395349;172;172;172;1.40 (+- 0.48);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_vis_END;185;633747;512374.20540540543;370;185;185;1.36 (+- 0.53);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_sub_END;186;633747;511519.55376344087;371;186;186;1.35 (+- 0.53);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END;219;633747;510542.6210045662;772;219;219;1.37 (+- 0.53);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_END>assignment_try_END;168;633747;511614.8154761905;670;168;168;1.38 (+- 0.55);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_END>assignment_sub_END;226;633747;507898.95132743364;780;226;226;1.36 (+- 0.53);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>forum_vis_END>assignment_vis_END;189;632743;496614.01587301586;378;189;189;1.44 (+- 0.49);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>forum_vis_END>assignment_sub_END;190;632743;495770.16315789474;379;190;190;1.43 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END;225;633838;493972.12444444443;814;225;225;1.36 (+- 0.55);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_START>assignment_try_END;182;633838;496726.0879120879;728;182;182;1.37 (+- 0.57);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_START>assignment_sub_END;225;633838;493972.12444444443;814;225;225;1.36 (+- 0.55);1.5;1.5;2
-4;resource_vis_START>resource_vis_START>resource_vis_START>resource_vis_START;167;633714;406801.29341317364;167;167;167;1.36 (+- 0.53);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;611;633923;497790.39607201307;3194;611;611;1.41 (+- 0.51);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END;248;633789;508947.6612903226;496;248;248;1.39 (+- 0.48);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END;216;633495;523323.25925925927;432;216;216;1.41 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>resource_vis_END>assignment_sub_END;231;633495;520241.09523809527;447;231;231;1.39 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;463;633923;509391.5183585313;2751;463;463;1.41 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END;254;633838;519536.531496063;508;254;254;1.39 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END;272;633923;518740.3088235294;544;272;272;1.41 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>assignment_try_END>assignment_vis_END>assignment_sub_END;248;633789;508947.6612903226;496;248;248;1.39 (+- 0.48);1.5;1.5;2
-4;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;395;633832;514369.4075949367;1939;395;395;1.39 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END;306;633832;514761.47712418303;946;306;306;1.39 (+- 0.54);1.5;1.5;2
-4;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END;226;633832;518690.5265486726;452;226;226;1.40 (+- 0.52);1.5;1.5;2
-4;resource_vis_START>resource_vis_END>assignment_try_END>assignment_sub_END;308;633832;514118.63636363635;949;308;308;1.39 (+- 0.53);1.5;1.5;2
-4;resource_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END;202;633747;518711.6881188119;404;202;202;1.34 (+- 0.57);1.5;1.5;2
-4;resource_vis_START>resource_vis_END>resource_vis_END>assignment_sub_END;213;633747;516291.93896713614;415;213;213;1.34 (+- 0.57);1.5;1.5;2
-4;resource_vis_START>assignment_try_START>assignment_vis_END>assignment_sub_END;199;633822;518464.9849246231;395;199;199;1.38 (+- 0.51);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_vis_END;174;633575;499105.8333333333;348;174;174;1.43 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END;217;633570;483906.26267281105;434;217;217;1.44 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;257;633575;485010.4591439689;1009;257;257;1.44 (+- 0.49);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>assignment_try_END>assignment_sub_END;217;633570;483906.26267281105;434;217;217;1.44 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END;173;632743;491750.3063583815;346;173;173;1.45 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>forum_vis_END>assignment_sub_END;174;632743;490856.8103448276;347;174;174;1.44 (+- 0.51);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END;188;632743;487784.1595744681;376;188;188;1.46 (+- 0.48);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>forum_vis_START>assignment_sub_END;188;632743;487784.1595744681;376;188;188;1.46 (+- 0.48);1.5;1.5;2
-4;resource_vis_START>forum_vis_START>forum_vis_START>forum_vis_START;184;632743;423381.01630434784;184;184;184;1.47 (+- 0.46);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END;202;632738;505995.40594059404;1520;202;202;1.48 (+- 0.49);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END;239;632738;501150.5271966527;1614;239;239;1.45 (+- 0.49);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>forum_vis_END>assignment_sub_END;239;632738;501150.5271966527;1614;239;239;1.45 (+- 0.49);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>forum_vis_END>assignment_try_END;188;632738;502492.28723404254;752;188;188;1.45 (+- 0.49);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;289;632743;495761.1626297578;1858;289;289;1.44 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_try_END;225;632738;497578.9511111111;826;225;225;1.45 (+- 0.50);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_vis_END;175;632743;507091.9942857143;350;175;175;1.43 (+- 0.48);1.5;1.5;2
-4;resource_vis_START>forum_vis_END>assignment_try_END>assignment_sub_END;225;632738;497578.9511111111;826;225;225;1.45 (+- 0.50);1.5;1.5;2
-4;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END;201;633832;517919.9253731343;402;201;201;1.37 (+- 0.56);1.5;1.5;2
-4;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;278;633832;506527.726618705;681;278;278;1.40 (+- 0.53);1.5;1.5;2
-4;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END;202;633832;513424.9653465347;404;202;202;1.40 (+- 0.53);1.5;1.5;2
-4;assignment_vis_START>resource_vis_START>assignment_try_END>assignment_sub_END;201;633832;517919.9253731343;402;201;201;1.37 (+- 0.56);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;481;633907;524443.1018711019;2284;481;481;1.37 (+- 0.54);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END;219;633789;530581.7762557077;438;219;219;1.38 (+- 0.50);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END;288;633822;530327.1701388889;1626;288;288;1.39 (+- 0.53);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END;281;633907;533385.1494661921;1234;281;281;1.39 (+- 0.55);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;453;633907;524799.9470198676;3380;453;453;1.40 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END;265;633580;535809.2452830189;530;265;265;1.41 (+- 0.51);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_END>resource_vis_END>assignment_sub_END;280;633580;532584.9535714285;545;280;280;1.41 (+- 0.51);1.5;1.5;2
-4;assignment_vis_START>assignment_try_END>assignment_vis_END>assignment_sub_END;219;633789;530581.7762557077;438;219;219;1.38 (+- 0.50);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END;174;633822;531220.643678161;348;174;174;1.31 (+- 0.55);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>assignment_vis_START>assignment_sub_END;175;633822;530204.5771428571;349;175;175;1.31 (+- 0.55);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END;263;633907;528590.6730038023;1218;263;263;1.38 (+- 0.54);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END;241;633907;536332.6597510374;816;241;241;1.32 (+- 0.56);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;332;633907;524193.0271084337;1956;332;332;1.36 (+- 0.54);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END;212;633832;536016.8867924528;424;212;212;1.36 (+- 0.54);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>resource_vis_END>assignment_sub_END;218;633832;535039.0733944954;430;218;218;1.35 (+- 0.53);1.5;1.5;2
-4;assignment_vis_START>assignment_vis_START>assignment_try_END>assignment_sub_END;241;633907;536332.6597510374;649;241;241;1.32 (+- 0.56);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_sub_START;167;633500;213610.16766467065;167;167;167;1.30 (+- 0.57);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_vis_END;193;633822;531652.1191709845;386;193;193;1.35 (+- 0.53);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_sub_END;193;633822;531652.1191709845;386;193;193;1.35 (+- 0.53);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_vis_END;226;633822;532089.1283185841;452;226;226;1.37 (+- 0.51);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_sub_END;310;633822;521599.7774193548;1107;310;310;1.35 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>resource_vis_END>assignment_vis_END;182;633747;535744.1923076923;364;182;182;1.31 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>assignment_try_START>resource_vis_END>assignment_sub_END;192;633747;531430.5416666666;374;192;192;1.31 (+- 0.51);1.5;1.5;2
-4;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END;275;633832;533145.7527272727;550;275;275;1.39 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END;235;633832;525854.2297872341;470;235;235;1.42 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;393;633832;529619.7709923664;1972;393;393;1.38 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>resource_vis_END>assignment_try_END>assignment_sub_END;277;633832;532298.2310469314;552;277;277;1.39 (+- 0.52);1.5;1.5;2
-4;assignment_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END;202;633747;533532.3861386139;404;202;202;1.34 (+- 0.56);1.5;1.5;2
-4;assignment_vis_START>resource_vis_END>resource_vis_END>assignment_sub_END;213;633747;529346.5305164319;415;213;213;1.33 (+- 0.55);1.5;1.5;2
-4;assignment_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END;183;633463;514545.05464480876;366;183;183;1.44 (+- 0.49);1.5;1.5;2
-4;assignment_vis_START>forum_vis_END>forum_vis_END>assignment_sub_END;183;633463;514545.05464480876;366;183;183;1.44 (+- 0.49);1.5;1.5;2
-4;assignment_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;223;633463;512043.94170403585;406;223;223;1.41 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>assignment_try_END>resource_vis_END>assignment_vis_END;280;633852;276146.5071428571;560;280;280;1.36 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>assignment_try_END>resource_vis_END>assignment_sub_END;323;633852;265765.7151702786;603;323;323;1.36 (+- 0.53);1.5;1.5;2
-4;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;712;633927;270188.17837078654;3394;712;712;1.38 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END;327;633918;264128.7981651376;654;327;327;1.35 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_try_END;189;632845;237601.8201058201;378;189;189;1.35 (+- 0.55);1.5;1.5;2
-4;assignment_vis_END>assignment_try_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;378;189;189;1.35 (+- 0.55);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;665;633852;279169.52330827067;4518;665;665;1.40 (+- 0.50);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;438;633768;258898.9406392694;1600;438;438;1.42 (+- 0.50);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;362;633768;294469.5248618784;2148;362;362;1.41 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END;181;633768;244760.60773480663;712;181;181;1.45 (+- 0.48);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;451;633768;255186.9356984479;1797;451;451;1.42 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;319;633768;288131.67398119124;1708;319;319;1.37 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;345;633768;283487.3217391304;1751;345;345;1.37 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_try_END;195;633768;262592.57435897435;764;195;195;1.39 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>resource_vis_END>resource_vis_END;178;633768;314199.78651685396;356;178;178;1.34 (+- 0.53);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END;175;632929;338063.0685714286;350;175;175;1.38 (+- 0.48);1.5;1.5;2
-4;assignment_vis_END>resource_vis_END>forum_vis_END>assignment_sub_END;179;632929;332478.56424581003;354;179;179;1.38 (+- 0.49);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END;313;633768;313176.8594249201;1308;313;313;1.35 (+- 0.50);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_try_END;170;632674;306839.5588235294;340;170;170;1.36 (+- 0.50);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END;179;633768;327094.0167597765;696;179;179;1.33 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_sub_END;336;633768;314563.29761904763;1339;336;336;1.35 (+- 0.49);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;384;633838;302382.4609375;1476;384;384;1.36 (+- 0.54);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;371;633918;332429.14016172505;2584;371;371;1.35 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;676;633934;303572.65680473374;5939;676;676;1.38 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;309;633843;279376.6116504854;968;309;309;1.41 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;776;633923;277729.29768041236;4420;776;776;1.37 (+- 0.53);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>forum_vis_END>assignment_vis_END;174;632929;352979.091954023;348;174;174;1.35 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>assignment_vis_END>forum_vis_END>assignment_sub_END;175;632929;353945.17142857146;349;175;175;1.35 (+- 0.51);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;175;632929;377648.09714285715;696;175;175;1.43 (+- 0.46);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;223;632929;372982.3542600897;792;223;223;1.41 (+- 0.47);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;225;632929;369731.0755555556;796;225;225;1.42 (+- 0.47);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;302;632929;344892.9735099338;1426;302;302;1.38 (+- 0.50);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;201;632738;329602.96019900497;402;201;201;1.41 (+- 0.50);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;178;632929;375775.90449438203;356;178;178;1.36 (+- 0.52);1.5;1.5;2
-4;assignment_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;203;632738;326375.68472906406;404;203;203;1.41 (+- 0.50);1.5;1.5;2
-4;assignment_try_END>resource_vis_END>assignment_vis_END>assignment_sub_END;280;633852;276146.5071428571;560;280;280;1.36 (+- 0.52);1.5;1.5;2
-4;assignment_try_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;327;633918;264128.7981651376;821;327;327;1.35 (+- 0.52);1.5;1.5;2
-4;assignment_try_END>assignment_vis_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;378;189;189;1.35 (+- 0.55);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;403;633843;237053.02977667493;1506;403;403;1.42 (+- 0.49);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;1059;633843;230783.0566572238;4922;1059;1059;1.41 (+- 0.51);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END;236;633768;296272.66101694916;472;236;236;1.38 (+- 0.52);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>resource_vis_END>assignment_sub_END;258;633768;295466.20930232556;494;258;258;1.38 (+- 0.52);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;683;633843;268463.0073206442;4727;683;683;1.40 (+- 0.50);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;335;633843;281860.20597014925;1042;335;335;1.39 (+- 0.50);1.5;1.5;2
-4;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;338;633832;255814.46153846153;676;338;338;1.38 (+- 0.54);1.5;1.5;2
-4;resource_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;408;633843;234427.52450980392;1688;408;408;1.42 (+- 0.49);1.5;1.5;2
-4;resource_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END;167;633843;214797.04790419163;334;167;167;1.40 (+- 0.50);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;607;633843;273549.8863261944;4759;607;607;1.37 (+- 0.53);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;322;633843;281113.0807453416;1704;322;322;1.40 (+- 0.51);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;463;633843;251492.93520518357;2142;463;463;1.38 (+- 0.53);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;472;633843;249112.27966101695;2167;472;472;1.38 (+- 0.53);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END;179;633843;239035.72067039105;708;179;179;1.41 (+- 0.49);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;338;633768;282213.20118343196;1918;338;338;1.36 (+- 0.52);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END;209;633768;329753.94736842107;816;209;209;1.37 (+- 0.54);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;353;633768;283162.65439093485;1949;353;353;1.36 (+- 0.52);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>resource_vis_END>assignment_try_END;250;633768;267220.984;992;250;250;1.36 (+- 0.52);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END;207;633086;317837.309178744;414;207;207;1.41 (+- 0.49);1.5;1.5;2
-4;resource_vis_END>resource_vis_END>forum_vis_END>assignment_sub_END;210;633086;314971.79047619045;417;210;210;1.41 (+- 0.49);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;203;633086;329000.8965517241;808;203;203;1.47 (+- 0.46);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;250;633086;334106.176;1292;250;250;1.46 (+- 0.45);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;252;633086;331511.7896825397;1297;252;252;1.46 (+- 0.45);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;196;632322;309514.6785714286;782;196;196;1.48 (+- 0.45);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;344;633086;311546.3226744186;2001;344;344;1.43 (+- 0.48);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;267;632322;295147.09363295883;924;267;267;1.47 (+- 0.46);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;189;633086;328724.91005291004;378;189;189;1.43 (+- 0.47);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;269;632322;292967.8178438662;927;269;269;1.47 (+- 0.46);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END;173;632165;303782.8843930636;346;173;173;1.46 (+- 0.49);1.5;1.5;2
-4;resource_vis_END>forum_vis_END>resource_vis_END>assignment_sub_END;179;632165;302621.31284916203;352;179;179;1.46 (+- 0.50);1.5;1.5;2
-4;assignment_try_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;193;633822;531652.1191709845;386;193;193;1.35 (+- 0.53);1.5;1.5;2
-4;assignment_try_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;226;633822;532089.1283185841;452;226;226;1.37 (+- 0.51);1.5;1.5;2
-4;assignment_try_START>resource_vis_END>assignment_vis_END>assignment_sub_END;182;633747;535744.1923076923;364;182;182;1.31 (+- 0.52);1.5;1.5;2
-4;forum_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;179;632750;483880.9776536313;179;179;179;1.46 (+- 0.49);1.5;1.5;2
-4;forum_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;189;633093;493661.71957671957;189;189;189;1.46 (+- 0.50);1.5;1.5;2
-4;forum_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;216;633918;502756.0833333333;390;216;216;1.43 (+- 0.48);1.5;1.5;2
-4;forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;276;633918;485875.77898550726;868;276;276;1.45 (+- 0.49);1.5;1.5;2
-4;forum_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END;181;633086;497486.8287292818;362;181;181;1.45 (+- 0.48);1.5;1.5;2
-4;forum_vis_START>forum_vis_END>forum_vis_END>assignment_sub_END;181;633086;497486.8287292818;362;181;181;1.45 (+- 0.48);1.5;1.5;2
-4;forum_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;208;633086;490925.02403846156;731;208;208;1.45 (+- 0.48);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END;207;633093;489079.7922705314;750;207;207;1.46 (+- 0.49);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;235;633093;486016.1446808511;1158;235;235;1.46 (+- 0.48);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>assignment_try_END>assignment_sub_END;207;633093;489079.7922705314;750;207;207;1.46 (+- 0.49);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>forum_vis_START>forum_vis_START;189;633389;417616.48148148146;189;189;189;1.50 (+- 0.44);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END;191;632890;490466.1518324607;718;191;191;1.48 (+- 0.46);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>forum_vis_START>assignment_try_END;168;632890;493530.45238095237;672;168;168;1.47 (+- 0.47);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>forum_vis_START>assignment_sub_END;191;632890;490466.1518324607;718;191;191;1.48 (+- 0.46);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END;169;633086;485313.07692307694;338;169;169;1.46 (+- 0.46);1.5;1.5;2
-4;forum_vis_START>forum_vis_START>forum_vis_END>assignment_sub_END;169;633086;485313.07692307694;338;169;169;1.46 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END;176;633086;375061.07386363635;686;176;176;1.44 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_participation_END>assignment_sub_END;176;633086;375061.07386363635;686;176;176;1.44 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;291;633569;362688.78694158077;6848;291;291;1.44 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END;167;633086;367895.2395209581;668;167;167;1.44 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;344;633726;362105.0901162791;6542;344;344;1.45 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;346;633726;360053.6936416185;6367;346;346;1.45 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;285;633086;355116.8245614035;3626;285;285;1.46 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;424;633726;353053.57547169813;6305;424;424;1.43 (+- 0.47);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;348;633086;344127.4683908046;3270;348;348;1.43 (+- 0.47);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;239;633086;366851.2092050209;866;239;239;1.41 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;349;633086;343143.9312320917;3277;349;349;1.43 (+- 0.47);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END;219;633569;345394.8904109589;438;219;219;1.41 (+- 0.48);1.5;1.5;2
-4;forum_vis_END>forum_vis_END>resource_vis_END>assignment_sub_END;225;633569;345060.76444444444;444;225;225;1.41 (+- 0.48);1.5;1.5;2
-4;forum_vis_END>forum_participation_END>forum_vis_END>assignment_vis_END;169;632823;375912.9881656805;338;169;169;1.44 (+- 0.47);1.5;1.5;2
-4;forum_vis_END>forum_participation_END>forum_vis_END>assignment_sub_END;169;632823;375912.9881656805;338;169;169;1.44 (+- 0.47);1.5;1.5;2
-4;forum_vis_END>forum_participation_END>assignment_vis_END>assignment_sub_END;179;633086;375942.843575419;691;179;179;1.44 (+- 0.46);1.5;1.5;2
-4;forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;457;633086;320262.22757111595;3368;457;457;1.42 (+- 0.49);1.5;1.5;2
-4;forum_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;176;633086;344938.0227272727;352;176;176;1.43 (+- 0.45);1.5;1.5;2
-4;forum_vis_END>assignment_vis_END>resource_vis_END>assignment_sub_END;169;632823;342967.36094674555;169;169;169;1.35 (+- 0.52);1.5;1.5;2
-4;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;179;632823;348378.08379888267;358;179;179;1.37 (+- 0.49);1.5;1.5;2
-4;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;176;633086;371346.2784090909;352;176;176;1.34 (+- 0.52);1.5;1.5;2
-4;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;329;633086;353503.61094224924;2003;329;329;1.38 (+- 0.49);1.5;1.5;2
-4;forum_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;177;633086;343007.2768361582;353;177;177;1.43 (+- 0.45);1.5;1.5;2
-4;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;228;632059;308038.0307017544;456;228;228;1.42 (+- 0.49);1.5;1.5;2
-4;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;168;632929;335046.8333333333;336;168;168;1.43 (+- 0.49);1.5;1.5;2
-4;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;311;633569;320843.347266881;1279;311;311;1.41 (+- 0.50);1.5;1.5;2
-4;forum_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;230;632059;307871.7304347826;458;230;230;1.42 (+- 0.49);1.5;1.5;2
-4;forum_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;180;633463;353417.1388888889;360;180;180;1.41 (+- 0.51);1.5;1.5;2
-4;forum_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;185;633463;356845.0054054054;365;185;185;1.41 (+- 0.50);1.5;1.5;2
-4;forum_participation_END>forum_vis_END>assignment_vis_END>assignment_sub_END;169;632823;375912.9881656805;338;169;169;1.44 (+- 0.47);1.5;1.5;2
-5;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;250;633822;519623.644;250;250;250;1.39 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;256;633822;517235.16015625;256;256;256;1.42 (+- 0.52);1.5;1.5;2
-5;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_sub_END;196;633822;520931.9081632653;196;196;196;1.38 (+- 0.51);1.5;1.5;2
-5;resource_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;195;633822;521079.13333333336;195;195;195;1.36 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;208;633747;528291.2259615385;208;208;208;1.38 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;327;633838;494713.33639143733;676;327;327;1.40 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;265;633838;504893.8301886792;265;265;265;1.38 (+- 0.51);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;185;633747;512374.20540540543;185;185;185;1.36 (+- 0.53);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END;167;633747;511836.4610778443;334;167;167;1.38 (+- 0.55);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;219;633747;510542.6210045662;386;219;219;1.37 (+- 0.53);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>resource_vis_END>assignment_try_END>assignment_sub_END;168;633747;511614.8154761905;335;168;168;1.38 (+- 0.55);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;189;632743;496614.01587301586;189;189;189;1.44 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END;182;633838;496726.0879120879;364;182;182;1.37 (+- 0.57);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;225;633838;493972.12444444443;407;225;225;1.36 (+- 0.55);1.5;1.5;2
-5;resource_vis_START>resource_vis_START>resource_vis_START>assignment_try_END>assignment_sub_END;182;633838;496726.0879120879;364;182;182;1.37 (+- 0.57);1.5;1.5;2
-5;resource_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;248;633789;508947.6612903226;248;248;248;1.39 (+- 0.48);1.5;1.5;2
-5;resource_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;216;633495;523323.25925925927;216;216;216;1.41 (+- 0.52);1.5;1.5;2
-5;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;254;633838;519536.531496063;254;254;254;1.39 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;272;633923;518740.3088235294;272;272;272;1.41 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;306;633832;514761.47712418303;473;306;306;1.39 (+- 0.54);1.5;1.5;2
-5;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;226;633832;518690.5265486726;226;226;226;1.40 (+- 0.52);1.5;1.5;2
-5;resource_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;202;633747;518711.6881188119;202;202;202;1.34 (+- 0.57);1.5;1.5;2
-5;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;174;633575;499105.8333333333;174;174;174;1.43 (+- 0.50);1.5;1.5;2
-5;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;217;633570;483906.26267281105;217;217;217;1.44 (+- 0.50);1.5;1.5;2
-5;resource_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;173;632743;491750.3063583815;173;173;173;1.45 (+- 0.50);1.5;1.5;2
-5;resource_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;188;632743;487784.1595744681;188;188;188;1.46 (+- 0.48);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;178;632738;507978.37078651687;712;178;178;1.47 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;202;632738;505995.40594059404;760;202;202;1.48 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;202;632738;505995.40594059404;760;202;202;1.48 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;239;632738;501150.5271966527;807;239;239;1.45 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;188;632738;502492.28723404254;376;188;188;1.45 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;188;632738;502492.28723404254;376;188;188;1.45 (+- 0.49);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;225;632738;497578.9511111111;413;225;225;1.45 (+- 0.50);1.5;1.5;2
-5;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;175;632743;507091.9942857143;175;175;175;1.43 (+- 0.48);1.5;1.5;2
-5;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;201;633832;517919.9253731343;201;201;201;1.37 (+- 0.56);1.5;1.5;2
-5;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;202;633832;513424.9653465347;202;202;202;1.40 (+- 0.53);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;219;633789;530581.7762557077;219;219;219;1.38 (+- 0.50);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;169;633822;534724.7337278107;338;169;169;1.39 (+- 0.57);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;177;633822;539951.6497175142;354;177;177;1.37 (+- 0.52);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;288;633822;530327.1701388889;813;288;288;1.39 (+- 0.53);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;281;633907;533385.1494661921;617;281;281;1.39 (+- 0.55);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;265;633580;535809.2452830189;265;265;265;1.41 (+- 0.51);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;174;633822;531220.643678161;174;174;174;1.31 (+- 0.55);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END;179;633822;536205.8268156424;358;179;179;1.35 (+- 0.55);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END;167;633907;540703.9101796407;334;167;167;1.37 (+- 0.57);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;263;633907;528590.6730038023;609;263;263;1.38 (+- 0.54);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;241;633907;536332.6597510374;408;241;241;1.32 (+- 0.56);1.5;1.5;2
-5;assignment_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;212;633832;536016.8867924528;212;212;212;1.36 (+- 0.54);1.5;1.5;2
-5;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;193;633822;531652.1191709845;193;193;193;1.35 (+- 0.53);1.5;1.5;2
-5;assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;226;633822;532089.1283185841;226;226;226;1.37 (+- 0.51);1.5;1.5;2
-5;assignment_vis_START>assignment_try_START>resource_vis_END>assignment_vis_END>assignment_sub_END;182;633747;535744.1923076923;182;182;182;1.31 (+- 0.52);1.5;1.5;2
-5;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;275;633832;533145.7527272727;275;275;275;1.39 (+- 0.52);1.5;1.5;2
-5;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;235;633832;525854.2297872341;235;235;235;1.42 (+- 0.52);1.5;1.5;2
-5;assignment_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;202;633747;533532.3861386139;202;202;202;1.34 (+- 0.56);1.5;1.5;2
-5;assignment_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;183;633463;514545.05464480876;183;183;183;1.44 (+- 0.49);1.5;1.5;2
-5;assignment_vis_END>assignment_try_END>resource_vis_END>assignment_vis_END>assignment_sub_END;280;633852;276146.5071428571;280;280;280;1.36 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;327;633918;264128.7981651376;327;327;327;1.35 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;189;189;189;1.35 (+- 0.55);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;175;633768;251918.48571428572;350;175;175;1.45 (+- 0.49);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;438;633768;258898.9406392694;800;438;438;1.42 (+- 0.50);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;362;633768;294469.5248618784;1074;362;362;1.41 (+- 0.51);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;186;633768;313507.4946236559;372;186;186;1.41 (+- 0.50);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;181;633768;244760.60773480663;356;181;181;1.45 (+- 0.48);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;319;633768;288131.67398119124;854;319;319;1.37 (+- 0.51);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;179;633768;315599.14525139664;358;179;179;1.37 (+- 0.53);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;187;633768;268276.26203208556;374;187;187;1.37 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;195;633768;262592.57435897435;382;195;195;1.39 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;178;633768;314199.78651685396;178;178;178;1.34 (+- 0.53);1.5;1.5;2
-5;assignment_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;175;632929;338063.0685714286;175;175;175;1.38 (+- 0.48);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;172;633768;341221.66279069765;344;172;172;1.37 (+- 0.51);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;313;633768;313176.8594249201;654;313;313;1.35 (+- 0.50);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;170;632674;306839.5588235294;170;170;170;1.36 (+- 0.50);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;169;633768;326752.81065088755;338;169;169;1.34 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;179;633768;327094.0167597765;348;179;179;1.33 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;384;633838;302382.4609375;738;384;384;1.36 (+- 0.54);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;371;633918;332429.14016172505;1292;371;371;1.35 (+- 0.52);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;201;633843;349996.0298507463;402;201;201;1.30 (+- 0.54);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;185;633747;317955.06486486486;370;185;185;1.32 (+- 0.56);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;309;633843;279376.6116504854;484;309;309;1.41 (+- 0.51);1.5;1.5;2
-5;assignment_vis_END>assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;174;632929;352979.091954023;174;174;174;1.35 (+- 0.51);1.5;1.5;2
-5;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;173;632929;381930.5780346821;346;173;173;1.43 (+- 0.46);1.5;1.5;2
-5;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;175;632929;377648.09714285715;348;175;175;1.43 (+- 0.46);1.5;1.5;2
-5;assignment_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;223;632929;372982.3542600897;396;223;223;1.41 (+- 0.47);1.5;1.5;2
-5;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;201;632738;329602.96019900497;201;201;201;1.41 (+- 0.50);1.5;1.5;2
-5;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;178;632929;375775.90449438203;178;178;178;1.36 (+- 0.52);1.5;1.5;2
-5;resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;403;633843;237053.02977667493;753;403;403;1.42 (+- 0.49);1.5;1.5;2
-5;resource_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;236;633768;296272.66101694916;236;236;236;1.38 (+- 0.52);1.5;1.5;2
-5;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;335;633843;281860.20597014925;521;335;335;1.39 (+- 0.50);1.5;1.5;2
-5;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;338;633832;255814.46153846153;338;338;338;1.38 (+- 0.54);1.5;1.5;2
-5;resource_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;167;633843;214797.04790419163;167;167;167;1.40 (+- 0.50);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;322;633843;281113.0807453416;852;322;322;1.40 (+- 0.51);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;463;633843;251492.93520518357;1071;463;463;1.38 (+- 0.53);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;175;633843;243278.28;350;175;175;1.40 (+- 0.49);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;179;633843;239035.72067039105;354;179;179;1.41 (+- 0.49);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;176;633768;306776.1534090909;352;176;176;1.40 (+- 0.52);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;338;633768;282213.20118343196;959;338;338;1.36 (+- 0.52);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;246;633768;266963.756097561;492;246;246;1.36 (+- 0.52);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;199;633768;328294.1859296482;398;199;199;1.36 (+- 0.54);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;209;633768;329753.94736842107;408;209;209;1.37 (+- 0.54);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;250;633768;267220.984;496;250;250;1.36 (+- 0.52);1.5;1.5;2
-5;resource_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;207;633086;317837.309178744;207;207;207;1.41 (+- 0.49);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;201;633086;332202.7611940298;402;201;201;1.47 (+- 0.46);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;203;633086;329000.8965517241;404;203;203;1.47 (+- 0.46);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;250;633086;334106.176;646;250;250;1.46 (+- 0.45);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;195;632322;311097.4564102564;390;195;195;1.48 (+- 0.45);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;196;632322;309514.6785714286;391;196;196;1.48 (+- 0.45);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;267;632322;295147.09363295883;462;267;267;1.47 (+- 0.46);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;189;633086;328724.91005291004;189;189;189;1.43 (+- 0.47);1.5;1.5;2
-5;resource_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;173;632165;303782.8843930636;173;173;173;1.46 (+- 0.49);1.5;1.5;2
-5;forum_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;181;633086;497486.8287292818;181;181;181;1.45 (+- 0.48);1.5;1.5;2
-5;forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;207;633093;489079.7922705314;375;207;207;1.46 (+- 0.49);1.5;1.5;2
-5;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END;168;632890;493530.45238095237;336;168;168;1.47 (+- 0.47);1.5;1.5;2
-5;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;191;632890;490466.1518324607;359;191;191;1.48 (+- 0.46);1.5;1.5;2
-5;forum_vis_START>forum_vis_START>forum_vis_START>assignment_try_END>assignment_sub_END;168;632890;493530.45238095237;336;168;168;1.47 (+- 0.47);1.5;1.5;2
-5;forum_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;169;633086;485313.07692307694;169;169;169;1.46 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END>assignment_sub_END;176;633086;375061.07386363635;343;176;176;1.44 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;234;632929;363429.36324786325;4022;234;234;1.48 (+- 0.44);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;288;633569;364604.0520833333;3412;288;288;1.44 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;291;633569;362688.78694158077;3424;291;291;1.44 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;240;632738;360653.32916666666;2488;240;240;1.46 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END;167;633086;367895.2395209581;334;167;167;1.44 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END>assignment_sub_END;167;633086;367895.2395209581;334;167;167;1.44 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;344;633726;362105.0901162791;3271;344;344;1.45 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;284;633086;356364.161971831;1808;284;284;1.46 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;194;633086;375581.28350515466;388;194;194;1.43 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;285;633086;355116.8245614035;1813;285;285;1.46 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;348;633086;344127.4683908046;1635;348;348;1.43 (+- 0.47);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;239;633086;366851.2092050209;433;239;239;1.41 (+- 0.46);1.5;1.5;2
-5;forum_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;219;633569;345394.8904109589;219;219;219;1.41 (+- 0.48);1.5;1.5;2
-5;forum_vis_END>forum_participation_END>forum_vis_END>assignment_vis_END>assignment_sub_END;169;632823;375912.9881656805;169;169;169;1.44 (+- 0.47);1.5;1.5;2
-5;forum_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;176;633086;344938.0227272727;176;176;176;1.43 (+- 0.45);1.5;1.5;2
-5;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;179;632823;348378.08379888267;179;179;179;1.37 (+- 0.49);1.5;1.5;2
-5;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;176;633086;371346.2784090909;176;176;176;1.34 (+- 0.52);1.5;1.5;2
-5;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;228;632059;308038.0307017544;228;228;228;1.42 (+- 0.49);1.5;1.5;2
-5;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;168;632929;335046.8333333333;168;168;168;1.43 (+- 0.49);1.5;1.5;2
-5;forum_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;180;633463;353417.1388888889;180;180;180;1.41 (+- 0.51);1.5;1.5;2
-6;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;167;633747;511836.4610778443;167;167;167;1.38 (+- 0.55);1.5;1.5;2
-6;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;182;633838;496726.0879120879;182;182;182;1.37 (+- 0.57);1.5;1.5;2
-6;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;178;632738;507978.37078651687;356;178;178;1.47 (+- 0.49);1.5;1.5;2
-6;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;178;632738;507978.37078651687;356;178;178;1.47 (+- 0.49);1.5;1.5;2
-6;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;202;632738;505995.40594059404;380;202;202;1.48 (+- 0.49);1.5;1.5;2
-6;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;188;632738;502492.28723404254;188;188;188;1.45 (+- 0.49);1.5;1.5;2
-6;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;169;633822;534724.7337278107;169;169;169;1.39 (+- 0.57);1.5;1.5;2
-6;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;177;633822;539951.6497175142;177;177;177;1.37 (+- 0.52);1.5;1.5;2
-6;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;179;633822;536205.8268156424;179;179;179;1.35 (+- 0.55);1.5;1.5;2
-6;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;167;633907;540703.9101796407;167;167;167;1.37 (+- 0.57);1.5;1.5;2
-6;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;175;633768;251918.48571428572;175;175;175;1.45 (+- 0.49);1.5;1.5;2
-6;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;186;633768;313507.4946236559;186;186;186;1.41 (+- 0.50);1.5;1.5;2
-6;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;179;633768;315599.14525139664;179;179;179;1.37 (+- 0.53);1.5;1.5;2
-6;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;187;633768;268276.26203208556;187;187;187;1.37 (+- 0.52);1.5;1.5;2
-6;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;172;633768;341221.66279069765;172;172;172;1.37 (+- 0.51);1.5;1.5;2
-6;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;169;633768;326752.81065088755;169;169;169;1.34 (+- 0.52);1.5;1.5;2
-6;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;201;633843;349996.0298507463;201;201;201;1.30 (+- 0.54);1.5;1.5;2
-6;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;185;633747;317955.06486486486;185;185;185;1.32 (+- 0.56);1.5;1.5;2
-6;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;173;632929;381930.5780346821;173;173;173;1.43 (+- 0.46);1.5;1.5;2
-6;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;175;633843;243278.28;175;175;175;1.40 (+- 0.49);1.5;1.5;2
-6;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;176;633768;306776.1534090909;176;176;176;1.40 (+- 0.52);1.5;1.5;2
-6;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;246;633768;266963.756097561;246;246;246;1.36 (+- 0.52);1.5;1.5;2
-6;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;199;633768;328294.1859296482;199;199;199;1.36 (+- 0.54);1.5;1.5;2
-6;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;201;633086;332202.7611940298;201;201;201;1.47 (+- 0.46);1.5;1.5;2
-6;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;195;632322;311097.4564102564;195;195;195;1.48 (+- 0.45);1.5;1.5;2
-6;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;168;632890;493530.45238095237;168;168;168;1.47 (+- 0.47);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;212;632583;361979.49528301886;2296;212;212;1.49 (+- 0.44);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;232;632929;366500.1896551724;2004;232;232;1.48 (+- 0.44);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;234;632929;363429.36324786325;2011;234;234;1.48 (+- 0.44);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;199;632583;360909.4120603015;1532;199;199;1.49 (+- 0.44);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;288;633569;364604.0520833333;1706;288;288;1.44 (+- 0.46);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;238;632738;361486.90336134454;1240;238;238;1.45 (+- 0.46);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;240;632738;360653.32916666666;1244;240;240;1.46 (+- 0.46);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END>assignment_sub_END;167;633086;367895.2395209581;167;167;167;1.44 (+- 0.46);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;284;633086;356364.161971831;904;284;284;1.46 (+- 0.46);1.5;1.5;2
-6;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;194;633086;375581.28350515466;194;194;194;1.43 (+- 0.46);1.5;1.5;2
-7;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;178;632738;507978.37078651687;178;178;178;1.47 (+- 0.49);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;179;632043;367410.9776536313;714;179;179;1.48 (+- 0.43);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;210;632583;365358.21904761903;1144;210;210;1.49 (+- 0.44);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;212;632583;361979.49528301886;1148;212;212;1.49 (+- 0.44);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;185;632583;361143.98918918916;738;185;185;1.50 (+- 0.44);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;232;632929;366500.1896551724;1002;232;232;1.48 (+- 0.44);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;198;632583;362727.77777777775;764;198;198;1.49 (+- 0.44);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;199;632583;360909.4120603015;766;199;199;1.49 (+- 0.44);1.5;1.5;2
-7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;238;632738;361486.90336134454;620;238;238;1.45 (+- 0.46);1.5;1.5;2
-8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;178;632043;369470.1797752809;356;178;178;1.47 (+- 0.43);1.5;1.5;2
-8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;179;632043;367410.9776536313;357;179;179;1.48 (+- 0.43);1.5;1.5;2
-8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;210;632583;365358.21904761903;572;210;210;1.49 (+- 0.44);1.5;1.5;2
-8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;184;632583;363101.98369565216;368;184;184;1.50 (+- 0.44);1.5;1.5;2
-8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;185;632583;361143.98918918916;369;185;185;1.50 (+- 0.44);1.5;1.5;2
-8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;198;632583;362727.77777777775;382;198;198;1.49 (+- 0.44);1.5;1.5;2
-9;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;178;632043;369470.1797752809;178;178;178;1.47 (+- 0.43);1.5;1.5;2
-9;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;184;632583;363101.98369565216;184;184;184;1.50 (+- 0.44);1.5;1.5;2
+sequence_size;sequence;total;total_time_span;avg_time_span;i_support;s_support;ids;grade_avg;grade_avg_deviation;grade_median;grade_mode;max_grade
+2;resource_vis_START>assignment_vis_START;550;633822;350789.30363636365;8202;550;550;1.4218181818181819;0.5141675533256286;1.5;1.5;2
+2;resource_vis_START>resource_vis_START;501;633838;408826.09580838325;9484;501;501;1.4001996007984032;0.5118788529328403;1.5;1.5;2
+2;resource_vis_START>assignment_vis_END;729;633923;495192.51989026065;23156;729;729;1.4176954732510287;0.5028240691322474;1.5;1.5;2
+2;resource_vis_START>assignment_try_END;611;633923;497790.39607201307;12238;611;611;1.4083469721767594;0.5135339317757684;1.5;1.5;2
+2;resource_vis_START>assignment_sub_END;730;633923;494998.29589041095;19983;730;730;1.417123287671233;0.5027168422307208;1.5;1.5;2
+2;resource_vis_START>resource_vis_END;408;633832;512550.6004901961;7424;408;408;1.3860294117647058;0.5197579469879676;1.5;1.5;2
+2;resource_vis_START>assignment_try_START;387;633822;299716.2816537468;3241;387;387;1.4108527131782946;0.5107000645884029;1.5;1.5;2
+2;resource_vis_START>assignment_sub_START;297;633500;212169.6632996633;1123;297;297;1.4006734006734007;0.5225323775040983;1.5;1.5;2
+2;resource_vis_START>forum_vis_START;308;633575;422495.0551948052;4166;308;308;1.4399350649350648;0.4880954100585163;1.5;1.5;2
+2;resource_vis_START>forum_vis_END;291;632743;494571.793814433;7090;291;291;1.4347079037800687;0.506030700212946;1.5;1.5;2
+2;assignment_vis_START>resource_vis_START;372;633832;397808.31451612903;3207;372;372;1.3884408602150538;0.5220741747418768;1.5;1.5;2
+2;assignment_vis_START>assignment_vis_END;625;633907;516143.2848;19926;625;625;1.3856;0.5182106788674927;1.5;1.5;2
+2;assignment_vis_START>assignment_try_END;481;633907;524443.1018711019;7906;481;481;1.37006237006237;0.5383789289170511;1.5;1.5;2
+2;assignment_vis_START>assignment_sub_END;626;633907;515883.32587859425;16113;626;626;1.3849840255591055;0.5180252501031286;1.5;1.5;2
+2;assignment_vis_START>assignment_vis_START;483;633907;380329.19461697724;8291;483;483;1.349896480331263;0.5406072634804634;1.5;1.5;2
+2;assignment_vis_START>assignment_try_START;551;633822;318072.6987295826;5937;551;551;1.3638838475499093;0.524475995752372;1.5;1.5;2
+2;assignment_vis_START>assignment_sub_START;351;633500;211429.59259259258;1811;351;351;1.3447293447293447;0.5497733280641325;1.5;1.5;2
+2;assignment_vis_START>resource_vis_END;408;633832;527634.5759803922;7558;408;408;1.3811274509803921;0.5138969996239316;1.5;1.5;2
+2;assignment_vis_START>forum_vis_END;225;633463;510360.9555555555;1628;225;225;1.4066666666666667;0.5283904130199834;1.5;1.5;2
+2;assignment_vis_START>forum_vis_START;185;633575;430489.15675675677;185;185;185;1.3891891891891892;0.5211733124610485;1.5;1.5;2
+2;assignment_vis_END>assignment_try_END;1700;633943;255287.99647058823;37760;1700;1700;1.3723529411764706;0.5241661941398387;1.5;1.5;2
+2;assignment_vis_END>assignment_sub_END;1844;633943;273493.50054229936;59475;1844;1844;1.3774403470715835;0.5184085576886724;1.5;1.5;2
+2;assignment_vis_END>resource_vis_END;711;633852;273210.85794655414;17046;711;711;1.40014064697609;0.5082557661773632;1.5;1.5;2
+2;assignment_vis_END>assignment_vis_END;1189;633943;291084.85786375107;44316;1189;1189;1.377628259041211;0.511192004762145;1.5;1.5;2
+2;assignment_vis_END>forum_vis_END;307;632929;341431.3941368078;5380;307;307;1.3778501628664495;0.5005532269709377;1.5;1.5;2
+2;assignment_try_END>assignment_sub_END;1700;633943;255287.99647058823;32339;1700;1700;1.3723529411764706;0.5241661941398387;1.5;1.5;2
+2;assignment_try_END>resource_vis_END;323;633852;265765.7151702786;2412;323;323;1.3560371517027863;0.5258997836721329;1.5;1.5;2
+2;assignment_try_END>assignment_vis_END;712;633927;270188.17837078654;12600;712;712;1.3764044943820224;0.5081938945583768;1.5;1.5;2
+2;assignment_try_END>assignment_try_END;189;632845;237601.8201058201;1512;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+2;resource_vis_END>assignment_vis_END;1265;633852;250588.4205533597;37888;1265;1265;1.4027667984189722;0.5067115345801098;1.5;1.5;2
+2;resource_vis_END>assignment_sub_END;1302;633852;248969.73963133642;33156;1302;1302;1.4001536098310292;0.5074540219367011;1.5;1.5;2
+2;resource_vis_END>assignment_try_END;1069;633843;229513.2871842844;19824;1069;1069;1.4106641721234798;0.5094779846954318;1.5;1.5;2
+2;resource_vis_END>resource_vis_END;632;633843;271697.3101265823;17660;632;632;1.370253164556962;0.5256657683261957;1.5;1.5;2
+2;resource_vis_END>forum_vis_END;348;633086;308978.6235632184;7674;348;348;1.4310344827586208;0.4871395884493499;1.5;1.5;2
+2;assignment_try_START>assignment_vis_START;307;633822;356431.8436482085;2508;307;307;1.3452768729641693;0.5435319361127765;1.5;1.5;2
+2;assignment_try_START>assignment_sub_START;351;633500;211429.59259259258;1575;351;351;1.3447293447293447;0.5497733280641325;1.5;1.5;2
+2;assignment_try_START>assignment_vis_END;310;633822;521599.7774193548;4434;310;310;1.3548387096774193;0.5150415257568977;1.5;1.5;2
+2;assignment_try_START>resource_vis_END;192;633747;531430.5416666666;1496;192;192;1.3098958333333333;0.51067760096674;1.5;1.5;2
+2;assignment_try_START>assignment_sub_END;311;633822;521058.97106109327;4006;311;311;1.3536977491961415;0.5146036607959518;1.5;1.5;2
+2;forum_vis_START>resource_vis_START;223;632750;411138.134529148;760;223;223;1.446188340807175;0.5038333240487467;1.5;1.5;2
+2;forum_vis_START>assignment_vis_START;221;633865;378069.17647058825;221;221;221;1.416289592760181;0.5054312176298902;1.5;1.5;2
+2;forum_vis_START>resource_vis_END;197;633093;491443.31979695434;772;197;197;1.4517766497461928;0.49893702402385387;1.5;1.5;2
+2;forum_vis_START>assignment_vis_END;324;633918;486467.9537037037;7104;324;324;1.4429012345679013;0.4808843531588673;1.5;1.5;2
+2;forum_vis_START>assignment_try_END;276;633918;485875.77898550726;3472;276;276;1.4474637681159421;0.48985424413866085;1.5;1.5;2
+2;forum_vis_START>forum_vis_END;209;633086;490185.1052631579;2928;209;209;1.4401913875598087;0.4853745200699781;1.5;1.5;2
+2;forum_vis_START>assignment_sub_END;324;633918;486467.9537037037;6724;324;324;1.4429012345679013;0.4808843531588673;1.5;1.5;2
+2;forum_vis_START>forum_vis_START;291;633732;414027.03092783503;5147;291;291;1.465635738831615;0.4740011544737729;1.5;1.5;2
+2;forum_vis_END>forum_vis_END;425;633726;352224.91529411764;24418;425;425;1.4270588235294117;0.472695061886235;1.5;1.5;2
+2;forum_vis_END>forum_participation_END;179;633086;375942.843575419;2764;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+2;forum_vis_END>assignment_vis_END;559;633726;332534.4114490161;27246;559;559;1.4069767441860466;0.492165849559409;1.5;1.5;2
+2;forum_vis_END>assignment_sub_END;563;633726;331323.1651865009;24984;563;563;1.4058614564831262;0.49555076874265225;1.5;1.5;2
+2;forum_vis_END>assignment_try_END;459;633086;318875.61437908496;13146;459;459;1.420479302832244;0.486381107768664;1.5;1.5;2
+2;forum_vis_END>resource_vis_END;319;633569;318444.9937304075;5172;319;319;1.4075235109717867;0.5016386468292348;1.5;1.5;2
+2;forum_participation_END>forum_vis_END;169;632823;375912.9881656805;1352;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+2;forum_participation_END>assignment_vis_END;179;633086;375942.843575419;2078;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+2;forum_participation_END>assignment_sub_END;179;633086;375942.843575419;2078;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>resource_vis_START;176;633747;412352.2443181818;176;176;176;1.3636363636363635;0.5489068238769684;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>assignment_vis_END;352;633822;510358.23863636365;3284;352;352;1.4090909090909092;0.5218608745046637;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>assignment_try_END;250;633822;519623.644;1000;250;250;1.392;0.5436157395524496;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>assignment_sub_END;353;633822;509913.6232294618;3043;353;353;1.4079320113314449;0.5215737504731146;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>assignment_try_START;381;633822;301379.53543307085;1610;381;381;1.4081364829396326;0.5111513755159114;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>assignment_vis_START;293;633822;372513.0034129693;1079;293;293;1.378839590443686;0.5377808455860842;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>assignment_sub_START;287;633500;216321.6550522648;555;287;287;1.4059233449477353;0.5237703892707988;1.5;1.5;2
+3;resource_vis_START>assignment_vis_START>resource_vis_END;219;633747;525311.1917808219;854;219;219;1.3675799086757991;0.5403864457840774;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>assignment_vis_END;397;633838;493228.05793450883;4312;397;397;1.4017632241813602;0.5177865813205659;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>assignment_try_END;327;633838;494713.33639143733;2706;327;327;1.3975535168195719;0.5350249200476085;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>assignment_sub_END;398;633838;492876.75376884424;4058;398;398;1.400753768844221;0.5175260220993644;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>assignment_vis_START;286;633747;362912.4510489511;1014;286;286;1.3741258741258742;0.5162908586899221;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>assignment_try_START;173;633673;305192.5722543353;345;173;173;1.4017341040462428;0.4751344960675953;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>resource_vis_END;226;633747;507898.95132743364;1560;226;226;1.3606194690265487;0.5348292075226188;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>forum_vis_END;190;632743;495770.16315789474;758;190;190;1.431578947368421;0.5045325056821328;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>resource_vis_START;290;633838;405064.88275862066;1860;290;290;1.3637931034482758;0.5338695575236923;1.5;1.5;2
+3;resource_vis_START>resource_vis_START>forum_vis_START;198;633123;420105.9696969697;198;198;198;1.4318181818181819;0.49786113823759715;1.5;1.5;2
+3;resource_vis_START>assignment_vis_END>assignment_try_END;611;633923;497790.39607201307;6388;611;611;1.4083469721767594;0.5135339317757684;1.5;1.5;2
+3;resource_vis_START>assignment_vis_END>assignment_sub_END;729;633923;495192.51989026065;11578;729;729;1.4176954732510287;0.5028240691322474;1.5;1.5;2
+3;resource_vis_START>assignment_vis_END>resource_vis_END;231;633495;520241.09523809527;894;231;231;1.393939393939394;0.5219175145203592;1.5;1.5;2
+3;resource_vis_START>assignment_vis_END>assignment_vis_END;463;633923;509391.5183585313;5502;463;463;1.4125269978401729;0.4961046169269196;1.5;1.5;2
+3;resource_vis_START>assignment_try_END>assignment_sub_END;611;633923;497790.39607201307;6119;611;611;1.4083469721767594;0.5135339317757684;1.5;1.5;2
+3;resource_vis_START>assignment_try_END>assignment_vis_END;248;633789;508947.6612903226;992;248;248;1.3870967741935485;0.48180963565478324;1.5;1.5;2
+3;resource_vis_START>resource_vis_END>assignment_vis_END;395;633832;514369.4075949367;3878;395;395;1.389873417721519;0.5210285943391209;1.5;1.5;2
+3;resource_vis_START>resource_vis_END>assignment_sub_END;408;633832;512550.6004901961;3712;408;408;1.3860294117647058;0.5197579469879676;1.5;1.5;2
+3;resource_vis_START>resource_vis_END>assignment_try_END;308;633832;514118.63636363635;1898;308;308;1.3879870129870129;0.5335199074893697;1.5;1.5;2
+3;resource_vis_START>resource_vis_END>resource_vis_END;213;633747;516291.93896713614;830;213;213;1.335680751173709;0.5694619534853559;1.5;1.5;2
+3;resource_vis_START>assignment_try_START>assignment_vis_START;202;633822;351331.7673267327;402;202;202;1.3737623762376239;0.5373184784037549;1.5;1.5;2
+3;resource_vis_START>assignment_try_START>assignment_sub_START;271;633500;215053.48708487084;539;271;271;1.411439114391144;0.5213037031413094;1.5;1.5;2
+3;resource_vis_START>assignment_try_START>assignment_vis_END;199;633822;518464.9849246231;790;199;199;1.3768844221105527;0.5136208774633336;1.5;1.5;2
+3;resource_vis_START>assignment_try_START>assignment_sub_END;200;633822;517639.705;792;200;200;1.375;0.5130213979688073;1.5;1.5;2
+3;resource_vis_START>forum_vis_START>assignment_vis_END;257;633575;485010.4591439689;2018;257;257;1.4377431906614786;0.4941212648898471;1.5;1.5;2
+3;resource_vis_START>forum_vis_START>assignment_try_END;217;633570;483906.26267281105;868;217;217;1.4423963133640554;0.5047457827179253;1.5;1.5;2
+3;resource_vis_START>forum_vis_START>forum_vis_END;174;632743;490856.8103448276;694;174;174;1.4425287356321839;0.506748032589819;1.5;1.5;2
+3;resource_vis_START>forum_vis_START>assignment_sub_END;257;633575;485010.4591439689;1845;257;257;1.4377431906614786;0.4941212648898471;1.5;1.5;2
+3;resource_vis_START>forum_vis_START>forum_vis_START;231;633066;418917.4675324675;979;231;231;1.4653679653679654;0.4787798973429809;1.5;1.5;2
+3;resource_vis_START>forum_vis_END>forum_vis_END;239;632738;501150.5271966527;3228;239;239;1.4518828451882846;0.49236461142818627;1.5;1.5;2
+3;resource_vis_START>forum_vis_END>assignment_vis_END;289;632743;495761.1626297578;3716;289;289;1.4411764705882353;0.5;1.5;1.5;2
+3;resource_vis_START>forum_vis_END>assignment_sub_END;291;632743;494571.793814433;3545;291;291;1.4347079037800687;0.506030700212946;1.5;1.5;2
+3;resource_vis_START>forum_vis_END>assignment_try_END;225;632738;497578.9511111111;1652;225;225;1.4466666666666668;0.4993746088859545;1.5;1.5;2
+3;assignment_vis_START>resource_vis_START>assignment_vis_END;278;633832;506527.726618705;1362;278;278;1.39568345323741;0.5254354224744656;1.5;1.5;2
+3;assignment_vis_START>resource_vis_START>assignment_try_END;201;633832;517919.9253731343;804;201;201;1.3681592039800996;0.5579257069963376;1.5;1.5;2
+3;assignment_vis_START>resource_vis_START>assignment_sub_END;279;633832;505978.91397849465;1161;279;279;1.3942652329749103;0.5250242350444675;1.5;1.5;2
+3;assignment_vis_START>resource_vis_START>assignment_vis_START;233;633747;364941.17596566526;233;233;233;1.3798283261802575;0.5359297155936009;1.5;1.5;2
+3;assignment_vis_START>resource_vis_START>resource_vis_START;214;633747;407736.96261682245;214;214;214;1.338785046728972;0.5271416594853999;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_END>assignment_try_END;481;633907;524443.1018711019;4568;481;481;1.37006237006237;0.5383789289170511;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_END>assignment_sub_END;625;633907;516143.2848;9963;625;625;1.3856;0.5182106788674927;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_END>assignment_vis_END;453;633907;524799.9470198676;6760;453;453;1.3962472406181015;0.5197932287782716;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_END>resource_vis_END;280;633580;532584.9535714285;1090;280;280;1.4089285714285715;0.507745309716565;1.5;1.5;2
+3;assignment_vis_START>assignment_try_END>assignment_sub_END;481;633907;524443.1018711019;3953;481;481;1.37006237006237;0.5383789289170511;1.5;1.5;2
+3;assignment_vis_START>assignment_try_END>assignment_vis_END;219;633789;530581.7762557077;876;219;219;1.3789954337899544;0.5047634517087077;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>assignment_try_START;241;633822;348065.1576763485;241;241;241;1.3547717842323652;0.5280349280119198;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>assignment_vis_START;251;633822;392468.8764940239;774;251;251;1.298804780876494;0.5534966718391826;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>assignment_sub_START;220;633500;216441.85454545455;387;220;220;1.334090909090909;0.5559734487509855;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>assignment_vis_END;332;633907;524193.0271084337;3912;332;332;1.355421686746988;0.537309626129934;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>resource_vis_END;218;633832;535039.0733944954;860;218;218;1.353211009174312;0.5336715376602488;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>assignment_try_END;241;633907;536332.6597510374;1298;241;241;1.3236514522821576;0.5636753894529771;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>assignment_sub_END;333;633907;523680.1621621622;3312;333;333;1.3543543543543544;0.5368532426792816;1.5;1.5;2
+3;assignment_vis_START>assignment_vis_START>resource_vis_START;169;633832;421086.7041420118;169;169;169;1.2751479289940828;0.5534288211952951;1.5;1.5;2
+3;assignment_vis_START>assignment_try_START>assignment_vis_START;307;633822;356431.8436482085;1253;307;307;1.3452768729641693;0.5435319361127765;1.5;1.5;2
+3;assignment_vis_START>assignment_try_START>assignment_sub_START;351;633500;211429.59259259258;786;351;351;1.3447293447293447;0.5497733280641325;1.5;1.5;2
+3;assignment_vis_START>assignment_try_START>assignment_vis_END;310;633822;521599.7774193548;2214;310;310;1.3548387096774193;0.5150415257568977;1.5;1.5;2
+3;assignment_vis_START>assignment_try_START>resource_vis_END;192;633747;531430.5416666666;748;192;192;1.3098958333333333;0.51067760096674;1.5;1.5;2
+3;assignment_vis_START>assignment_try_START>assignment_sub_END;311;633822;521058.97106109327;2000;311;311;1.3536977491961415;0.5146036607959518;1.5;1.5;2
+3;assignment_vis_START>resource_vis_END>assignment_vis_END;393;633832;529619.7709923664;3944;393;393;1.3829516539440203;0.5153653748511553;1.5;1.5;2
+3;assignment_vis_START>resource_vis_END>assignment_try_END;277;633832;532298.2310469314;1104;277;277;1.388086642599278;0.5213926651828166;1.5;1.5;2
+3;assignment_vis_START>resource_vis_END>resource_vis_END;213;633747;529346.5305164319;830;213;213;1.3333333333333333;0.5530077848121969;1.5;1.5;2
+3;assignment_vis_START>resource_vis_END>assignment_sub_END;408;633832;527634.5759803922;3779;408;408;1.3811274509803921;0.5138969996239316;1.5;1.5;2
+3;assignment_vis_START>forum_vis_END>forum_vis_END;183;633463;514545.05464480876;732;183;183;1.4371584699453552;0.49184180877512285;1.5;1.5;2
+3;assignment_vis_START>forum_vis_END>assignment_vis_END;223;633463;512043.94170403585;812;223;223;1.4147982062780269;0.5215239533047757;1.5;1.5;2
+3;assignment_vis_START>forum_vis_END>assignment_sub_END;225;633463;510360.9555555555;814;225;225;1.4066666666666667;0.5283904130199834;1.5;1.5;2
+3;assignment_vis_END>assignment_try_END>assignment_sub_END;1700;633943;255287.99647058823;18880;1700;1700;1.3723529411764706;0.5241661941398387;1.5;1.5;2
+3;assignment_vis_END>assignment_try_END>resource_vis_END;323;633852;265765.7151702786;1206;323;323;1.3560371517027863;0.5258997836721329;1.5;1.5;2
+3;assignment_vis_END>assignment_try_END>assignment_vis_END;712;633927;270188.17837078654;6788;712;712;1.3764044943820224;0.5081938945583768;1.5;1.5;2
+3;assignment_vis_END>assignment_try_END>assignment_try_END;189;632845;237601.8201058201;756;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+3;assignment_vis_END>resource_vis_END>assignment_vis_END;665;633852;279169.52330827067;9036;665;665;1.4045112781954887;0.5047760838504832;1.5;1.5;2
+3;assignment_vis_END>resource_vis_END>assignment_sub_END;711;633852;273210.85794655414;8523;711;711;1.40014064697609;0.5082557661773632;1.5;1.5;2
+3;assignment_vis_END>resource_vis_END>assignment_try_END;451;633768;255186.9356984479;3594;451;451;1.419068736141907;0.5083655921331061;1.5;1.5;2
+3;assignment_vis_END>resource_vis_END>resource_vis_END;345;633768;283487.3217391304;3502;345;345;1.3652173913043477;0.5170989309095756;1.5;1.5;2
+3;assignment_vis_END>resource_vis_END>forum_vis_END;179;632929;332478.56424581003;708;179;179;1.3826815642458101;0.494556394400561;1.5;1.5;2
+3;assignment_vis_END>assignment_vis_END>assignment_sub_END;1189;633943;291084.85786375107;22158;1189;1189;1.377628259041211;0.511192004762145;1.5;1.5;2
+3;assignment_vis_END>assignment_vis_END>resource_vis_END;336;633768;314563.29761904763;2678;336;336;1.349702380952381;0.4937216879866065;1.5;1.5;2
+3;assignment_vis_END>assignment_vis_END>assignment_vis_END;676;633934;303572.65680473374;11878;676;676;1.3801775147928994;0.5132242000850367;1.5;1.5;2
+3;assignment_vis_END>assignment_vis_END>assignment_try_END;776;633923;277729.29768041236;8840;776;776;1.3737113402061856;0.5268576490613566;1.5;1.5;2
+3;assignment_vis_END>assignment_vis_END>forum_vis_END;175;632929;353945.17142857146;698;175;175;1.3542857142857143;0.5087413232578496;1.5;1.5;2
+3;assignment_vis_END>forum_vis_END>forum_vis_END;225;632929;369731.0755555556;1592;225;225;1.4155555555555555;0.47196187968205217;1.5;1.5;2
+3;assignment_vis_END>forum_vis_END>assignment_vis_END;302;632929;344892.9735099338;2852;302;302;1.3791390728476822;0.4952886877861955;1.5;1.5;2
+3;assignment_vis_END>forum_vis_END>assignment_sub_END;307;632929;341431.3941368078;2690;307;307;1.3778501628664495;0.5005532269709377;1.5;1.5;2
+3;assignment_vis_END>forum_vis_END>assignment_try_END;203;632738;326375.68472906406;808;203;203;1.4088669950738917;0.4978371011202528;1.5;1.5;2
+3;assignment_try_END>resource_vis_END>assignment_vis_END;280;633852;276146.5071428571;1120;280;280;1.3589285714285715;0.5242426815368101;1.5;1.5;2
+3;assignment_try_END>resource_vis_END>assignment_sub_END;323;633852;265765.7151702786;1206;323;323;1.3560371517027863;0.5258997836721329;1.5;1.5;2
+3;assignment_try_END>assignment_vis_END>assignment_sub_END;712;633927;270188.17837078654;6300;712;712;1.3764044943820224;0.5081938945583768;1.5;1.5;2
+3;assignment_try_END>assignment_vis_END>assignment_vis_END;327;633918;264128.7981651376;1642;327;327;1.353211009174312;0.5164595389171828;1.5;1.5;2
+3;assignment_try_END>assignment_vis_END>assignment_try_END;189;632845;237601.8201058201;756;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+3;assignment_try_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;756;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+3;resource_vis_END>assignment_vis_END>assignment_sub_END;1265;633852;250588.4205533597;18944;1265;1265;1.4027667984189722;0.5067115345801098;1.5;1.5;2
+3;resource_vis_END>assignment_vis_END>assignment_try_END;1059;633843;230783.0566572238;9844;1059;1059;1.408876298394712;0.5093238065140263;1.5;1.5;2
+3;resource_vis_END>assignment_vis_END>resource_vis_END;258;633768;295466.20930232556;988;258;258;1.3817829457364341;0.5168159771722906;1.5;1.5;2
+3;resource_vis_END>assignment_vis_END>assignment_vis_END;683;633843;268463.0073206442;9454;683;683;1.3989751098096632;0.5029666864210439;1.5;1.5;2
+3;resource_vis_END>assignment_try_END>assignment_vis_END;408;633843;234427.52450980392;3376;408;408;1.4191176470588236;0.48902169387808714;1.5;1.5;2
+3;resource_vis_END>assignment_try_END>assignment_sub_END;1069;633843;229513.2871842844;9912;1069;1069;1.4106641721234798;0.5094779846954318;1.5;1.5;2
+3;resource_vis_END>resource_vis_END>assignment_vis_END;607;633843;273549.8863261944;9518;607;607;1.371499176276771;0.526488046353491;1.5;1.5;2
+3;resource_vis_END>resource_vis_END>assignment_sub_END;632;633843;271697.3101265823;8830;632;632;1.370253164556962;0.5256657683261957;1.5;1.5;2
+3;resource_vis_END>resource_vis_END>assignment_try_END;472;633843;249112.27966101695;4334;472;472;1.3845338983050848;0.5272955021799123;1.5;1.5;2
+3;resource_vis_END>resource_vis_END>resource_vis_END;353;633768;283162.65439093485;3898;353;353;1.3569405099150142;0.5236603463913359;1.5;1.5;2
+3;resource_vis_END>resource_vis_END>forum_vis_END;210;633086;314971.79047619045;834;210;210;1.4071428571428573;0.4936888086449513;1.5;1.5;2
+3;resource_vis_END>forum_vis_END>forum_vis_END;252;633086;331511.7896825397;2594;252;252;1.4583333333333333;0.45214187034196984;1.5;1.5;2
+3;resource_vis_END>forum_vis_END>assignment_vis_END;344;633086;311546.3226744186;4002;344;344;1.431686046511628;0.4818714189606461;1.5;1.5;2
+3;resource_vis_END>forum_vis_END>assignment_sub_END;348;633086;308978.6235632184;3837;348;348;1.4310344827586208;0.4871395884493499;1.5;1.5;2
+3;resource_vis_END>forum_vis_END>assignment_try_END;269;632322;292967.8178438662;1854;269;269;1.466542750929368;0.45995978392650544;1.5;1.5;2
+3;resource_vis_END>forum_vis_END>resource_vis_END;179;632165;302621.31284916203;704;179;179;1.4553072625698324;0.497987286628472;1.5;1.5;2
+3;assignment_try_START>assignment_vis_START>assignment_sub_START;167;633500;213610.16766467065;334;167;167;1.3023952095808384;0.5702411343477555;1.5;1.5;2
+3;assignment_try_START>assignment_vis_START>assignment_vis_END;193;633822;531652.1191709845;772;193;193;1.349740932642487;0.533475666456502;1.5;1.5;2
+3;assignment_try_START>assignment_vis_START>assignment_sub_END;193;633822;531652.1191709845;772;193;193;1.349740932642487;0.533475666456502;1.5;1.5;2
+3;assignment_try_START>assignment_vis_END>assignment_vis_END;226;633822;532089.1283185841;904;226;226;1.3650442477876106;0.5083037130496868;1.5;1.5;2
+3;assignment_try_START>assignment_vis_END>assignment_sub_END;310;633822;521599.7774193548;2217;310;310;1.3548387096774193;0.5150415257568977;1.5;1.5;2
+3;assignment_try_START>resource_vis_END>assignment_vis_END;182;633747;535744.1923076923;728;182;182;1.3076923076923077;0.5190792462797968;1.5;1.5;2
+3;assignment_try_START>resource_vis_END>assignment_sub_END;192;633747;531430.5416666666;748;192;192;1.3098958333333333;0.51067760096674;1.5;1.5;2
+3;forum_vis_START>resource_vis_START>assignment_vis_END;179;632750;483880.9776536313;358;179;179;1.4608938547486034;0.48993382368564553;1.5;1.5;2
+3;forum_vis_START>resource_vis_START>assignment_sub_END;179;632750;483880.9776536313;358;179;179;1.4608938547486034;0.48993382368564553;1.5;1.5;2
+3;forum_vis_START>resource_vis_END>assignment_vis_END;189;633093;493661.71957671957;378;189;189;1.4603174603174602;0.497078598136583;1.5;1.5;2
+3;forum_vis_START>resource_vis_END>assignment_sub_END;197;633093;491443.31979695434;386;197;197;1.4517766497461928;0.49893702402385387;1.5;1.5;2
+3;forum_vis_START>assignment_vis_END>assignment_vis_END;216;633918;502756.0833333333;780;216;216;1.4328703703703705;0.47874166636924526;1.5;1.5;2
+3;forum_vis_START>assignment_vis_END>assignment_try_END;276;633918;485875.77898550726;1736;276;276;1.4474637681159421;0.48985424413866085;1.5;1.5;2
+3;forum_vis_START>assignment_vis_END>assignment_sub_END;324;633918;486467.9537037037;3552;324;324;1.4429012345679013;0.4808843531588673;1.5;1.5;2
+3;forum_vis_START>assignment_try_END>assignment_sub_END;276;633918;485875.77898550726;1736;276;276;1.4474637681159421;0.48985424413866085;1.5;1.5;2
+3;forum_vis_START>forum_vis_END>forum_vis_END;181;633086;497486.8287292818;724;181;181;1.4475138121546962;0.48161407564949765;1.5;1.5;2
+3;forum_vis_START>forum_vis_END>assignment_vis_END;208;633086;490925.02403846156;1462;208;208;1.4471153846153846;0.4760864474679502;1.5;1.5;2
+3;forum_vis_START>forum_vis_END>assignment_sub_END;209;633086;490185.1052631579;1464;209;209;1.4401913875598087;0.4853745200699781;1.5;1.5;2
+3;forum_vis_START>forum_vis_START>assignment_vis_END;235;633093;486016.1446808511;2316;235;235;1.4617021276595745;0.4788488651748215;1.5;1.5;2
+3;forum_vis_START>forum_vis_START>assignment_try_END;207;633093;489079.7922705314;1500;207;207;1.463768115942029;0.48510964064270184;1.5;1.5;2
+3;forum_vis_START>forum_vis_START>assignment_sub_END;235;633093;486016.1446808511;2316;235;235;1.4617021276595745;0.4788488651748215;1.5;1.5;2
+3;forum_vis_START>forum_vis_START>forum_vis_START;234;633536;422457.54273504275;1852;234;234;1.4786324786324787;0.46042135205687573;1.5;1.5;2
+3;forum_vis_START>forum_vis_START>forum_vis_END;169;633086;485313.07692307694;676;169;169;1.4644970414201184;0.46153846153846156;1.5;1.5;2
+3;forum_vis_END>forum_vis_END>forum_participation_END;176;633086;375061.07386363635;1372;176;176;1.4431818181818181;0.4624890311089593;1.5;1.5;2
+3;forum_vis_END>forum_vis_END>forum_vis_END;346;633726;360053.6936416185;12734;346;346;1.449421965317919;0.462710616025603;1.5;1.5;2
+3;forum_vis_END>forum_vis_END>assignment_vis_END;424;633726;353053.57547169813;12610;424;424;1.4257075471698113;0.47243093416413656;1.5;1.5;2
+3;forum_vis_END>forum_vis_END>assignment_sub_END;425;633726;352224.91529411764;12209;425;425;1.4270588235294117;0.472695061886235;1.5;1.5;2
+3;forum_vis_END>forum_vis_END>assignment_try_END;349;633086;343143.9312320917;6554;349;349;1.4340974212034383;0.46880945044512917;1.5;1.5;2
+3;forum_vis_END>forum_vis_END>resource_vis_END;225;633569;345060.76444444444;888;225;225;1.4111111111111112;0.4781951849617841;1.5;1.5;2
+3;forum_vis_END>forum_participation_END>forum_vis_END;169;632823;375912.9881656805;676;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+3;forum_vis_END>forum_participation_END>assignment_vis_END;179;633086;375942.843575419;1382;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+3;forum_vis_END>forum_participation_END>assignment_sub_END;179;633086;375942.843575419;1382;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+3;forum_vis_END>assignment_vis_END>assignment_sub_END;559;633726;332534.4114490161;13623;559;559;1.4069767441860466;0.492165849559409;1.5;1.5;2
+3;forum_vis_END>assignment_vis_END>assignment_try_END;457;633086;320262.22757111595;6736;457;457;1.4201312910284465;0.48629189514762444;1.5;1.5;2
+3;forum_vis_END>assignment_vis_END>resource_vis_END;169;632823;342967.36094674555;338;169;169;1.3520710059171597;0.5164080102238799;1.5;1.5;2
+3;forum_vis_END>assignment_vis_END>assignment_vis_END;329;633086;353503.61094224924;4006;329;329;1.3814589665653496;0.4888291751603551;1.5;1.5;2
+3;forum_vis_END>assignment_try_END>assignment_sub_END;459;633086;318875.61437908496;6573;459;459;1.420479302832244;0.486381107768664;1.5;1.5;2
+3;forum_vis_END>assignment_try_END>assignment_vis_END;177;633086;343007.2768361582;706;177;177;1.4293785310734464;0.45143226386097857;1.5;1.5;2
+3;forum_vis_END>resource_vis_END>assignment_vis_END;311;633569;320843.347266881;2558;311;311;1.4131832797427653;0.49726979940164323;1.5;1.5;2
+3;forum_vis_END>resource_vis_END>assignment_try_END;230;632059;307871.7304347826;916;230;230;1.423913043478261;0.4852338303692371;1.5;1.5;2
+3;forum_vis_END>resource_vis_END>resource_vis_END;185;633463;356845.0054054054;730;185;185;1.4054054054054055;0.5032211167686896;1.5;1.5;2
+3;forum_vis_END>resource_vis_END>assignment_sub_END;319;633569;318444.9937304075;2586;319;319;1.4075235109717867;0.5016386468292348;1.5;1.5;2
+3;forum_participation_END>forum_vis_END>assignment_vis_END;169;632823;375912.9881656805;676;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+3;forum_participation_END>forum_vis_END>assignment_sub_END;169;632823;375912.9881656805;676;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+3;forum_participation_END>assignment_vis_END>assignment_sub_END;179;633086;375942.843575419;1039;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END;250;633822;519623.644;500;250;250;1.392;0.5436157395524496;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;352;633822;510358.23863636365;1642;352;352;1.4090909090909092;0.5218608745046637;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END;256;633822;517235.16015625;512;256;256;1.421875;0.5199453214088016;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_try_END>assignment_sub_END;250;633822;519623.644;500;250;250;1.392;0.5436157395524496;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_vis_START;200;633822;350374.955;200;200;200;1.3725;0.537529945408677;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_sub_START;268;633500;217114.83208955225;268;268;268;1.4085820895522387;0.5211276350018857;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_vis_END;196;633822;520931.9081632653;392;196;196;1.375;0.5148437651988247;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_sub_END;197;633822;520081.53807106597;393;197;197;1.3730964467005076;0.514223265888648;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END;195;633822;521079.13333333336;390;195;195;1.358974358974359;0.5390512612226659;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>assignment_vis_START>assignment_sub_END;196;633822;520223.67346938775;391;196;196;1.3571428571428572;0.5382783571197989;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END;208;633747;528291.2259615385;416;208;208;1.375;0.5417363388859614;1.5;1.5;2
+4;resource_vis_START>assignment_vis_START>resource_vis_END>assignment_sub_END;219;633747;525311.1917808219;427;219;219;1.3675799086757991;0.5403864457840774;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END;327;633838;494713.33639143733;1352;327;327;1.3975535168195719;0.5350249200476085;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;397;633838;493228.05793450883;2156;397;397;1.4017632241813602;0.5177865813205659;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END;265;633838;504893.8301886792;530;265;265;1.3754716981132076;0.5108317861872952;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_try_END>assignment_sub_END;327;633838;494713.33639143733;1353;327;327;1.3975535168195719;0.5350249200476085;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_try_START;172;633673;303434.0581395349;172;172;172;1.4011627906976745;0.47646215366021366;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_vis_END;185;633747;512374.20540540543;370;185;185;1.3567567567567567;0.5313746224879458;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_sub_END;186;633747;511519.55376344087;371;186;186;1.3548387096774193;0.5305817570100196;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END;219;633747;510542.6210045662;772;219;219;1.365296803652968;0.5344818965521939;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_END>assignment_try_END;168;633747;511614.8154761905;670;168;168;1.380952380952381;0.5478266674771205;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_END>assignment_sub_END;226;633747;507898.95132743364;780;226;226;1.3606194690265487;0.5348292075226188;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>forum_vis_END>assignment_vis_END;189;632743;496614.01587301586;378;189;189;1.439153439153439;0.4949224340165806;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>forum_vis_END>assignment_sub_END;190;632743;495770.16315789474;379;190;190;1.431578947368421;0.5045325056821328;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END;225;633838;493972.12444444443;814;225;225;1.3644444444444443;0.5473783114748116;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_START>assignment_try_END;182;633838;496726.0879120879;728;182;182;1.3681318681318682;0.5652709946847175;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_START>assignment_sub_END;225;633838;493972.12444444443;814;225;225;1.3644444444444443;0.5473783114748116;1.5;1.5;2
+4;resource_vis_START>resource_vis_START>resource_vis_START>resource_vis_START;167;633714;406801.29341317364;167;167;167;1.3562874251497006;0.5295536777438193;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;611;633923;497790.39607201307;3194;611;611;1.4083469721767594;0.5135339317757684;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END;248;633789;508947.6612903226;496;248;248;1.3870967741935485;0.48180963565478324;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END;216;633495;523323.25925925927;432;216;216;1.4097222222222223;0.5171009677545704;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>resource_vis_END>assignment_sub_END;231;633495;520241.09523809527;447;231;231;1.393939393939394;0.5219175145203592;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;463;633923;509391.5183585313;2751;463;463;1.4125269978401729;0.4961046169269196;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END;254;633838;519536.531496063;508;254;254;1.389763779527559;0.5368381514910529;1.5;1.5;2
+4;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END;272;633923;518740.3088235294;544;272;272;1.40625;0.5411460266325729;1.5;1.5;2
+4;resource_vis_START>assignment_try_END>assignment_vis_END>assignment_sub_END;248;633789;508947.6612903226;496;248;248;1.3870967741935485;0.48180963565478324;1.5;1.5;2
+4;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;395;633832;514369.4075949367;1939;395;395;1.389873417721519;0.5210285943391209;1.5;1.5;2
+4;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END;306;633832;514761.47712418303;946;306;306;1.3872549019607843;0.5351889328343319;1.5;1.5;2
+4;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END;226;633832;518690.5265486726;452;226;226;1.404867256637168;0.5151252103138468;1.5;1.5;2
+4;resource_vis_START>resource_vis_END>assignment_try_END>assignment_sub_END;308;633832;514118.63636363635;949;308;308;1.3879870129870129;0.5335199074893697;1.5;1.5;2
+4;resource_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END;202;633747;518711.6881188119;404;202;202;1.3415841584158417;0.5727245396827002;1.5;1.5;2
+4;resource_vis_START>resource_vis_END>resource_vis_END>assignment_sub_END;213;633747;516291.93896713614;415;213;213;1.335680751173709;0.5694619534853559;1.5;1.5;2
+4;resource_vis_START>assignment_try_START>assignment_vis_END>assignment_sub_END;199;633822;518464.9849246231;395;199;199;1.3768844221105527;0.5136208774633336;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_vis_END;174;633575;499105.8333333333;348;174;174;1.4281609195402298;0.5034678095240005;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END;217;633570;483906.26267281105;434;217;217;1.4423963133640554;0.5047457827179253;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;257;633575;485010.4591439689;1009;257;257;1.4377431906614786;0.4941212648898471;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>assignment_try_END>assignment_sub_END;217;633570;483906.26267281105;434;217;217;1.4423963133640554;0.5047457827179253;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END;173;632743;491750.3063583815;346;173;173;1.4508670520231215;0.4961032451985085;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>forum_vis_END>assignment_sub_END;174;632743;490856.8103448276;347;174;174;1.4425287356321839;0.506748032589819;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END;188;632743;487784.1595744681;376;188;188;1.4627659574468086;0.4836324326985339;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>forum_vis_START>assignment_sub_END;188;632743;487784.1595744681;376;188;188;1.4627659574468086;0.4836324326985339;1.5;1.5;2
+4;resource_vis_START>forum_vis_START>forum_vis_START>forum_vis_START;184;632743;423381.01630434784;184;184;184;1.4728260869565217;0.460838689193766;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END;202;632738;505995.40594059404;1520;202;202;1.4752475247524752;0.4905892366564883;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END;239;632738;501150.5271966527;1614;239;239;1.4518828451882846;0.49236461142818627;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>forum_vis_END>assignment_sub_END;239;632738;501150.5271966527;1614;239;239;1.4518828451882846;0.49236461142818627;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>forum_vis_END>assignment_try_END;188;632738;502492.28723404254;752;188;188;1.4547872340425532;0.4925416537631856;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;289;632743;495761.1626297578;1858;289;289;1.4411764705882353;0.5;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_try_END;225;632738;497578.9511111111;826;225;225;1.4466666666666668;0.4993746088859545;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_vis_END;175;632743;507091.9942857143;350;175;175;1.4342857142857144;0.48241660415781634;1.5;1.5;2
+4;resource_vis_START>forum_vis_END>assignment_try_END>assignment_sub_END;225;632738;497578.9511111111;826;225;225;1.4466666666666668;0.4993746088859545;1.5;1.5;2
+4;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END;201;633832;517919.9253731343;402;201;201;1.3681592039800996;0.5579257069963376;1.5;1.5;2
+4;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;278;633832;506527.726618705;681;278;278;1.39568345323741;0.5254354224744656;1.5;1.5;2
+4;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END;202;633832;513424.9653465347;404;202;202;1.396039603960396;0.5269683861634992;1.5;1.5;2
+4;assignment_vis_START>resource_vis_START>assignment_try_END>assignment_sub_END;201;633832;517919.9253731343;402;201;201;1.3681592039800996;0.5579257069963376;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;481;633907;524443.1018711019;2284;481;481;1.37006237006237;0.5383789289170511;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END;219;633789;530581.7762557077;438;219;219;1.3789954337899544;0.5047634517087077;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END;288;633822;530327.1701388889;1626;288;288;1.3871527777777777;0.5282357239546976;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END;281;633907;533385.1494661921;1234;281;281;1.393238434163701;0.5454262848743404;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;453;633907;524799.9470198676;3380;453;453;1.3962472406181015;0.5197932287782716;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END;265;633580;535809.2452830189;530;265;265;1.4132075471698113;0.5093957114581112;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_END>resource_vis_END>assignment_sub_END;280;633580;532584.9535714285;545;280;280;1.4089285714285715;0.507745309716565;1.5;1.5;2
+4;assignment_vis_START>assignment_try_END>assignment_vis_END>assignment_sub_END;219;633789;530581.7762557077;438;219;219;1.3789954337899544;0.5047634517087077;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END;174;633822;531220.643678161;348;174;174;1.3074712643678161;0.5471961497828;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>assignment_vis_START>assignment_sub_END;175;633822;530204.5771428571;349;175;175;1.3057142857142856;0.5461163075265832;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END;263;633907;528590.6730038023;1218;263;263;1.376425855513308;0.5376434312592958;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END;241;633907;536332.6597510374;816;241;241;1.3236514522821576;0.5636753894529771;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;332;633907;524193.0271084337;1956;332;332;1.355421686746988;0.537309626129934;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END;212;633832;536016.8867924528;424;212;212;1.3561320754716981;0.5370713469945093;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>resource_vis_END>assignment_sub_END;218;633832;535039.0733944954;430;218;218;1.353211009174312;0.5336715376602488;1.5;1.5;2
+4;assignment_vis_START>assignment_vis_START>assignment_try_END>assignment_sub_END;241;633907;536332.6597510374;649;241;241;1.3236514522821576;0.5636753894529771;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_sub_START;167;633500;213610.16766467065;167;167;167;1.3023952095808384;0.5702411343477555;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_vis_END;193;633822;531652.1191709845;386;193;193;1.349740932642487;0.533475666456502;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_sub_END;193;633822;531652.1191709845;386;193;193;1.349740932642487;0.533475666456502;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_vis_END;226;633822;532089.1283185841;452;226;226;1.3650442477876106;0.5083037130496868;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_sub_END;310;633822;521599.7774193548;1107;310;310;1.3548387096774193;0.5150415257568977;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>resource_vis_END>assignment_vis_END;182;633747;535744.1923076923;364;182;182;1.3076923076923077;0.5190792462797968;1.5;1.5;2
+4;assignment_vis_START>assignment_try_START>resource_vis_END>assignment_sub_END;192;633747;531430.5416666666;374;192;192;1.3098958333333333;0.51067760096674;1.5;1.5;2
+4;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END;275;633832;533145.7527272727;550;275;275;1.3872727272727272;0.523204104377465;1.5;1.5;2
+4;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END;235;633832;525854.2297872341;470;235;235;1.421276595744681;0.5221324496358376;1.5;1.5;2
+4;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;393;633832;529619.7709923664;1972;393;393;1.3829516539440203;0.5153653748511553;1.5;1.5;2
+4;assignment_vis_START>resource_vis_END>assignment_try_END>assignment_sub_END;277;633832;532298.2310469314;552;277;277;1.388086642599278;0.5213926651828166;1.5;1.5;2
+4;assignment_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END;202;633747;533532.3861386139;404;202;202;1.3391089108910892;0.5554839206397925;1.5;1.5;2
+4;assignment_vis_START>resource_vis_END>resource_vis_END>assignment_sub_END;213;633747;529346.5305164319;415;213;213;1.3333333333333333;0.5530077848121969;1.5;1.5;2
+4;assignment_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END;183;633463;514545.05464480876;366;183;183;1.4371584699453552;0.49184180877512285;1.5;1.5;2
+4;assignment_vis_START>forum_vis_END>forum_vis_END>assignment_sub_END;183;633463;514545.05464480876;366;183;183;1.4371584699453552;0.49184180877512285;1.5;1.5;2
+4;assignment_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;223;633463;512043.94170403585;406;223;223;1.4147982062780269;0.5215239533047757;1.5;1.5;2
+4;assignment_vis_END>assignment_try_END>resource_vis_END>assignment_vis_END;280;633852;276146.5071428571;560;280;280;1.3589285714285715;0.5242426815368101;1.5;1.5;2
+4;assignment_vis_END>assignment_try_END>resource_vis_END>assignment_sub_END;323;633852;265765.7151702786;603;323;323;1.3560371517027863;0.5258997836721329;1.5;1.5;2
+4;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;712;633927;270188.17837078654;3394;712;712;1.3764044943820224;0.5081938945583768;1.5;1.5;2
+4;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END;327;633918;264128.7981651376;654;327;327;1.353211009174312;0.5164595389171828;1.5;1.5;2
+4;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_try_END;189;632845;237601.8201058201;378;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+4;assignment_vis_END>assignment_try_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;378;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;665;633852;279169.52330827067;4518;665;665;1.4045112781954887;0.5047760838504832;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;438;633768;258898.9406392694;1600;438;438;1.4166666666666667;0.5044614078158914;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;362;633768;294469.5248618784;2148;362;362;1.408839779005525;0.5129668003360865;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END;181;633768;244760.60773480663;712;181;181;1.4530386740331491;0.4821873122050863;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;451;633768;255186.9356984479;1797;451;451;1.419068736141907;0.5083655921331061;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;319;633768;288131.67398119124;1708;319;319;1.365203761755486;0.5145791519616816;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;345;633768;283487.3217391304;1751;345;345;1.3652173913043477;0.5170989309095756;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_try_END;195;633768;262592.57435897435;764;195;195;1.3871794871794871;0.5202990254322173;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>resource_vis_END>resource_vis_END;178;633768;314199.78651685396;356;178;178;1.3426966292134832;0.5346497117046466;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END;175;632929;338063.0685714286;350;175;175;1.3828571428571428;0.4845223470201398;1.5;1.5;2
+4;assignment_vis_END>resource_vis_END>forum_vis_END>assignment_sub_END;179;632929;332478.56424581003;354;179;179;1.3826815642458101;0.494556394400561;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END;313;633768;313176.8594249201;1308;313;313;1.3498402555910542;0.49820991100697254;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_try_END;170;632674;306839.5588235294;340;170;170;1.3647058823529412;0.5008172923534318;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END;179;633768;327094.0167597765;696;179;179;1.329608938547486;0.5195777922186865;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_sub_END;336;633768;314563.29761904763;1339;336;336;1.349702380952381;0.4937216879866065;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;384;633838;302382.4609375;1476;384;384;1.3606770833333333;0.542685094841152;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;371;633918;332429.14016172505;2584;371;371;1.3463611859838276;0.5192057020911799;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;676;633934;303572.65680473374;5939;676;676;1.3801775147928994;0.5132242000850367;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;309;633843;279376.6116504854;968;309;309;1.4110032362459546;0.5058187043574055;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;776;633923;277729.29768041236;4420;776;776;1.3737113402061856;0.5268576490613566;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>forum_vis_END>assignment_vis_END;174;632929;352979.091954023;348;174;174;1.353448275862069;0.510088573485506;1.5;1.5;2
+4;assignment_vis_END>assignment_vis_END>forum_vis_END>assignment_sub_END;175;632929;353945.17142857146;349;175;175;1.3542857142857143;0.5087413232578496;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;175;632929;377648.09714285715;696;175;175;1.4342857142857144;0.46109742727369846;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;223;632929;372982.3542600897;792;223;223;1.4125560538116593;0.4724139802023896;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;225;632929;369731.0755555556;796;225;225;1.4155555555555555;0.47196187968205217;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;302;632929;344892.9735099338;1426;302;302;1.3791390728476822;0.4952886877861955;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;201;632738;329602.96019900497;402;201;201;1.407960199004975;0.4977311708221218;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;178;632929;375775.90449438203;356;178;178;1.3623595505617978;0.5200923917744978;1.5;1.5;2
+4;assignment_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;203;632738;326375.68472906406;404;203;203;1.4088669950738917;0.4978371011202528;1.5;1.5;2
+4;assignment_try_END>resource_vis_END>assignment_vis_END>assignment_sub_END;280;633852;276146.5071428571;560;280;280;1.3589285714285715;0.5242426815368101;1.5;1.5;2
+4;assignment_try_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;327;633918;264128.7981651376;821;327;327;1.353211009174312;0.5164595389171828;1.5;1.5;2
+4;assignment_try_END>assignment_vis_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;378;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;403;633843;237053.02977667493;1506;403;403;1.4168734491315136;0.4898605257533084;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;1059;633843;230783.0566572238;4922;1059;1059;1.408876298394712;0.5093238065140263;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END;236;633768;296272.66101694916;472;236;236;1.3834745762711864;0.5179565037495093;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>resource_vis_END>assignment_sub_END;258;633768;295466.20930232556;494;258;258;1.3817829457364341;0.5168159771722906;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;683;633843;268463.0073206442;4727;683;683;1.3989751098096632;0.5029666864210439;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;335;633843;281860.20597014925;1042;335;335;1.3925373134328358;0.503375858916641;1.5;1.5;2
+4;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;338;633832;255814.46153846153;676;338;338;1.3816568047337279;0.5386164058115428;1.5;1.5;2
+4;resource_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;408;633843;234427.52450980392;1688;408;408;1.4191176470588236;0.48902169387808714;1.5;1.5;2
+4;resource_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END;167;633843;214797.04790419163;334;167;167;1.3982035928143712;0.4986092772024154;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;607;633843;273549.8863261944;4759;607;607;1.371499176276771;0.526488046353491;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;322;633843;281113.0807453416;1704;322;322;1.3975155279503106;0.5149418877244397;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;463;633843;251492.93520518357;2142;463;463;1.3779697624190064;0.5281169922709059;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;472;633843;249112.27966101695;2167;472;472;1.3845338983050848;0.5272955021799123;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END;179;633843;239035.72067039105;708;179;179;1.410614525139665;0.4890361559335945;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;338;633768;282213.20118343196;1918;338;338;1.3594674556213018;0.5212820993738722;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END;209;633768;329753.94736842107;816;209;209;1.3660287081339713;0.5359606931077093;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;353;633768;283162.65439093485;1949;353;353;1.3569405099150142;0.5236603463913359;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>resource_vis_END>assignment_try_END;250;633768;267220.984;992;250;250;1.362;0.5225401350815881;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END;207;633086;317837.309178744;414;207;207;1.4106280193236715;0.48570146629049565;1.5;1.5;2
+4;resource_vis_END>resource_vis_END>forum_vis_END>assignment_sub_END;210;633086;314971.79047619045;417;210;210;1.4071428571428573;0.4936888086449513;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;203;633086;329000.8965517241;808;203;203;1.4704433497536946;0.45501963888920466;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;250;633086;334106.176;1292;250;250;1.456;0.45264062360392066;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;252;633086;331511.7896825397;1297;252;252;1.4583333333333333;0.45214187034196984;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;196;632322;309514.6785714286;782;196;196;1.4795918367346939;0.44674530888409164;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;344;633086;311546.3226744186;2001;344;344;1.431686046511628;0.4818714189606461;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;267;632322;295147.09363295883;924;267;267;1.4662921348314606;0.45963629464932293;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;189;633086;328724.91005291004;378;189;189;1.433862433862434;0.4694002535109802;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;269;632322;292967.8178438662;927;269;269;1.466542750929368;0.45995978392650544;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END;173;632165;303782.8843930636;346;173;173;1.4624277456647399;0.48826806130528205;1.5;1.5;2
+4;resource_vis_END>forum_vis_END>resource_vis_END>assignment_sub_END;179;632165;302621.31284916203;352;179;179;1.4553072625698324;0.497987286628472;1.5;1.5;2
+4;assignment_try_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;193;633822;531652.1191709845;386;193;193;1.349740932642487;0.533475666456502;1.5;1.5;2
+4;assignment_try_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;226;633822;532089.1283185841;452;226;226;1.3650442477876106;0.5083037130496868;1.5;1.5;2
+4;assignment_try_START>resource_vis_END>assignment_vis_END>assignment_sub_END;182;633747;535744.1923076923;364;182;182;1.3076923076923077;0.5190792462797968;1.5;1.5;2
+4;forum_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;179;632750;483880.9776536313;179;179;179;1.4608938547486034;0.48993382368564553;1.5;1.5;2
+4;forum_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;189;633093;493661.71957671957;189;189;189;1.4603174603174602;0.497078598136583;1.5;1.5;2
+4;forum_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;216;633918;502756.0833333333;390;216;216;1.4328703703703705;0.47874166636924526;1.5;1.5;2
+4;forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;276;633918;485875.77898550726;868;276;276;1.4474637681159421;0.48985424413866085;1.5;1.5;2
+4;forum_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END;181;633086;497486.8287292818;362;181;181;1.4475138121546962;0.48161407564949765;1.5;1.5;2
+4;forum_vis_START>forum_vis_END>forum_vis_END>assignment_sub_END;181;633086;497486.8287292818;362;181;181;1.4475138121546962;0.48161407564949765;1.5;1.5;2
+4;forum_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;208;633086;490925.02403846156;731;208;208;1.4471153846153846;0.4760864474679502;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END;207;633093;489079.7922705314;750;207;207;1.463768115942029;0.48510964064270184;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;235;633093;486016.1446808511;1158;235;235;1.4617021276595745;0.4788488651748215;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>assignment_try_END>assignment_sub_END;207;633093;489079.7922705314;750;207;207;1.463768115942029;0.48510964064270184;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>forum_vis_START>forum_vis_START;189;633389;417616.48148148146;189;189;189;1.5026455026455026;0.43606483297417353;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END;191;632890;490466.1518324607;718;191;191;1.4764397905759161;0.45965650251368556;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>forum_vis_START>assignment_try_END;168;632890;493530.45238095237;672;168;168;1.4732142857142858;0.46833546683472;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>forum_vis_START>assignment_sub_END;191;632890;490466.1518324607;718;191;191;1.4764397905759161;0.45965650251368556;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END;169;633086;485313.07692307694;338;169;169;1.4644970414201184;0.46153846153846156;1.5;1.5;2
+4;forum_vis_START>forum_vis_START>forum_vis_END>assignment_sub_END;169;633086;485313.07692307694;338;169;169;1.4644970414201184;0.46153846153846156;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END;176;633086;375061.07386363635;686;176;176;1.4431818181818181;0.4624890311089593;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_participation_END>assignment_sub_END;176;633086;375061.07386363635;686;176;176;1.4431818181818181;0.4624890311089593;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;291;633569;362688.78694158077;6848;291;291;1.443298969072165;0.46168519275132713;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END;167;633086;367895.2395209581;668;167;167;1.437125748502994;0.4630297055140657;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;344;633726;362105.0901162791;6542;344;344;1.447674418604651;0.4630930978786749;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;346;633726;360053.6936416185;6367;346;346;1.449421965317919;0.462710616025603;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;285;633086;355116.8245614035;3626;285;285;1.4596491228070176;0.4588180041789281;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;424;633726;353053.57547169813;6305;424;424;1.4257075471698113;0.47243093416413656;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;348;633086;344127.4683908046;3270;348;348;1.4324712643678161;0.4684977362323973;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;239;633086;366851.2092050209;866;239;239;1.4079497907949792;0.46279610279534666;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;349;633086;343143.9312320917;3277;349;349;1.4340974212034383;0.46880945044512917;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END;219;633569;345394.8904109589;438;219;219;1.41324200913242;0.480594042642507;1.5;1.5;2
+4;forum_vis_END>forum_vis_END>resource_vis_END>assignment_sub_END;225;633569;345060.76444444444;444;225;225;1.4111111111111112;0.4781951849617841;1.5;1.5;2
+4;forum_vis_END>forum_participation_END>forum_vis_END>assignment_vis_END;169;632823;375912.9881656805;338;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+4;forum_vis_END>forum_participation_END>forum_vis_END>assignment_sub_END;169;632823;375912.9881656805;338;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+4;forum_vis_END>forum_participation_END>assignment_vis_END>assignment_sub_END;179;633086;375942.843575419;691;179;179;1.4441340782122905;0.46168560720426066;1.5;1.5;2
+4;forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;457;633086;320262.22757111595;3368;457;457;1.4201312910284465;0.48629189514762444;1.5;1.5;2
+4;forum_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;176;633086;344938.0227272727;352;176;176;1.4318181818181819;0.4515485620573981;1.5;1.5;2
+4;forum_vis_END>assignment_vis_END>resource_vis_END>assignment_sub_END;169;632823;342967.36094674555;169;169;169;1.3520710059171597;0.5164080102238799;1.5;1.5;2
+4;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;179;632823;348378.08379888267;358;179;179;1.3715083798882681;0.49460398832445907;1.5;1.5;2
+4;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;176;633086;371346.2784090909;352;176;176;1.34375;0.5179802809263799;1.5;1.5;2
+4;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;329;633086;353503.61094224924;2003;329;329;1.3814589665653496;0.4888291751603551;1.5;1.5;2
+4;forum_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;177;633086;343007.2768361582;353;177;177;1.4293785310734464;0.45143226386097857;1.5;1.5;2
+4;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;228;632059;308038.0307017544;456;228;228;1.4210526315789473;0.48582981088775246;1.5;1.5;2
+4;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;168;632929;335046.8333333333;336;168;168;1.4285714285714286;0.49332585787999883;1.5;1.5;2
+4;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;311;633569;320843.347266881;1279;311;311;1.4131832797427653;0.49726979940164323;1.5;1.5;2
+4;forum_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;230;632059;307871.7304347826;458;230;230;1.423913043478261;0.4852338303692371;1.5;1.5;2
+4;forum_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;180;633463;353417.1388888889;360;180;180;1.4083333333333334;0.5054866563783226;1.5;1.5;2
+4;forum_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;185;633463;356845.0054054054;365;185;185;1.4054054054054055;0.5032211167686896;1.5;1.5;2
+4;forum_participation_END>forum_vis_END>assignment_vis_END>assignment_sub_END;169;632823;375912.9881656805;338;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+5;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;250;633822;519623.644;250;250;250;1.392;0.5436157395524496;1.5;1.5;2
+5;resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;256;633822;517235.16015625;256;256;256;1.421875;0.5199453214088016;1.5;1.5;2
+5;resource_vis_START>assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_sub_END;196;633822;520931.9081632653;196;196;196;1.375;0.5148437651988247;1.5;1.5;2
+5;resource_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;195;633822;521079.13333333336;195;195;195;1.358974358974359;0.5390512612226659;1.5;1.5;2
+5;resource_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;208;633747;528291.2259615385;208;208;208;1.375;0.5417363388859614;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;327;633838;494713.33639143733;676;327;327;1.3975535168195719;0.5350249200476085;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;265;633838;504893.8301886792;265;265;265;1.3754716981132076;0.5108317861872952;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;185;633747;512374.20540540543;185;185;185;1.3567567567567567;0.5313746224879458;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END;167;633747;511836.4610778443;334;167;167;1.3802395209580838;0.5493961110732581;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;219;633747;510542.6210045662;386;219;219;1.365296803652968;0.5344818965521939;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>resource_vis_END>assignment_try_END>assignment_sub_END;168;633747;511614.8154761905;335;168;168;1.380952380952381;0.5478266674771205;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;189;632743;496614.01587301586;189;189;189;1.439153439153439;0.4949224340165806;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END;182;633838;496726.0879120879;364;182;182;1.3681318681318682;0.5652709946847175;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END>assignment_sub_END;225;633838;493972.12444444443;407;225;225;1.3644444444444443;0.5473783114748116;1.5;1.5;2
+5;resource_vis_START>resource_vis_START>resource_vis_START>assignment_try_END>assignment_sub_END;182;633838;496726.0879120879;364;182;182;1.3681318681318682;0.5652709946847175;1.5;1.5;2
+5;resource_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;248;633789;508947.6612903226;248;248;248;1.3870967741935485;0.48180963565478324;1.5;1.5;2
+5;resource_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;216;633495;523323.25925925927;216;216;216;1.4097222222222223;0.5171009677545704;1.5;1.5;2
+5;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;254;633838;519536.531496063;254;254;254;1.389763779527559;0.5368381514910529;1.5;1.5;2
+5;resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;272;633923;518740.3088235294;272;272;272;1.40625;0.5411460266325729;1.5;1.5;2
+5;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;306;633832;514761.47712418303;473;306;306;1.3872549019607843;0.5351889328343319;1.5;1.5;2
+5;resource_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;226;633832;518690.5265486726;226;226;226;1.404867256637168;0.5151252103138468;1.5;1.5;2
+5;resource_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;202;633747;518711.6881188119;202;202;202;1.3415841584158417;0.5727245396827002;1.5;1.5;2
+5;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;174;633575;499105.8333333333;174;174;174;1.4281609195402298;0.5034678095240005;1.5;1.5;2
+5;resource_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;217;633570;483906.26267281105;217;217;217;1.4423963133640554;0.5047457827179253;1.5;1.5;2
+5;resource_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;173;632743;491750.3063583815;173;173;173;1.4508670520231215;0.4961032451985085;1.5;1.5;2
+5;resource_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;188;632743;487784.1595744681;188;188;188;1.4627659574468086;0.4836324326985339;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;178;632738;507978.37078651687;712;178;178;1.4719101123595506;0.48630714157038674;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;202;632738;505995.40594059404;760;202;202;1.4752475247524752;0.4905892366564883;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;202;632738;505995.40594059404;760;202;202;1.4752475247524752;0.4905892366564883;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;239;632738;501150.5271966527;807;239;239;1.4518828451882846;0.49236461142818627;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;188;632738;502492.28723404254;376;188;188;1.4547872340425532;0.4925416537631856;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;188;632738;502492.28723404254;376;188;188;1.4547872340425532;0.4925416537631856;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;225;632738;497578.9511111111;413;225;225;1.4466666666666668;0.4993746088859545;1.5;1.5;2
+5;resource_vis_START>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;175;632743;507091.9942857143;175;175;175;1.4342857142857144;0.48241660415781634;1.5;1.5;2
+5;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;201;633832;517919.9253731343;201;201;201;1.3681592039800996;0.5579257069963376;1.5;1.5;2
+5;assignment_vis_START>resource_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;202;633832;513424.9653465347;202;202;202;1.396039603960396;0.5269683861634992;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;219;633789;530581.7762557077;219;219;219;1.3789954337899544;0.5047634517087077;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;169;633822;534724.7337278107;338;169;169;1.3905325443786982;0.5681258457535007;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;177;633822;539951.6497175142;354;177;177;1.3728813559322033;0.518903074394759;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;288;633822;530327.1701388889;813;288;288;1.3871527777777777;0.5282357239546976;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;281;633907;533385.1494661921;617;281;281;1.393238434163701;0.5454262848743404;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;265;633580;535809.2452830189;265;265;265;1.4132075471698113;0.5093957114581112;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;174;633822;531220.643678161;174;174;174;1.3074712643678161;0.5471961497828;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END;179;633822;536205.8268156424;358;179;179;1.3519553072625698;0.5549917280609296;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END;167;633907;540703.9101796407;334;167;167;1.3682634730538923;0.5655884898071416;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;263;633907;528590.6730038023;609;263;263;1.376425855513308;0.5376434312592958;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;241;633907;536332.6597510374;408;241;241;1.3236514522821576;0.5636753894529771;1.5;1.5;2
+5;assignment_vis_START>assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_sub_END;212;633832;536016.8867924528;212;212;212;1.3561320754716981;0.5370713469945093;1.5;1.5;2
+5;assignment_vis_START>assignment_try_START>assignment_vis_START>assignment_vis_END>assignment_sub_END;193;633822;531652.1191709845;193;193;193;1.349740932642487;0.533475666456502;1.5;1.5;2
+5;assignment_vis_START>assignment_try_START>assignment_vis_END>assignment_vis_END>assignment_sub_END;226;633822;532089.1283185841;226;226;226;1.3650442477876106;0.5083037130496868;1.5;1.5;2
+5;assignment_vis_START>assignment_try_START>resource_vis_END>assignment_vis_END>assignment_sub_END;182;633747;535744.1923076923;182;182;182;1.3076923076923077;0.5190792462797968;1.5;1.5;2
+5;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;275;633832;533145.7527272727;275;275;275;1.3872727272727272;0.523204104377465;1.5;1.5;2
+5;assignment_vis_START>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;235;633832;525854.2297872341;235;235;235;1.421276595744681;0.5221324496358376;1.5;1.5;2
+5;assignment_vis_START>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;202;633747;533532.3861386139;202;202;202;1.3391089108910892;0.5554839206397925;1.5;1.5;2
+5;assignment_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;183;633463;514545.05464480876;183;183;183;1.4371584699453552;0.49184180877512285;1.5;1.5;2
+5;assignment_vis_END>assignment_try_END>resource_vis_END>assignment_vis_END>assignment_sub_END;280;633852;276146.5071428571;280;280;280;1.3589285714285715;0.5242426815368101;1.5;1.5;2
+5;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;327;633918;264128.7981651376;327;327;327;1.353211009174312;0.5164595389171828;1.5;1.5;2
+5;assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_try_END>assignment_sub_END;189;632845;237601.8201058201;189;189;189;1.3465608465608465;0.5460217074939409;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;175;633768;251918.48571428572;350;175;175;1.4485714285714286;0.485639422415715;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;438;633768;258898.9406392694;800;438;438;1.4166666666666667;0.5044614078158914;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;362;633768;294469.5248618784;1074;362;362;1.408839779005525;0.5129668003360865;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;186;633768;313507.4946236559;372;186;186;1.4112903225806452;0.4974871467717921;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;181;633768;244760.60773480663;356;181;181;1.4530386740331491;0.4821873122050863;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;319;633768;288131.67398119124;854;319;319;1.365203761755486;0.5145791519616816;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;179;633768;315599.14525139664;358;179;179;1.3687150837988826;0.5255537714461891;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;187;633768;268276.26203208556;374;187;187;1.3716577540106951;0.520647787661754;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;195;633768;262592.57435897435;382;195;195;1.3871794871794871;0.5202990254322173;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;178;633768;314199.78651685396;178;178;178;1.3426966292134832;0.5346497117046466;1.5;1.5;2
+5;assignment_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;175;632929;338063.0685714286;175;175;175;1.3828571428571428;0.4845223470201398;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;172;633768;341221.66279069765;344;172;172;1.369186046511628;0.5061417297204366;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;313;633768;313176.8594249201;654;313;313;1.3498402555910542;0.49820991100697254;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;170;632674;306839.5588235294;170;170;170;1.3647058823529412;0.5008172923534318;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;169;633768;326752.81065088755;338;169;169;1.3372781065088757;0.5219876613723401;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;179;633768;327094.0167597765;348;179;179;1.329608938547486;0.5195777922186865;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;384;633838;302382.4609375;738;384;384;1.3606770833333333;0.542685094841152;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;371;633918;332429.14016172505;1292;371;371;1.3463611859838276;0.5192057020911799;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END;201;633843;349996.0298507463;402;201;201;1.2960199004975124;0.5437684062190355;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END;185;633747;317955.06486486486;370;185;185;1.318918918918919;0.5599096578126407;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;309;633843;279376.6116504854;484;309;309;1.4110032362459546;0.5058187043574055;1.5;1.5;2
+5;assignment_vis_END>assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;174;632929;352979.091954023;174;174;174;1.353448275862069;0.510088573485506;1.5;1.5;2
+5;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;173;632929;381930.5780346821;346;173;173;1.430635838150289;0.4617184160122963;1.5;1.5;2
+5;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;175;632929;377648.09714285715;348;175;175;1.4342857142857144;0.46109742727369846;1.5;1.5;2
+5;assignment_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;223;632929;372982.3542600897;396;223;223;1.4125560538116593;0.4724139802023896;1.5;1.5;2
+5;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;201;632738;329602.96019900497;201;201;201;1.407960199004975;0.4977311708221218;1.5;1.5;2
+5;assignment_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;178;632929;375775.90449438203;178;178;178;1.3623595505617978;0.5200923917744978;1.5;1.5;2
+5;resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;403;633843;237053.02977667493;753;403;403;1.4168734491315136;0.4898605257533084;1.5;1.5;2
+5;resource_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;236;633768;296272.66101694916;236;236;236;1.3834745762711864;0.5179565037495093;1.5;1.5;2
+5;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;335;633843;281860.20597014925;521;335;335;1.3925373134328358;0.503375858916641;1.5;1.5;2
+5;resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;338;633832;255814.46153846153;338;338;338;1.3816568047337279;0.5386164058115428;1.5;1.5;2
+5;resource_vis_END>assignment_try_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;167;633843;214797.04790419163;167;167;167;1.3982035928143712;0.4986092772024154;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;322;633843;281113.0807453416;852;322;322;1.3975155279503106;0.5149418877244397;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;463;633843;251492.93520518357;1071;463;463;1.3779697624190064;0.5281169922709059;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END;175;633843;243278.28;350;175;175;1.4028571428571428;0.4904172011651777;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;179;633843;239035.72067039105;354;179;179;1.410614525139665;0.4890361559335945;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END;176;633768;306776.1534090909;352;176;176;1.4034090909090908;0.5202084996584381;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;338;633768;282213.20118343196;959;338;338;1.3594674556213018;0.5212820993738722;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END;246;633768;266963.756097561;492;246;246;1.3617886178861789;0.5241156322335285;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END;199;633768;328294.1859296482;398;199;199;1.3592964824120604;0.5391739918360423;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_sub_END;209;633768;329753.94736842107;408;209;209;1.3660287081339713;0.5359606931077093;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>resource_vis_END>assignment_try_END>assignment_sub_END;250;633768;267220.984;496;250;250;1.362;0.5225401350815881;1.5;1.5;2
+5;resource_vis_END>resource_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;207;633086;317837.309178744;207;207;207;1.4106280193236715;0.48570146629049565;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;201;633086;332202.7611940298;402;201;201;1.4676616915422886;0.4557400629472072;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;203;633086;329000.8965517241;404;203;203;1.4704433497536946;0.45501963888920466;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;250;633086;334106.176;646;250;250;1.456;0.45264062360392066;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;195;632322;311097.4564102564;390;195;195;1.476923076923077;0.4463260899705751;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;196;632322;309514.6785714286;391;196;196;1.4795918367346939;0.44674530888409164;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;267;632322;295147.09363295883;462;267;267;1.4662921348314606;0.45963629464932293;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;189;633086;328724.91005291004;189;189;189;1.433862433862434;0.4694002535109802;1.5;1.5;2
+5;resource_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;173;632165;303782.8843930636;173;173;173;1.4624277456647399;0.48826806130528205;1.5;1.5;2
+5;forum_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;181;633086;497486.8287292818;181;181;181;1.4475138121546962;0.48161407564949765;1.5;1.5;2
+5;forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;207;633093;489079.7922705314;375;207;207;1.463768115942029;0.48510964064270184;1.5;1.5;2
+5;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END;168;632890;493530.45238095237;336;168;168;1.4732142857142858;0.46833546683472;1.5;1.5;2
+5;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_sub_END;191;632890;490466.1518324607;359;191;191;1.4764397905759161;0.45965650251368556;1.5;1.5;2
+5;forum_vis_START>forum_vis_START>forum_vis_START>assignment_try_END>assignment_sub_END;168;632890;493530.45238095237;336;168;168;1.4732142857142858;0.46833546683472;1.5;1.5;2
+5;forum_vis_START>forum_vis_START>forum_vis_END>assignment_vis_END>assignment_sub_END;169;633086;485313.07692307694;169;169;169;1.4644970414201184;0.46153846153846156;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END>assignment_sub_END;176;633086;375061.07386363635;343;176;176;1.4431818181818181;0.4624890311089593;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;234;632929;363429.36324786325;4022;234;234;1.4807692307692308;0.44026650892103675;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;288;633569;364604.0520833333;3412;288;288;1.4409722222222223;0.4628969820061967;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;291;633569;362688.78694158077;3424;291;291;1.443298969072165;0.46168519275132713;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;240;632738;360653.32916666666;2488;240;240;1.45625;0.46325492498516685;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END;167;633086;367895.2395209581;334;167;167;1.437125748502994;0.4630297055140657;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END>assignment_sub_END;167;633086;367895.2395209581;334;167;167;1.437125748502994;0.4630297055140657;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;344;633726;362105.0901162791;3271;344;344;1.447674418604651;0.4630930978786749;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;284;633086;356364.161971831;1808;284;284;1.4577464788732395;0.4585002350438449;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END;194;633086;375581.28350515466;388;194;194;1.4329896907216495;0.45881614941120547;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;285;633086;355116.8245614035;1813;285;285;1.4596491228070176;0.4588180041789281;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;348;633086;344127.4683908046;1635;348;348;1.4324712643678161;0.4684977362323973;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;239;633086;366851.2092050209;433;239;239;1.4079497907949792;0.46279610279534666;1.5;1.5;2
+5;forum_vis_END>forum_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;219;633569;345394.8904109589;219;219;219;1.41324200913242;0.480594042642507;1.5;1.5;2
+5;forum_vis_END>forum_participation_END>forum_vis_END>assignment_vis_END>assignment_sub_END;169;632823;375912.9881656805;169;169;169;1.4378698224852071;0.4667366006448561;1.5;1.5;2
+5;forum_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;176;633086;344938.0227272727;176;176;176;1.4318181818181819;0.4515485620573981;1.5;1.5;2
+5;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;179;632823;348378.08379888267;179;179;179;1.3715083798882681;0.49460398832445907;1.5;1.5;2
+5;forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;176;633086;371346.2784090909;176;176;176;1.34375;0.5179802809263799;1.5;1.5;2
+5;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;228;632059;308038.0307017544;228;228;228;1.4210526315789473;0.48582981088775246;1.5;1.5;2
+5;forum_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;168;632929;335046.8333333333;168;168;168;1.4285714285714286;0.49332585787999883;1.5;1.5;2
+5;forum_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;180;633463;353417.1388888889;180;180;180;1.4083333333333334;0.5054866563783226;1.5;1.5;2
+6;resource_vis_START>resource_vis_START>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;167;633747;511836.4610778443;167;167;167;1.3802395209580838;0.5493961110732581;1.5;1.5;2
+6;resource_vis_START>resource_vis_START>resource_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;182;633838;496726.0879120879;182;182;182;1.3681318681318682;0.5652709946847175;1.5;1.5;2
+6;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;178;632738;507978.37078651687;356;178;178;1.4719101123595506;0.48630714157038674;1.5;1.5;2
+6;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;178;632738;507978.37078651687;356;178;178;1.4719101123595506;0.48630714157038674;1.5;1.5;2
+6;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;202;632738;505995.40594059404;380;202;202;1.4752475247524752;0.4905892366564883;1.5;1.5;2
+6;resource_vis_START>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;188;632738;502492.28723404254;188;188;188;1.4547872340425532;0.4925416537631856;1.5;1.5;2
+6;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;169;633822;534724.7337278107;169;169;169;1.3905325443786982;0.5681258457535007;1.5;1.5;2
+6;assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;177;633822;539951.6497175142;177;177;177;1.3728813559322033;0.518903074394759;1.5;1.5;2
+6;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;179;633822;536205.8268156424;179;179;179;1.3519553072625698;0.5549917280609296;1.5;1.5;2
+6;assignment_vis_START>assignment_vis_START>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;167;633907;540703.9101796407;167;167;167;1.3682634730538923;0.5655884898071416;1.5;1.5;2
+6;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;175;633768;251918.48571428572;175;175;175;1.4485714285714286;0.485639422415715;1.5;1.5;2
+6;assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;186;633768;313507.4946236559;186;186;186;1.4112903225806452;0.4974871467717921;1.5;1.5;2
+6;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;179;633768;315599.14525139664;179;179;179;1.3687150837988826;0.5255537714461891;1.5;1.5;2
+6;assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;187;633768;268276.26203208556;187;187;187;1.3716577540106951;0.520647787661754;1.5;1.5;2
+6;assignment_vis_END>assignment_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;172;633768;341221.66279069765;172;172;172;1.369186046511628;0.5061417297204366;1.5;1.5;2
+6;assignment_vis_END>assignment_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;169;633768;326752.81065088755;169;169;169;1.3372781065088757;0.5219876613723401;1.5;1.5;2
+6;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;201;633843;349996.0298507463;201;201;201;1.2960199004975124;0.5437684062190355;1.5;1.5;2
+6;assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;185;633747;317955.06486486486;185;185;185;1.318918918918919;0.5599096578126407;1.5;1.5;2
+6;assignment_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;173;632929;381930.5780346821;173;173;173;1.430635838150289;0.4617184160122963;1.5;1.5;2
+6;resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_vis_END>assignment_sub_END;175;633843;243278.28;175;175;175;1.4028571428571428;0.4904172011651777;1.5;1.5;2
+6;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;176;633768;306776.1534090909;176;176;176;1.4034090909090908;0.5202084996584381;1.5;1.5;2
+6;resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;246;633768;266963.756097561;246;246;246;1.3617886178861789;0.5241156322335285;1.5;1.5;2
+6;resource_vis_END>resource_vis_END>resource_vis_END>resource_vis_END>assignment_vis_END>assignment_sub_END;199;633768;328294.1859296482;199;199;199;1.3592964824120604;0.5391739918360423;1.5;1.5;2
+6;resource_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;201;633086;332202.7611940298;201;201;201;1.4676616915422886;0.4557400629472072;1.5;1.5;2
+6;resource_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;195;632322;311097.4564102564;195;195;195;1.476923076923077;0.4463260899705751;1.5;1.5;2
+6;forum_vis_START>forum_vis_START>forum_vis_START>assignment_vis_END>assignment_try_END>assignment_sub_END;168;632890;493530.45238095237;168;168;168;1.4732142857142858;0.46833546683472;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;212;632583;361979.49528301886;2296;212;212;1.4882075471698113;0.436598869482922;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;232;632929;366500.1896551724;2004;232;232;1.478448275862069;0.44083864085370483;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;234;632929;363429.36324786325;2011;234;234;1.4807692307692308;0.44026650892103675;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;199;632583;360909.4120603015;1532;199;199;1.4899497487437185;0.4436982975854647;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;288;633569;364604.0520833333;1706;288;288;1.4409722222222223;0.4628969820061967;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;238;632738;361486.90336134454;1240;238;238;1.453781512605042;0.46384740615514763;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;240;632738;360653.32916666666;1244;240;240;1.45625;0.46325492498516685;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>forum_participation_END>assignment_vis_END>assignment_sub_END;167;633086;367895.2395209581;167;167;167;1.437125748502994;0.4630297055140657;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;284;633086;356364.161971831;904;284;284;1.4577464788732395;0.4585002350438449;1.5;1.5;2
+6;forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_vis_END>assignment_sub_END;194;633086;375581.28350515466;194;194;194;1.4329896907216495;0.45881614941120547;1.5;1.5;2
+7;resource_vis_START>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;178;632738;507978.37078651687;178;178;178;1.4719101123595506;0.48630714157038674;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END;179;632043;367410.9776536313;714;179;179;1.4776536312849162;0.4267107967626532;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;210;632583;365358.21904761903;1144;210;210;1.4857142857142858;0.43724421289345555;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;212;632583;361979.49528301886;1148;212;212;1.4882075471698113;0.436598869482922;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END;185;632583;361143.98918918916;738;185;185;1.5;0.43924342067775546;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;232;632929;366500.1896551724;1002;232;232;1.478448275862069;0.44083864085370483;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;198;632583;362727.77777777775;764;198;198;1.4873737373737375;0.4433286318917341;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;199;632583;360909.4120603015;766;199;199;1.4899497487437185;0.4436982975854647;1.5;1.5;2
+7;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;238;632738;361486.90336134454;620;238;238;1.453781512605042;0.46384740615514763;1.5;1.5;2
+8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END;178;632043;369470.1797752809;356;178;178;1.4747191011235956;0.4260993488768925;1.5;1.5;2
+8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_sub_END;179;632043;367410.9776536313;357;179;179;1.4776536312849162;0.4267107967626532;1.5;1.5;2
+8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;210;632583;365358.21904761903;572;210;210;1.4857142857142858;0.43724421289345555;1.5;1.5;2
+8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END;184;632583;363101.98369565216;368;184;184;1.497282608695652;0.4388798540070697;1.5;1.5;2
+8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_try_END>assignment_sub_END;185;632583;361143.98918918916;369;185;185;1.5;0.43924342067775546;1.5;1.5;2
+8;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;198;632583;362727.77777777775;382;198;198;1.4873737373737375;0.4433286318917341;1.5;1.5;2
+9;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_sub_END;178;632043;369470.1797752809;178;178;178;1.4747191011235956;0.4260993488768925;1.5;1.5;2
+9;forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>forum_vis_END>assignment_vis_END>assignment_try_END>assignment_sub_END;184;632583;363101.98369565216;184;184;184;1.497282608695652;0.4388798540070697;1.5;1.5;2

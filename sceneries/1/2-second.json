@@ -216,7 +216,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573953806
+        "time": 1573955038
       },
       {
         "event": "forum_participation_END",
@@ -224,7 +224,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573955150
+        "time": 1573955178
       },
       {
         "event": "forum_participation_END",
@@ -232,7 +232,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573955204
+        "time": 1573955226
       },
       {
         "event": "forum_participation_END",
@@ -1931,7 +1931,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574188842
+        "time": 1574188892
       },
       {
         "event": "forum_participation_END",
@@ -2005,10 +2005,6 @@
         "time": 1573829992
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573829992
-      },
-      {
         "event": "assignment_vis_START",
         "time": 1573830006
       },
@@ -2038,6 +2034,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574076475
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574076475
       },
       {
@@ -2107,11 +2107,11 @@
     "key": "14297",
     "events": [
       {
-        "event": "forum_vis_START",
+        "event": "resource_vis_START",
         "time": 1573598964
       },
       {
-        "event": "resource_vis_START",
+        "event": "forum_vis_START",
         "time": 1573598964
       },
       {
@@ -3541,10 +3541,14 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573753665
+        "time": 1573753699
       },
       {
         "event": "forum_participation_START",
+        "time": 1573754832
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573754832
       },
       {
@@ -3977,14 +3981,10 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574049354
+        "time": 1574049241
       },
       {
         "event": "forum_participation_END",
-        "time": 1574052151
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574052151
       },
       {
@@ -7657,7 +7657,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573936346
+        "time": 1573936328
       },
       {
         "event": "forum_participation_END",
@@ -7884,7 +7884,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573719952
+        "time": 1573719931
       },
       {
         "event": "forum_participation_START",
@@ -9931,7 +9931,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573950168
+        "time": 1573950143
       },
       {
         "event": "assignment_vis_END",
@@ -10075,7 +10075,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574079931
+        "time": 1574079910
       },
       {
         "event": "forum_participation_END",
@@ -10744,10 +10744,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574032984
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574032984
       },
       {
@@ -11629,10 +11625,14 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574124873
+        "time": 1574124929
       },
       {
         "event": "forum_participation_END",
+        "time": 1574125048
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574125048
       },
       {
@@ -12775,7 +12775,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574076908
+        "time": 1574077031
       },
       {
         "event": "forum_participation_END",
@@ -12783,7 +12783,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574078012
+        "time": 1574078000
       },
       {
         "event": "assignment_vis_END",
@@ -12931,7 +12931,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574210247
+        "time": 1574210257
       },
       {
         "event": "forum_participation_END",
@@ -13951,7 +13951,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574079830
+        "time": 1574079817
       },
       {
         "event": "forum_participation_END",
@@ -14158,6 +14158,14 @@
       {
         "event": "forum_participation_END",
         "time": 1574008435
+      },
+      {
+        "event": "forum_vis_END",
+        "time": 1574008435
+      },
+      {
+        "event": "forum_participation_END",
+        "time": 1574008551
       },
       {
         "event": "forum_vis_END",
@@ -14533,11 +14541,11 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574037962
+        "time": 1574037839
       },
       {
         "event": "forum_vis_END",
-        "time": 1574038012
+        "time": 1574037962
       },
       {
         "event": "resource_vis_END",
@@ -14561,7 +14569,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574163423
+        "time": 1574081690
       },
       {
         "event": "forum_participation_END",
@@ -14569,10 +14577,14 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574165665
+        "time": 1574165411
       },
       {
         "event": "forum_participation_END",
+        "time": 1574173452
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574173452
       },
       {
@@ -15285,7 +15297,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573871304
+        "time": 1573871226
       },
       {
         "event": "forum_vis_END",
@@ -15944,7 +15956,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574101247
+        "time": 1574101263
       },
       {
         "event": "assignment_vis_END",
@@ -16127,7 +16139,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574121587
+        "time": 1574121603
       },
       {
         "event": "forum_participation_END",
@@ -17725,7 +17737,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573998590
+        "time": 1573998565
       },
       {
         "event": "forum_participation_END",
@@ -17749,7 +17761,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574182302
+        "time": 1574182237
       },
       {
         "event": "forum_participation_END",
@@ -17941,6 +17953,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1573919311
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1573919311
       },
       {
@@ -18255,14 +18271,10 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574206482
+        "time": 1574206467
       },
       {
         "event": "forum_participation_END",
-        "time": 1574208762
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574208762
       },
       {
@@ -19087,14 +19099,10 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574165219
+        "time": 1574165205
       },
       {
         "event": "forum_participation_END",
-        "time": 1574165660
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574165660
       },
       {
@@ -21180,6 +21188,10 @@
         "time": 1573913652
       },
       {
+        "event": "forum_vis_END",
+        "time": 1573913652
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574155170
       },
@@ -22873,10 +22885,6 @@
         "time": 1573863120
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573863120
-      },
-      {
         "event": "resource_vis_START",
         "time": 1573866069
       },
@@ -22906,7 +22914,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574098599
+        "time": 1574098619
       },
       {
         "event": "forum_participation_END",
@@ -23345,11 +23353,11 @@
     "key": "97620",
     "events": [
       {
-        "event": "assignment_vis_END",
+        "event": "resource_vis_END",
         "time": 1574190811
       },
       {
-        "event": "resource_vis_END",
+        "event": "assignment_vis_END",
         "time": 1574190811
       },
       {
@@ -23729,7 +23737,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573744343
+        "time": 1573744376
       },
       {
         "event": "forum_participation_START",
@@ -23745,7 +23753,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573747936
+        "time": 1573747923
       },
       {
         "event": "forum_participation_START",
@@ -23773,7 +23781,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573754998
+        "time": 1573754980
       },
       {
         "event": "forum_participation_START",
@@ -23797,7 +23805,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573755118
+        "time": 1573755106
       },
       {
         "event": "assignment_vis_START",
@@ -25482,7 +25490,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574088917
+        "time": 1574088951
       },
       {
         "event": "forum_participation_END",
@@ -25553,10 +25561,6 @@
       },
       {
         "event": "forum_participation_START",
-        "time": 1573761560
-      },
-      {
-        "event": "forum_vis_START",
         "time": 1573761560
       },
       {
@@ -25904,7 +25908,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573875760
+        "time": 1573875371
       },
       {
         "event": "resource_vis_END",
@@ -26142,7 +26146,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574098264
+        "time": 1574098286
       },
       {
         "event": "forum_participation_END",
@@ -27733,6 +27737,10 @@
         "time": 1574078176
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574078176
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574177614
       },
@@ -27944,7 +27952,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573602246
+        "time": 1573602297
       },
       {
         "event": "assignment_vis_START",
@@ -27972,7 +27980,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574211186
+        "time": 1574211220
       },
       {
         "event": "assignment_vis_END",
@@ -28327,7 +28335,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574106931
+        "time": 1574106981
       },
       {
         "event": "message_read_END",
@@ -29413,6 +29421,10 @@
         "time": 1574003846
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574003846
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574004016
       },
@@ -30101,6 +30113,10 @@
         "time": 1573632883
       },
       {
+        "event": "forum_participation_START",
+        "time": 1573632883
+      },
+      {
         "event": "assignment_vis_START",
         "time": 1573711038
       },
@@ -30126,7 +30142,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573713779
+        "time": 1573805595
       },
       {
         "event": "assignment_vis_START",
@@ -30425,7 +30441,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574211144
+        "time": 1574211150
       },
       {
         "event": "forum_participation_END",
@@ -30445,10 +30461,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574212457
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574212457
       },
       {
@@ -32149,7 +32161,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574122355
+        "time": 1574122346
       },
       {
         "event": "forum_participation_END",
@@ -33057,10 +33069,6 @@
         "time": 1573862071
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573862071
-      },
-      {
         "event": "resource_vis_END",
         "time": 1573929104
       },
@@ -33136,10 +33144,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574207551
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574207551
       },
       {
@@ -33413,6 +33417,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574083234
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574083234
       },
       {
@@ -33886,6 +33894,10 @@
         "time": 1573653703
       },
       {
+        "event": "forum_vis_START",
+        "time": 1573653703
+      },
+      {
         "event": "resource_vis_START",
         "time": 1573653738
       },
@@ -33915,7 +33927,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574080390
+        "time": 1574080438
       },
       {
         "event": "assignment_vis_END",
@@ -34726,7 +34738,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574098394
+        "time": 1574098378
       },
       {
         "event": "forum_participation_END",
@@ -35350,7 +35362,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574077341
+        "time": 1574077372
       },
       {
         "event": "forum_participation_END",
@@ -35366,7 +35378,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574080143
+        "time": 1574080102
       },
       {
         "event": "forum_participation_END",
@@ -37568,7 +37580,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574180334
+        "time": 1574180291
       },
       {
         "event": "resource_vis_END",
@@ -37592,7 +37604,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574182331
+        "time": 1574182352
       },
       {
         "event": "forum_participation_END",
@@ -39057,7 +39069,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573762290
+        "time": 1573762296
       },
       {
         "event": "forum_participation_START",
@@ -39074,14 +39086,6 @@
       {
         "event": "forum_vis_START",
         "time": 1573853664
-      },
-      {
-        "event": "forum_participation_START",
-        "time": 1573853664
-      },
-      {
-        "event": "forum_vis_START",
-        "time": 1573853683
       },
       {
         "event": "resource_vis_START",
@@ -39121,10 +39125,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574106616
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574106616
       },
       {
@@ -39524,6 +39524,10 @@
         "time": 1574023846
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574023846
+      },
+      {
         "event": "resource_vis_END",
         "time": 1574104007
       },
@@ -39623,6 +39627,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574201407
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574201407
       },
       {
@@ -39973,6 +39981,10 @@
       },
       {
         "event": "forum_participation_START",
+        "time": 1573858044
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573858044
       },
       {
@@ -40499,6 +40511,10 @@
         "time": 1574194068
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574194068
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574194119
       },
@@ -40982,7 +40998,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574043379
+        "time": 1574043420
       },
       {
         "event": "forum_participation_END",
@@ -40990,7 +41006,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574044144
+        "time": 1574044175
       },
       {
         "event": "forum_participation_END",
@@ -41561,7 +41577,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574030768
+        "time": 1574030747
       },
       {
         "event": "resource_vis_END",
@@ -41573,6 +41589,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574030930
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574030930
       },
       {
@@ -42006,7 +42026,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573839670
+        "time": 1573842741
       },
       {
         "event": "message_read_START",
@@ -42089,6 +42109,14 @@
       {
         "event": "forum_vis_END",
         "time": 1573989930
+      },
+      {
+        "event": "forum_participation_END",
+        "time": 1573989930
+      },
+      {
+        "event": "forum_vis_END",
+        "time": 1573989961
       },
       {
         "event": "forum_participation_END",
@@ -42251,6 +42279,10 @@
         "time": 1573598787
       },
       {
+        "event": "forum_vis_START",
+        "time": 1573598787
+      },
+      {
         "event": "resource_vis_START",
         "time": 1573598828
       },
@@ -42303,6 +42335,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574078752
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574078752
       },
       {
@@ -42432,7 +42468,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573926835
+        "time": 1573926806
       },
       {
         "event": "forum_participation_END",
@@ -42799,6 +42835,10 @@
         "time": 1574202434
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574202434
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574202454
       },
@@ -42924,10 +42964,6 @@
         "time": 1573616747
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573616747
-      },
-      {
         "event": "message_read_START",
         "time": 1573616934
       },
@@ -42941,7 +42977,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573617047
+        "time": 1573649858
       },
       {
         "event": "message_read_END",
@@ -43286,7 +43322,7 @@
       },
       {
         "event": "forum_participation_START",
-        "time": 1573675658
+        "time": 1573675433
       },
       {
         "event": "forum_vis_START",
@@ -43318,7 +43354,7 @@
       },
       {
         "event": "forum_participation_START",
-        "time": 1573676816
+        "time": 1573676677
       },
       {
         "event": "forum_vis_START",
@@ -43330,7 +43366,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573679811
+        "time": 1573679914
       },
       {
         "event": "forum_participation_START",
@@ -43338,14 +43374,10 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573679914
-      },
-      {
-        "event": "forum_participation_START",
         "time": 1573679954
       },
       {
-        "event": "forum_vis_START",
+        "event": "forum_participation_START",
         "time": 1573679954
       },
       {
@@ -43374,7 +43406,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574105784
+        "time": 1574105569
       },
       {
         "event": "forum_participation_END",
@@ -43805,7 +43837,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574131712
+        "time": 1574131701
       },
       {
         "event": "assignment_vis_END",
@@ -43977,7 +44009,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573741099
+        "time": 1573680547
       },
       {
         "event": "forum_participation_START",
@@ -44125,7 +44157,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574124573
+        "time": 1574124592
       },
       {
         "event": "forum_participation_END",
@@ -44222,7 +44254,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574197154
+        "time": 1574197143
       },
       {
         "event": "resource_vis_END",
@@ -44384,7 +44416,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573674634
+        "time": 1573674662
       },
       {
         "event": "forum_participation_START",
@@ -44392,7 +44424,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573675527
+        "time": 1573675547
       },
       {
         "event": "assignment_vis_START",
@@ -45078,14 +45110,10 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574167117
+        "time": 1574167130
       },
       {
         "event": "forum_participation_END",
-        "time": 1574167173
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574167173
       },
       {
@@ -45157,10 +45185,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574105215
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574105215
       },
       {
@@ -45321,6 +45345,14 @@
       },
       {
         "event": "forum_vis_START",
+        "time": 1573871984
+      },
+      {
+        "event": "forum_participation_START",
+        "time": 1573872032
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573872033
       },
       {
@@ -45329,7 +45361,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573872456
+        "time": 1573872105
       },
       {
         "event": "forum_vis_END",
@@ -45703,7 +45735,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574212933
+        "time": 1574212912
       },
       {
         "event": "forum_participation_END",
@@ -46044,7 +46076,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574110319
+        "time": 1574108201
       },
       {
         "event": "assignment_vis_END",
@@ -46716,7 +46748,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573611340
+        "time": 1573611220
       },
       {
         "event": "message_read_START",
@@ -47143,7 +47175,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573916891
+        "time": 1573917163
       },
       {
         "event": "forum_participation_END",
@@ -47199,7 +47231,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574165080
+        "time": 1574165389
       },
       {
         "event": "forum_participation_END",
@@ -47207,7 +47239,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574165990
+        "time": 1574165998
       },
       {
         "event": "resource_vis_END",
@@ -47353,7 +47385,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574171074
+        "time": 1574170622
       },
       {
         "event": "forum_participation_END",
@@ -47361,7 +47393,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574171108
+        "time": 1574171074
       },
       {
         "event": "forum_participation_END",
@@ -47510,7 +47542,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574097899
+        "time": 1574097945
       },
       {
         "event": "assignment_vis_END",
@@ -48117,6 +48149,10 @@
         "time": 1573741312
       },
       {
+        "event": "forum_vis_START",
+        "time": 1573741312
+      },
+      {
         "event": "resource_vis_START",
         "time": 1573741383
       },
@@ -48419,7 +48455,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573988360
+        "time": 1573988347
       },
       {
         "event": "assignment_vis_END",
@@ -48568,7 +48604,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574049754
+        "time": 1574050119
       },
       {
         "event": "forum_participation_END",
@@ -48611,6 +48647,10 @@
       },
       {
         "event": "forum_participation_START",
+        "time": 1573660306
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573660306
       },
       {
@@ -48799,6 +48839,10 @@
       },
       {
         "event": "forum_participation_START",
+        "time": 1573598780
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573598780
       },
       {
@@ -49280,7 +49324,7 @@
       },
       {
         "event": "forum_participation_START",
-        "time": 1573683883
+        "time": 1573683956
       },
       {
         "event": "forum_vis_START",
@@ -51361,7 +51405,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573774526
+        "time": 1573774666
       },
       {
         "event": "forum_participation_START",
@@ -51369,7 +51413,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573774826
+        "time": 1573774805
       },
       {
         "event": "resource_vis_START",
@@ -51413,7 +51457,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574031439
+        "time": 1574031893
       },
       {
         "event": "forum_participation_END",
@@ -51421,7 +51465,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574031893
+        "time": 1574097103
       },
       {
         "event": "forum_participation_END",
@@ -51449,10 +51493,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574186728
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574186728
       },
       {
@@ -51647,7 +51687,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574174182
+        "time": 1574174156
       },
       {
         "event": "assignment_vis_END",
@@ -53203,7 +53243,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573931886
+        "time": 1573931981
       },
       {
         "event": "assignment_vis_END",
@@ -54025,7 +54065,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573601038
+        "time": 1573601026
       },
       {
         "event": "assignment_vis_START",
@@ -54799,7 +54839,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574164993
+        "time": 1574165014
       },
       {
         "event": "forum_participation_END",
@@ -56363,7 +56403,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573730064
+        "time": 1573730103
       },
       {
         "event": "resource_vis_START",
@@ -56379,7 +56419,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573942693
+        "time": 1573942629
       },
       {
         "event": "assignment_vis_END",
@@ -57291,6 +57331,10 @@
         "time": 1573590911
       },
       {
+        "event": "forum_vis_START",
+        "time": 1573590911
+      },
+      {
         "event": "resource_vis_START",
         "time": 1573590942
       },
@@ -57324,7 +57368,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573597219
+        "time": 1573591163
       },
       {
         "event": "assignment_vis_START",
@@ -57340,7 +57384,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573686287
+        "time": 1573686454
       },
       {
         "event": "forum_participation_START",
@@ -57352,6 +57396,10 @@
       },
       {
         "event": "forum_participation_START",
+        "time": 1573767900
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573767900
       },
       {
@@ -57371,11 +57419,11 @@
         "time": 1573945330
       },
       {
-        "event": "forum_vis_END",
+        "event": "forum_participation_END",
         "time": 1573945471
       },
       {
-        "event": "forum_participation_END",
+        "event": "forum_vis_END",
         "time": 1573945471
       },
       {
@@ -57819,10 +57867,14 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574192078
+        "time": 1574192090
       },
       {
         "event": "forum_participation_END",
+        "time": 1574192184
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574192184
       },
       {
@@ -57966,7 +58018,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573948853
+        "time": 1573948932
       },
       {
         "event": "forum_participation_END",
@@ -57994,14 +58046,10 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574024352
+        "time": 1574024393
       },
       {
         "event": "forum_participation_END",
-        "time": 1574025241
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574025241
       },
       {
@@ -58759,7 +58807,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573611115
+        "time": 1573611107
       },
       {
         "event": "assignment_vis_START",
@@ -58799,7 +58847,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574093691
+        "time": 1574093699
       },
       {
         "event": "forum_participation_END",
@@ -59049,6 +59097,10 @@
         "time": 1573782554
       },
       {
+        "event": "forum_vis_START",
+        "time": 1573782554
+      },
+      {
         "event": "resource_vis_START",
         "time": 1573782624
       },
@@ -59058,6 +59110,10 @@
       },
       {
         "event": "forum_participation_START",
+        "time": 1573783159
+      },
+      {
+        "event": "forum_vis_START",
         "time": 1573783159
       },
       {
@@ -59442,6 +59498,14 @@
       },
       {
         "event": "forum_vis_END",
+        "time": 1574185282
+      },
+      {
+        "event": "forum_participation_END",
+        "time": 1574185431
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574185432
       },
       {
@@ -59450,7 +59514,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574185731
+        "time": 1574185583
       },
       {
         "event": "assignment_vis_END",
@@ -59923,7 +59987,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574116817
+        "time": 1574116754
       },
       {
         "event": "forum_participation_END",
@@ -60515,7 +60579,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573978194
+        "time": 1573978143
       },
       {
         "event": "forum_participation_END",
@@ -61381,14 +61445,10 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573664675
-      },
-      {
-        "event": "forum_participation_START",
         "time": 1573664848
       },
       {
-        "event": "forum_vis_START",
+        "event": "forum_participation_START",
         "time": 1573664848
       },
       {
@@ -61441,6 +61501,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574017381
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574017381
       },
       {
@@ -61578,7 +61642,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574101434
+        "time": 1574101420
       },
       {
         "event": "forum_participation_END",
@@ -61602,6 +61666,10 @@
       },
       {
         "event": "forum_vis_END",
+        "time": 1574103534
+      },
+      {
+        "event": "forum_participation_END",
         "time": 1574104164
       },
       {
@@ -61752,7 +61820,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574191226
+        "time": 1574191159
       },
       {
         "event": "forum_participation_END",
@@ -61910,14 +61978,6 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573774452
-      },
-      {
-        "event": "forum_participation_START",
-        "time": 1573774570
-      },
-      {
-        "event": "forum_vis_START",
         "time": 1573774571
       },
       {
@@ -62040,6 +62100,10 @@
         "time": 1574126191
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574126191
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574137618
       },
@@ -62155,7 +62219,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574103616
+        "time": 1574103639
       },
       {
         "event": "forum_participation_END",
@@ -63016,7 +63080,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574212434
+        "time": 1574212862
       },
       {
         "event": "assignment_vis_END",
@@ -63699,7 +63763,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574112822
+        "time": 1574112843
       },
       {
         "event": "forum_participation_END",
@@ -63883,7 +63947,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573593015
+        "time": 1573592992
       },
       {
         "event": "resource_vis_START",
@@ -63938,6 +64002,10 @@
         "time": 1573739231
       },
       {
+        "event": "forum_vis_START",
+        "time": 1573739231
+      },
+      {
         "event": "resource_vis_START",
         "time": 1573745825
       },
@@ -63979,7 +64047,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573926019
+        "time": 1573925883
       },
       {
         "event": "forum_participation_END",
@@ -63987,7 +64055,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573926157
+        "time": 1573926019
       },
       {
         "event": "forum_participation_END",
@@ -63995,7 +64063,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574088118
+        "time": 1573926157
       },
       {
         "event": "forum_participation_END",
@@ -64231,7 +64299,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574196311
+        "time": 1574196270
       },
       {
         "event": "forum_participation_END",
@@ -64239,7 +64307,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574196489
+        "time": 1574196543
       },
       {
         "event": "assignment_vis_END",
@@ -64505,10 +64573,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574030481
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574030481
       },
       {
@@ -65351,6 +65415,10 @@
         "time": 1574202199
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574202199
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574202225
       },
@@ -66001,7 +66069,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574120658
+        "time": 1574120662
       },
       {
         "event": "forum_participation_END",
@@ -66405,7 +66473,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574212529
+        "time": 1574212453
       },
       {
         "event": "resource_vis_END",
@@ -66421,7 +66489,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574216661
+        "time": 1574216799
       },
       {
         "event": "assignment_vis_END",
@@ -66452,10 +66520,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1574098292
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1574098292
       },
       {
@@ -67216,7 +67280,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573869614
+        "time": 1573869640
       },
       {
         "event": "forum_participation_START",
@@ -67264,7 +67328,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574095225
+        "time": 1574095239
       },
       {
         "event": "assignment_vis_END",
@@ -67405,7 +67469,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573660699
+        "time": 1573660631
       },
       {
         "event": "assignment_vis_START",
@@ -67480,10 +67544,6 @@
         "time": 1573832515
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573832515
-      },
-      {
         "event": "forum_vis_END",
         "time": 1573907188
       },
@@ -67538,6 +67598,14 @@
       {
         "event": "forum_participation_END",
         "time": 1574173580
+      },
+      {
+        "event": "forum_vis_END",
+        "time": 1574173580
+      },
+      {
+        "event": "forum_participation_END",
+        "time": 1574173665
       },
       {
         "event": "forum_vis_END",
@@ -68362,6 +68430,10 @@
         "time": 1574134570
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574134570
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574134612
       },
@@ -69167,10 +69239,6 @@
         "time": 1573604617
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573604617
-      },
-      {
         "event": "resource_vis_START",
         "time": 1573604650
       },
@@ -69359,7 +69427,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574134113
+        "time": 1574130478
       },
       {
         "event": "forum_participation_END",
@@ -69367,7 +69435,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574134400
+        "time": 1574134156
       },
       {
         "event": "forum_participation_END",
@@ -69783,10 +69851,6 @@
         "time": 1573839557
       },
       {
-        "event": "forum_vis_START",
-        "time": 1573839557
-      },
-      {
         "event": "resource_vis_END",
         "time": 1573925186
       },
@@ -69800,7 +69864,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574189869
+        "time": 1574189837
       },
       {
         "event": "forum_participation_END",
@@ -69812,6 +69876,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574199797
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574199797
       },
       {
@@ -69951,7 +70019,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573649866
+        "time": 1573649887
       },
       {
         "event": "forum_vis_END",
@@ -69971,7 +70039,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574178771
+        "time": 1574178835
       },
       {
         "event": "forum_participation_END",
@@ -69979,7 +70047,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574179582
+        "time": 1574179627
       },
       {
         "event": "forum_participation_END",
@@ -70065,7 +70133,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574155994
+        "time": 1574155946
       },
       {
         "event": "forum_participation_END",
@@ -71349,6 +71417,10 @@
         "time": 1574092964
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574092964
+      },
+      {
         "event": "assignment_vis_END",
         "time": 1574097516
       },
@@ -71416,6 +71488,10 @@
       },
       {
         "event": "forum_participation_END",
+        "time": 1574077848
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574077848
       },
       {
@@ -75590,7 +75666,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1573998712
+        "time": 1574001844
       },
       {
         "event": "forum_participation_END",
@@ -75598,7 +75674,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574002537
+        "time": 1574109892
       },
       {
         "event": "forum_participation_END",
@@ -75838,10 +75914,14 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574021693
+        "time": 1574021637
       },
       {
         "event": "forum_participation_END",
+        "time": 1574021693
+      },
+      {
+        "event": "forum_vis_END",
         "time": 1574021693
       },
       {
@@ -77205,7 +77285,7 @@
       },
       {
         "event": "forum_vis_START",
-        "time": 1573865710
+        "time": 1573865664
       },
       {
         "event": "message_read_START",
@@ -77221,10 +77301,6 @@
       },
       {
         "event": "forum_participation_END",
-        "time": 1573951200
-      },
-      {
-        "event": "forum_vis_END",
         "time": 1573951200
       },
       {
@@ -77880,6 +77956,10 @@
         "time": 1574020262
       },
       {
+        "event": "forum_vis_END",
+        "time": 1574020262
+      },
+      {
         "event": "message_read_END",
         "time": 1574020302
       },
@@ -77893,7 +77973,7 @@
       },
       {
         "event": "forum_vis_END",
-        "time": 1574020544
+        "time": 1574020588
       },
       {
         "event": "resource_vis_END",

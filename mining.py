@@ -1,5 +1,3 @@
-import sys
-
 from gsppy.gsp import GSP
 from prefixspan import PrefixSpan
 import pandas as pd
@@ -10,14 +8,18 @@ import statistics
 import datetime
 
 sceneries_names = [
-    "1-first",
-    "2-second",
-    "3-third",
-    "4-fourth",
-    "5-fifth",
-    "6-sixth",
-    "7-seventh",
-    "8-eighth",
+    # "1-first",
+    # "2-second",
+    # "3-third",
+    # "4-fourth",
+    # "5-fifth",
+    # "6-sixth",
+    # "7-seventh",
+    # "8-eighth",
+    "9-ninth",
+    "10-tenth",
+    "11-eleventh",
+    "12-twelfth",
 ]
 
 activity = 1
@@ -28,7 +30,7 @@ def gsp_mining(sequences_list: list, minsup: float = 0.08) -> list:
 
 
 def prefix_mining(sequences_list: list, minsup: float = 0.08, subsequence=None) -> list:
-    ps = PrefixSpan(sequences_list)
+    ps = PrefixSpan(sequences_list, minlen=2)
     min_support = len(sequences_list) * minsup
 
     if subsequence:
@@ -74,7 +76,7 @@ def write_csv(file_name, path=f"sceneries_results/{activity}"):
     json_file = open(f"./{path}/json/{file_name}.json")
     json_data = json.load(json_file)
     with open(f"./{path}/csv/{file_name}.csv", "w+", newline="\n") as f:
-        writer = csv.DictWriter(f, delimiter=";", fieldnames=json_data["1_sequences"]["sequences"][0])
+        writer = csv.DictWriter(f, delimiter=";", fieldnames=json_data["2_sequences"]["sequences"][0])
         writer.writeheader()
 
         for key in json_data.keys():
@@ -215,6 +217,7 @@ def generate_total_csv():
     cols = total.columns.tolist()
     cols.insert(0, cols.pop(cols.index("scenery")))
     total = total.reindex(columns=cols)
+    total = total.round(2)
     total.to_csv(f"sceneries_results/{activity}/total.csv", sep=";", index=False)
 
 
@@ -266,13 +269,14 @@ def generate_gen_info():
         "longest_sequence_length": [],
         "shortest_sequence_length": [],
         "average_sequence_length": [],
-        "elapsed_time": [],
     }
+
     general_info = pd.DataFrame(g)
     general_info["scenery"] = general_info["scenery"].astype(str)
     general_info["average_pattern_length"] = general_info["average_pattern_length"].astype(str)
     general_info["average_sequence_length"] = general_info["average_sequence_length"].astype(str)
-    elapsed_time = pd.read_csv(f"sceneries_results/{activity}/general_info.csv", sep=";")[["scenery", "elapsed_time"]]
+    general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=True)
+    # elapsed_time = pd.read_csv(f"sceneries_results/{activity}/general_info.csv", sep=";")[["scenery", "elapsed_time"]]
 
     for index, scenery in enumerate(sceneries_names):
         df = pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";")
@@ -285,41 +289,47 @@ def generate_gen_info():
         all_sequences = pd.read_json(file_name)
         min_len, max_len, avg_len, dev_len = get_sequences_length(all_sequences)
 
-        general_info.loc["scenery"] = scenery
-        general_info.loc["minsup"] = minsup
-        general_info.loc["max_grade"] = df["max_grade"].iloc[0]
-        general_info.loc["total_sequences"] = df.count()
-        general_info.loc["longest_pattern_length"] = lengths[-1]
-        general_info.loc["shortest_pattern_length"] = lengths[0]
-        general_info.loc["average_pattern_length"] = f"{statistics.mean(lengths)} (+- {statistics.stdev(lengths)})"
-        general_info.loc["longest_sequence_length"] = max_len
-        general_info.loc["shortest_sequence_length"] = min_len
-        general_info.loc["average_sequence_length"] = f"{avg_len:.2f} (+- {dev_len:.2f})"
-        general_info.loc["time_span_in_days"] = (
-                datetime.datetime.fromtimestamp(times[-1]) - datetime.datetime.fromtimestamp(times[0])
+        general_info.loc[index, "scenery"] = scenery.split("-")[0]
+        general_info.loc[index, "minsup"] = minsup
+        general_info.loc[index, "max_grade"] = df["max_grade"].iloc[0]
+        general_info.loc[index, "total_sequences"] = len(df)
+        general_info.loc[index, "longest_pattern_length"] = lengths[-1]
+        general_info.loc[index, "shortest_pattern_length"] = lengths[0]
+        general_info.loc[index, "average_pattern_length"] = f"{statistics.mean(lengths)} (+- {statistics.stdev(lengths)})"
+        general_info.loc[index, "longest_sequence_length"] = max_len
+        general_info.loc[index, "shortest_sequence_length"] = min_len
+        general_info.loc[index, "average_sequence_length"] = f"{avg_len:.2f} (+- {dev_len:.2f})"
+        general_info.loc[index, "time_span_in_days"] = (
+            datetime.datetime.fromtimestamp(times[-1]) - datetime.datetime.fromtimestamp(times[0])
         ).days
-    general_info = pd.merge(general_info, elapsed_time, on="scenery")
     general_info = general_info.round(2)
-    general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=False)
+    general_info.to_csv(f"./sceneries_results/{activity}/general_info.csv", sep=";", index=False)
+    print(general_info.shape)
 
 
 def alter_support_to_percentage():
-    datas = [pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";") for scenery in sceneries_names]
+    # datas = [pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";") for scenery in sceneries_names]
     gen_info = pd.read_csv(f"sceneries_results/{activity}/general_info.csv", sep=";")
     top_k = pd.read_csv(f"sceneries_results/{activity}/top_k.csv", sep=";")
 
-    for index, data in enumerate(datas):
-        data["s_support"] = data["s_support"] / gen_info.loc[index, "total_sequences"]
-        data = data.round(4)
-        data.to_csv(f"sceneries_results/{activity}/csv/{sceneries_names[index]}.csv", sep=";", index=False)
+    # for index, data in enumerate(datas):
+    #     # data["s_support"] = data["s_support"] / gen_info.loc[index, "total_sequences"]
+    #     data = data.round(4)
+    #     data.to_csv(f"sceneries_results/{activity}/csv/{sceneries_names[index]}.csv", sep=";", index=False)
 
     gen_info["s_support"] = gen_info["s_support"] / gen_info["total_sequences"]
     gen_info = gen_info.round(4)
     gen_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=False)
+    for i in range(0, len(sceneries_names)):
+        # Check if the scenery matches the current index
+        if (top_k['scenery'] == i + 1).any():
+            # Calculate the support values
+            top_k.loc[top_k['scenery'] == i + 1, "s_support"] = top_k["s_support"] / gen_info["total_sequences"].iloc[i]
+            # Round the values
+            top_k = top_k.round(4)
+            # Save the DataFrame to a CSV file
+            top_k.to_csv(f"sceneries_results/{activity}/top_k.csv", sep=";", index=False)
 
-    top_k["s_support"] = top_k["s_support"] / gen_info["total_sequences"]
-    top_k = top_k.round(4)
-    top_k.to_csv(f"sceneries_results/{activity}/top_k.csv", sep=";", index=False)
 
 
 # noinspection PyTypedDict
@@ -395,7 +405,8 @@ def main():
                         "i_support": i_support,
                         "s_support": len(ids),
                         "ids": ids,
-                        "grade_avg": f"{avg:.2f} (+- {dev:.2f})",
+                        "grade_avg": avg,
+                        "grade_avg_deviation": dev,
                         "grade_median": median,
                         "grade_mode": mode,
                         "max_grade": max_grade,
@@ -428,7 +439,7 @@ def main():
             f"{statistics.mean(lengths)} (+- {statistics.stdev(lengths)})"
         )
         general_info.loc[index, "time_span_in_days"] = (
-                datetime.datetime.fromtimestamp(times[-1]) - datetime.datetime.fromtimestamp(times[0])
+            datetime.datetime.fromtimestamp(times[-1]) - datetime.datetime.fromtimestamp(times[0])
         ).days
 
         # print(json.dumps(final_result['2_sequences'], indent=2, default=lambda o: str(o)))
@@ -447,10 +458,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
     # [write_csv(data) for data in sceneries_names]
-    # generate_gen_info()
-    # get_supports_by_scenery()
-    # generate_total_csv()
-    # get_top_k()
+    generate_gen_info()
+    get_supports_by_scenery()
+    generate_total_csv()
+    get_top_k()
     # alter_support_to_percentage()

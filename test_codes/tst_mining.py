@@ -8,7 +8,7 @@ def find_pattern_occurrences_with_gaps(lst, pattern):
         while j < pattern_length and lst[i + j] == pattern[j]:
             j += 1
         if j == pattern_length:
-            result.append(lst[i: i + pattern_length])
+            result.append(lst[i : i + pattern_length])
             i += pattern_length
         else:
             i += 1

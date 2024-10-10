@@ -1,6 +1,7 @@
 import json
 import sys
 import time
+import re
 import pandas as pd
 
 data = "./data/see_course2060_12-11_to_11-12_logs_filtered.csv"
@@ -27,19 +28,85 @@ def event_mapping(event, t: int, params: dict):
     return result
 
 
+def coalescing_hidden(events, tf=False):
+    remove_indexes = []
+    suffix = "_START" if tf else ""
+    end_suffix = "_END" if tf else ""
+
+    for i in range(len(events) - 1):
+        try:
+            if events[i]["event"] == f"assignment_vis{suffix}" and events[i + 1]["event"] in [f"assignment_try{suffix}", f"assignment_sub{suffix}"]:
+                remove_indexes.append(i)
+            elif events[i]["event"] == f"assignment_try{suffix}" and events[i + 1]["event"] == f"assignment_sub{suffix}":
+                remove_indexes.append(i)
+            elif tf and events[i]["event"] == f"assignment_vis{end_suffix}" and events[i + 1]["event"] in [f"assignment_try{end_suffix}", f"assignment_sub{end_suffix}"]:
+                remove_indexes.append(i)
+            elif tf and events[i]["event"] == f"assignment_try{end_suffix}" and events[i + 1]["event"] == f"assignment_sub{end_suffix}":
+                remove_indexes.append(i)
+        except IndexError:
+            pass
+
+    # get index list in reverse order
+    remove_indexes = sorted(remove_indexes, reverse=True)
+    # drop elements in place
+    for index in remove_indexes:
+        del events[index]
+
+
+def coalescing_repeating(events):
+    remove_indexes = []
+    for i in range(len(events)):
+        try:
+            if events[i]["event"] == events[i + 1]["event"]:
+                if re.match(r"^assignment_sub(_START|_END)?$", events[i]["event"]):
+                    remove_indexes.append(i)
+                else:
+                    remove_indexes.append(i + 1)
+        except IndexError:
+            pass
+    # get index list in reverse order
+    remove_indexes = sorted(remove_indexes, reverse=True)
+    # drop elements in place
+    for index in remove_indexes:
+        del events[index]
+
+
+def spell(events):
+    remove_indexes = []
+    for i in range(len(events)):
+        try:
+            spell_length = 1
+            index = i
+            while events[index]["event"] == events[index + 1]["event"]:
+                spell_length += 1
+                index += 1
+            if events[i]["event"] == events[i + 1]["event"]:
+                if re.match(r"^assignment_sub(_START|_END)?$", events[i]["event"]):
+                    remove_indexes.append(i)
+                else:
+                    remove_indexes.append(i + 1)
+            # events[i]["event"] = events[i]["event"] + f"-{spell_length}"
+            if 2 < spell_length <= 5:
+                events[i]["event"] = events[i]["event"] + f"_SOME"
+            elif spell_length > 5:
+                events[i]["event"] = events[i]["event"] + f"_MANY"
+        except IndexError:
+            pass
+    # get index list in reverse order
+    remove_indexes = sorted(remove_indexes, reverse=True)
+    # drop elements in place
+    for index in remove_indexes:
+        del events[index]
+
+
 # return a sequence of catalogued events based on a dataframe of events
 def generate_sequence_from_df(df, params: dict):
-    e = list(
-        df.apply(
-            lambda x: event_mapping([x.component, x.action, x.target], x.t, params),
-            axis=1,
-        )
-    )
+    e = list(df.apply(lambda x: event_mapping([x.component, x.action, x.target], x.t, params), axis=1))
     e.pop(0)
     flag = False
     events = []
     for event in reversed(e):
-        if (event["event"] == "assignment_sub" or event["event"] == "assignment_sub") and not flag:
+        if (re.match(r"^assignment_sub(_START|_END)?$", event["event"])) and not flag:
             flag = True
         if flag:
             events.append(event)
@@ -49,98 +116,13 @@ def generate_sequence_from_df(df, params: dict):
         return None
 
     if params["coalescing_repeating"]:
-        remove_indexes = []
-        for i in range(len(events)):
-            try:
-                if events[i]["event"] == events[i + 1]["event"]:
-                    if events[i]["event"] == "assignment_sub" or events[i]["event"] == "assignment_sub":
-                        remove_indexes.append(i)
-                    else:
-                        remove_indexes.append(i + 1)
-            except IndexError:
-                pass
-        # get index list in reverse order
-        remove_indexes = sorted(remove_indexes, reverse=True)
-        # drop elements in place
-        for index in remove_indexes:
-            del events[index]
-    if params["coalescing_hidden"]:
-        remove_indexes = []
-        for i in range(len(events)):
-            try:
-                if events[i]["event"] == "assignment_vis" and events[i + 1]["event"] == "assignment_try":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_vis" and events[i + 1]["event"] == "assignment_sub":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_try" and events[i + 1]["event"] == "assignment_sub":
-                    remove_indexes.append(i)
-            except IndexError:
-                pass
-        # get index list in reverse order
-        remove_indexes = sorted(remove_indexes, reverse=True)
-        # drop elements in place
-        for index in remove_indexes:
-            del events[index]
-    return events
-
-
-# return a sequence of catalogued events based on a dataframe of events
-def generate_sequence_from_df_with_temporal_folding(df, params: dict):
-    e = list(
-        df.apply(
-            lambda x: event_mapping([x.component, x.action, x.target], x.t, params),
-            axis=1,
-        )
-    )
-    e.pop(0)
-    flag = False
-    events = []
-    for event in reversed(e):
-        if (event["event"] == "assignment_sub_START" or event["event"] == "assignment_sub_END") and not flag:
-            flag = True
-        if flag:
-            events.append(event)
-    events = list(reversed(events))
-
-    if params["coalescing_repeating"]:
-        remove_indexes = []
-        for i in range(len(events) - 1):
-            if events[i]["event"] == events[i + 1]["event"]:
-                if events[i]["event"] == "assignment_sub_START" or events[i]["event"] == "assignment_sub_END":
-                    remove_indexes.append(i)
-                else:
-                    remove_indexes.append(i + 1)
-        # get index list in reverse order
-        remove_indexes = sorted(remove_indexes, reverse=True)
-        # drop elements in place
-        for index in remove_indexes:
-            del events[index]
+        coalescing_repeating(events)
 
     if params["coalescing_hidden"]:
-        remove_indexes = []
-        for i in range(len(events)):
-            try:
-                if events[i]["event"] == "assignment_vis_START" and events[i + 1]["event"] == "assignment_try_START":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_vis_START" and events[i + 1]["event"] == "assignment_sub_START":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_try_START" and events[i + 1]["event"] == "assignment_sub_START":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_vis_END" and events[i + 1]["event"] == "assignment_try_END":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_vis_END" and events[i + 1]["event"] == "assignment_sub_END":
-                    remove_indexes.append(i)
-                elif events[i]["event"] == "assignment_try_END" and events[i + 1]["event"] == "assignment_sub_END":
-                    remove_indexes.append(i)
-            except IndexError:
-                pass
-        # get index list in reverse order
-        remove_indexes = sorted(remove_indexes, reverse=True)
+        coalescing_hidden(events, params["tf"])
 
-        # drop elements in place
-        for index in remove_indexes:
-            # events.pop(index)
-            del events[index]
+    if params["spell"]:
+        spell(events)
 
     return events
 
@@ -152,10 +134,7 @@ def prepare_database(df, params: dict, grade_df=None) -> list:
     unique_users = unique_users["userid"].tolist()
 
     for userid in unique_users:
-        if params["tf"]:
-            events = generate_sequence_from_df_with_temporal_folding(df[df.userid == userid], params)
-        else:
-            events = generate_sequence_from_df(df[df.userid == userid], params)
+        events = generate_sequence_from_df(df[df.userid == userid], params)
         if events:
             new_user = {"key": str(userid), "events": events}
             if grade_df is not None:
@@ -254,6 +233,10 @@ def read_params(argv: list) -> dict:
         if argv[index] == "-c" or argv[index] == "--coalescing-hidden":
             params["coalescing_hidden"] = True
             continue
+        if argv[index] == "-s" or argv[index] == "--spell":
+            params["spell"] = True
+            params["coalescing_repeating"] = False
+            continue
         if argv[index] == "-h" or argv[index] == "--help":
             print(
                 "-tf:    temporal folding\n-p [path]:     path to save the file\n-pg [grade's path]: path of grades "
@@ -269,9 +252,9 @@ def read_params(argv: list) -> dict:
 def main(params: dict):
     activities_details = [
         {"initial_date": 1573527600, "final_date": 1574218500, "assignment_id": 12841},
-        # {"initial_date": 1574132400, "final_date": 1574823300, "assignment_id": 12842},
-        # {"initial_date": 1574737200, "final_date": 1575428100, "assignment_id": 12843},
-        # {"initial_date": 1575342000, "final_date": 1576032900, "assignment_id": 12844},
+        {"initial_date": 1574132400, "final_date": 1574823300, "assignment_id": 12842},
+        {"initial_date": 1574737200, "final_date": 1575428100, "assignment_id": 12843},
+        {"initial_date": 1575342000, "final_date": 1576032900, "assignment_id": 12844},
     ]
     for activity in range(1, len(activities_details) + 1):
         params["activity"] = activity
@@ -281,21 +264,28 @@ def main(params: dict):
 
         grade_df = None
         sceneries_names = [
-            {"path": "1-first", "tf": True, "coalescing_repeating": True, "coalescing_hidden": True},
-            {"path": "2-second", "tf": True, "coalescing_repeating": True, "coalescing_hidden": False},
-            {"path": "3-third", "tf": True, "coalescing_repeating": False, "coalescing_hidden": True},
-            {"path": "4-fourth", "tf": True, "coalescing_repeating": False, "coalescing_hidden": False},
-            {"path": "5-fifth", "tf": False, "coalescing_repeating": True, "coalescing_hidden": True},
-            {"path": "6-sixth", "tf": False, "coalescing_repeating": True, "coalescing_hidden": False},
-            {"path": "7-seventh", "tf": False, "coalescing_repeating": False, "coalescing_hidden": True},
-            {"path": "8-eighth", "tf": False, "coalescing_repeating": False, "coalescing_hidden": False},
+            {"path": "1-first", "tf": True, "spell": False, "coalescing_repeating": True, "coalescing_hidden": True, "section": False},
+            {"path": "2-second", "tf": True, "spell": False, "coalescing_repeating": True, "coalescing_hidden": False, "section": False},
+            {"path": "3-third", "tf": True, "spell": False, "coalescing_repeating": False, "coalescing_hidden": True, "section": False},
+            {"path": "4-fourth", "tf": True, "spell": False, "coalescing_repeating": False, "coalescing_hidden": False, "section": False},
+            {"path": "5-fifth", "tf": False, "spell": False, "coalescing_repeating": True, "coalescing_hidden": True, "section": False},
+            {"path": "6-sixth", "tf": False, "spell": False, "coalescing_repeating": True, "coalescing_hidden": False, "section": False},
+            {"path": "7-seventh", "tf": False, "spell": False, "coalescing_repeating": False, "coalescing_hidden": True, "section": False},
+            {"path": "8-eighth", "tf": False, "spell": False, "coalescing_repeating": False, "coalescing_hidden": False, "section": False},
+            {"path": "9-ninth", "tf": True, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "section": False},
+            {"path": "10-tenth", "tf": True, "spell": True, "coalescing_hidden": False, "coalescing_repeating": False, "section": False},
+            {"path": "11-eleventh", "tf": False, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "section": False},
+            {"path": "12-twelfth", "tf": False, "spell": True, "coalescing_hidden": False, "coalescing_repeating": False, "section": False},
+            # {"path": "13-thirteenth", "tf": True, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "section": True},
         ]
         for scenery in sceneries_names:
             start = time.time()
             params["tf"] = scenery["tf"]
             params["coalescing_repeating"] = scenery["coalescing_repeating"]
             params["coalescing_hidden"] = scenery["coalescing_hidden"]
+            params["spell"] = scenery["spell"]
             params["path"] = f"sceneries/{params["activity"]}/{scenery['path']}"
+            params["section"] = scenery["section"]
 
             if params["grade_path"]:
                 grade_df = pd.read_csv(params["grade_path"])
