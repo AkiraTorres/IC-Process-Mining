@@ -11,7 +11,7 @@ import sys
 import numpy as np
 
 sceneries_names = [
-    "1-first",
+    # "1-first",
     # "2-second",
     # "3-third",
     # "4-fourth",
@@ -24,11 +24,11 @@ sceneries_names = [
     # "11-eleventh",
     # "12-twelfth",
     "13-thirteenth",
-    # "14-fourteenth",
-    # "15-fifteenth",
-    # "16-sixteenth",
-    # "17-seventeenth",
-    # "18-eighteenth",
+    "14-fourteenth",
+    "15-fifteenth",
+    "16-sixteenth",
+    "17-seventeenth",
+    "18-eighteenth",
     # "19-nineteenth",
     # "20-twentieth",
     # "21-twenty_first",
@@ -259,7 +259,7 @@ def get_sequences_length(data):
 
 def generate_total_csv():
     datas = [pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";") for scenery in sceneries_names]
-    datas = [df.assign(scenery=i + 1) for i, df in enumerate(datas)]
+    datas = [df.assign(scenery=scenery.split("-")[0]) for scenery, df in zip(sceneries_names, datas)]
     total = pd.concat(datas)
     cols = total.columns.tolist()
     cols.insert(0, cols.pop(cols.index("scenery")))
@@ -270,7 +270,7 @@ def generate_total_csv():
 
 def get_top_k(k=5):
     datas = [pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";") for scenery in sceneries_names]
-    datas = [df.assign(scenery=i + 1) for i, df in enumerate(datas)]
+    datas = [df.assign(scenery=scenery.split("-")[0]) for scenery, df in zip(sceneries_names, datas)]
     datas = [df[df["sequence_size"] > 1] for df in datas]
     datas = [df.nlargest(k, "total") for df in datas]
     total = pd.concat(datas)
@@ -283,14 +283,14 @@ def get_top_k(k=5):
 
 def get_supports_by_scenery():
     datas = [pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";") for scenery in sceneries_names]
-    datas = [df.assign(scenery=i + 1) for i, df in enumerate(datas)]
+    datas = [df.assign(scenery=scenery.split("-")[0]) for scenery, df in zip(sceneries_names, datas)]
     info = {
         "scenery": [],
         "i_support": [],
         "s_support": [],
     }
-    for index, data in enumerate(datas):
-        info["scenery"].append(index + 1)
+    for scenery, data in zip(sceneries_names, datas):
+        info["scenery"].append(eval(scenery.split("-")[0]))
         info["i_support"].append(
             f"{statistics.mean(data['i_support']):.2f} (+- {statistics.stdev(data['i_support']):.2f})"
         )
@@ -304,62 +304,8 @@ def get_supports_by_scenery():
     general_info = general_info.drop(columns=["i_support", "s_support"])
     general_info = general_info.rename(columns={"i_support_new": "i_support", "s_support_new": "s_support"})
 
+    print(general_info)
     general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=False)
-
-
-def generate_gen_info():
-    g = {
-        "scenery": [],
-        "minsup": [],
-        "max_grade": [],
-        "total_sequences": [],
-        "time_span_in_days": [],
-        "longest_pattern_length": [],
-        "shortest_pattern_length": [],
-        "average_pattern_length": [],
-        "longest_sequence_length": [],
-        "shortest_sequence_length": [],
-        "average_sequence_length": [],
-        "elapsed_time": [],
-        "i_support": [],
-        "s_support": [],
-    }
-
-    general_info = pd.DataFrame(g)
-    general_info["scenery"] = general_info["scenery"].astype(str)
-    general_info["average_pattern_length"] = general_info["average_pattern_length"].astype(str)
-    general_info["average_sequence_length"] = general_info["average_sequence_length"].astype(str)
-    general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=True)
-    # elapsed_time = pd.read_csv(f"sceneries_results/{activity}/general_info.csv", sep=";")[["scenery", "elapsed_time"]]
-
-    for index, scenery in enumerate(sceneries_names):
-        df = pd.read_csv(f"sceneries_results/{activity}/csv/{scenery}.csv", sep=";")
-        minsup = 0.08
-        lengths = df["sequence_size"].tolist()
-        lengths.sort()
-        times = df["avg_time_span"].tolist()
-        times.sort()
-        file_name = read_params(scenery)
-        all_sequences = pd.read_json(file_name)
-        min_len, max_len, avg_len, dev_len = get_sequences_length(all_sequences)
-
-        general_info.loc[index, "scenery"] = scenery.split("-")[0]
-        general_info.loc[index, "minsup"] = minsup
-        general_info.loc[index, "max_grade"] = df["max_grade"].iloc[0]
-        general_info.loc[index, "total_sequences"] = len(df)
-        general_info.loc[index, "longest_pattern_length"] = lengths[-1]
-        general_info.loc[index, "shortest_pattern_length"] = lengths[0]
-        general_info.loc[index, "average_pattern_length"] = (
-            f"{statistics.mean(lengths)} (+- {statistics.stdev(lengths)})"
-        )
-        general_info.loc[index, "longest_sequence_length"] = max_len
-        general_info.loc[index, "shortest_sequence_length"] = min_len
-        general_info.loc[index, "average_sequence_length"] = f"{avg_len:.2f} (+- {dev_len:.2f})"
-        general_info.loc[index, "time_span_in_days"] = (
-            datetime.datetime.fromtimestamp(times[-1]) - datetime.datetime.fromtimestamp(times[0])
-        ).days
-    general_info = general_info.round(2)
-    general_info.to_csv(f"./sceneries_results/{activity}/general_info.csv", sep=";", index=False)
 
 
 def alter_support_to_percentage():
@@ -508,24 +454,8 @@ def main():
                 "s_support": "",
             }
         )
+        print(f"Chegou aqui {scenery} | ", end="")
 
-        # general_info.loc[index, "scenery"], _ = scenery.split("-")
-        # general_info.loc[index, "minsup"] = minsup
-        # general_info.loc[index, "max_grade"] = max_grade
-        # general_info.loc[index, "total_sequences"] = total_sequences
-        # general_info.loc[index, "longest_pattern_length"] = lengths[-1]
-        # general_info.loc[index, "shortest_pattern_length"] = lengths[0]
-        # general_info.loc[index, "longest_sequence_length"] = max_len
-        # general_info.loc[index, "shortest_sequence_length"] = min_len
-        # general_info.loc[index, "average_sequence_length"] = f"{avg_len:.2f} (+- {dev_len:.2f})"
-        # general_info.loc[index, "average_pattern_length"] = (
-        #     f"{statistics.mean(lengths)} (+- {statistics.stdev(lengths)})"
-        # )
-        # general_info.loc[index, "time_span_in_days"] = (
-        #     datetime.datetime.fromtimestamp(times[-1]) - datetime.datetime.fromtimestamp(times[0])
-        # ).days
-
-        # print(json.dumps(final_result['2_sequences'], indent=2, default=lambda o: str(o)))
         sceneries[scenery] = final_result
         write_result(final_result, scenery, f"sceneries_results/{activity}", True)
         # break
@@ -539,11 +469,12 @@ def main():
         if row["scenery"] in general_info["scenery"].values:
             general_info.loc[general_info["scenery"] == row["scenery"]] = pd.DataFrame([row])
         else:
-            general_info = pd.concat([general_info, row.to_frame().T], ignore_index=True)
+            general_info = pd.concat([general_info, row.to_frame().T])
 
     general_info = general_info.sort_values(by="scenery", ascending=True).reset_index(drop=True)
     general_info = general_info.round(2)
-    general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=False)
+    # print(general_info["scenery"].drop_duplicates())
+    general_info.to_csv(f"./sceneries_results/{activity}/general_info.csv", sep=";", index=False)
     get_supports_by_scenery()
     generate_total_csv()
     get_top_k()
