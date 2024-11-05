@@ -11,33 +11,33 @@ import sys
 import numpy as np
 
 sceneries_names = [
-    # "1-first",
-    # "2-second",
-    # "3-third",
-    # "4-fourth",
-    # "5-fifth",
-    # "6-sixth",
-    # "7-seventh",
-    # "8-eighth",
-    # "9-ninth",
-    # "10-tenth",
-    # "11-eleventh",
-    # "12-twelfth",
+    "1-first",
+    "2-second",
+    "3-third",
+    "4-fourth",
+    "5-fifth",
+    "6-sixth",
+    "7-seventh",
+    "8-eighth",
+    "9-ninth",
+    "10-tenth",
+    "11-eleventh",
+    "12-twelfth",
     "13-thirteenth",
     "14-fourteenth",
     "15-fifteenth",
     "16-sixteenth",
     "17-seventeenth",
     "18-eighteenth",
-    # "19-nineteenth",
-    # "20-twentieth",
-    # "21-twenty_first",
-    # "22-twenty_second",
-    # "23-twenty_third",
-    # "24-twenty_fourth",
+    "19-nineteenth",
+    "20-twentieth",
+    "21-twenty_first",
+    "22-twenty_second",
+    "23-twenty_third",
+    "24-twenty_fourth",
 ]
 
-activity = 1
+activity = 4
 
 
 def generate_data(data):
@@ -360,6 +360,9 @@ def main():
     general_info["average_sequence_length"] = general_info["average_sequence_length"].astype(str)
     general_info = general_info.round(2)
     general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=False)
+
+    if not os.path.exists(f"sceneries_results/{activity}"):
+        os.makedirs(f"sceneries_results/{activity}")
 
     new_lines = []
     for index, scenery in enumerate(sceneries_names):
