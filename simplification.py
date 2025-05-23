@@ -233,6 +233,19 @@ def get_dates(params: dict) -> dict:
     return params
 
 
+def split_by_grade(prepared_data, threshold=0.5):
+    high_grade = []
+    low_grade = []
+
+    for user in prepared_data:
+        if user.get("grade", 0) / user.get("max_grade", 2) >= threshold:
+            high_grade.append(user)
+        else:
+            low_grade.append(user)
+
+    return high_grade, low_grade
+
+
 def read_params(argv=None) -> dict:
     parser = argparse.ArgumentParser(description="Process command-line parameters for temporal folding and file paths.")
 
@@ -249,6 +262,10 @@ def read_params(argv=None) -> dict:
     parser.add_argument("-c", "--coalescing-hidden", action="store_true", help="Enable coalescing hidden")
     parser.add_argument(
         "-s", "--spell", action="store_true", help="Enable spell option and disable coalescing repeating"
+    )
+
+    parser.add_argument(
+        "--split-grade", action="store_true", help="Split datasets into high-grade and low-grade before simplification"
     )
 
     # Parse the arguments
@@ -270,6 +287,7 @@ def read_params(argv=None) -> dict:
         "data": pd.read_csv(args.path, index_col="id").sort_values("t"),
         "mapping": pd.read_csv(args.mapping_path),
         "quiz": pd.read_csv(args.quiz_path),
+        "split_grade": args.split_grade,
     }
 
     # Override coalescing_repeating if spell option is enabled
@@ -290,11 +308,20 @@ def main(params: dict):
     events_by_user = prepare_database(activity, params, grades)
     os.makedirs(params["path"], exist_ok=True)
 
-    with open(params["path"] + "user.json", "w+") as file:
-        json.dump(events_by_user, file, indent=2, default=lambda o: str(o))
+    if params["split_grade"]:
+        high_grade, low_grade = split_by_grade(events_by_user)
+
+        with open(params["path"] + "high.json", "w+") as file:
+            json.dump(high_grade, file, indent=2, default=lambda o: str(o))
+
+        with open(params["path"] + "low.json", "w+") as file:
+            json.dump(low_grade, file, indent=2, default=lambda o: str(o))
+    else:
+        with open(params["path"] + "user.json", "w+") as file:
+            json.dump(events_by_user, file, indent=2, default=lambda o: str(o))
 
 
-def test_main(params: dict):
+def ready_main(params: dict):
     activities_details = [
         {"initial_date": 1573527600, "final_date": 1574218500, "assignment_id": 12841},
         {"initial_date": 1574132400, "final_date": 1574823300, "assignment_id": 12842},
@@ -307,6 +334,7 @@ def test_main(params: dict):
     )
     params["mapping"] = pd.read_csv("./data/event_mapping.csv")
     params["quiz"] = pd.read_csv("./data/see_course2060_quiz_list.csv")
+    params["split_grade"] = True
     for activity in range(1, len(activities_details) + 1):
         params["activity"] = activity
         params["initial_date"] = activities_details[activity - 1]["initial_date"]
@@ -315,198 +343,35 @@ def test_main(params: dict):
 
         grade_df = None
         sceneries_names = [
-            {
-                "path": "1-first",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": True,
-                "tf": False,
-            },
-            {
-                "path": "2-second",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": False,
-                "tf": False,
-            },
-            {
-                "path": "3-third",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": True,
-                "tf": False,
-            },
-            {
-                "path": "4-fourth",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": False,
-                "tf": False,
-            },
-            {
-                "path": "5-fifth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": True,
-                "tf": False,
-            },
-            {
-                "path": "6-sixth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": False,
-                "tf": False,
-            },
-            {
-                "path": "7-seventh",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": True,
-                "tf": False,
-            },
-            {
-                "path": "8-eighth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": False,
-                "tf": False,
-            },
-            {
-                "path": "9-ninth",
-                "multilevel": True,
-                "spell": True,
-                "coalescing_hidden": True,
-                "coalescing_repeating": False,
-                "tf": False,
-            },
-            {
-                "path": "10-tenth",
-                "multilevel": True,
-                "spell": True,
-                "coalescing_hidden": False,
-                "coalescing_repeating": False,
-                "tf": False,
-            },
-            {
-                "path": "11-eleventh",
-                "multilevel": False,
-                "spell": True,
-                "coalescing_hidden": True,
-                "coalescing_repeating": False,
-                "tf": False,
-            },
-            {
-                "path": "12-twelfth",
-                "multilevel": False,
-                "spell": True,
-                "coalescing_hidden": False,
-                "coalescing_repeating": False,
-                "tf": False,
-            },
-            {
-                "path": "13-thirteenth",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": True,
-                "tf": True,
-            },
-            {
-                "path": "14-fourteenth",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": False,
-                "tf": True,
-            },
-            {
-                "path": "15-fifteenth",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": True,
-                "tf": True,
-            },
-            {
-                "path": "16-sixteenth",
-                "multilevel": True,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": False,
-                "tf": True,
-            },
-            {
-                "path": "17-seventeenth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": True,
-                "tf": True,
-            },
-            {
-                "path": "18-eighteenth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": True,
-                "coalescing_hidden": False,
-                "tf": True,
-            },
-            {
-                "path": "19-nineteenth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": True,
-                "tf": True,
-            },
-            {
-                "path": "20-twentieth",
-                "multilevel": False,
-                "spell": False,
-                "coalescing_repeating": False,
-                "coalescing_hidden": False,
-                "tf": True,
-            },
-            {
-                "path": "21-twenty_first",
-                "multilevel": True,
-                "spell": True,
-                "coalescing_hidden": True,
-                "coalescing_repeating": False,
-                "tf": True,
-            },
-            {
-                "path": "22-twenty_second",
-                "multilevel": True,
-                "spell": True,
-                "coalescing_hidden": False,
-                "coalescing_repeating": False,
-                "tf": True,
-            },
-            {
-                "path": "23-twenty_third",
-                "multilevel": False,
-                "spell": True,
-                "coalescing_hidden": True,
-                "coalescing_repeating": False,
-                "tf": True,
-            },
-            {
-                "path": "24-twenty_fourth",
-                "multilevel": False,
-                "spell": True,
-                "coalescing_hidden": False,
-                "coalescing_repeating": False,
-                "tf": True,
-            },
+            {"path": "1-first", "multilevel": True, "spell": False, "coalescing_repeating": True, "coalescing_hidden": True, "tf": False},
+            {"path": "2-second", "multilevel": True, "spell": False, "coalescing_repeating": True, "coalescing_hidden": False, "tf": False},
+            {"path": "3-third", "multilevel": True, "spell": False, "coalescing_repeating": False, "coalescing_hidden": True, "tf": False},
+            {"path": "4-fourth", "multilevel": True, "spell": False, "coalescing_repeating": False, "coalescing_hidden": False, "tf": False},
+
+            {"path": "5-fifth", "multilevel": False, "spell": False, "coalescing_repeating": True, "coalescing_hidden": True, "tf": False},
+            {"path": "6-sixth", "multilevel": False, "spell": False, "coalescing_repeating": True, "coalescing_hidden": False, "tf": False},
+            {"path": "7-seventh", "multilevel": False, "spell": False, "coalescing_repeating": False, "coalescing_hidden": True, "tf": False},
+            {"path": "8-eighth", "multilevel": False, "spell": False, "coalescing_repeating": False, "coalescing_hidden": False, "tf": False},
+
+            {"path": "9-ninth", "multilevel": True, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "tf": False},
+            {"path": "10-tenth", "multilevel": True, "spell": True, "coalescing_hidden": False, "coalescing_repeating": False, "tf": False},
+            {"path": "11-eleventh", "multilevel": False, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "tf": False},
+            {"path": "12-twelfth", "multilevel": False, "spell": True, "coalescing_hidden": False, "coalescing_repeating": False, "tf": False},
+            
+            {"path": "13-thirteenth", "multilevel": True, "spell": False, "coalescing_repeating": True, "coalescing_hidden": True, "tf": True},
+            {"path": "14-fourteenth", "multilevel": True, "spell": False, "coalescing_repeating": True, "coalescing_hidden": False, "tf": True},
+            {"path": "15-fifteenth", "multilevel": True, "spell": False, "coalescing_repeating": False, "coalescing_hidden": True, "tf": True},
+            {"path": "16-sixteenth", "multilevel": True, "spell": False, "coalescing_repeating": False, "coalescing_hidden": False, "tf": True},
+
+            {"path": "17-seventeenth", "multilevel": False, "spell": False, "coalescing_repeating": True, "coalescing_hidden": True, "tf": True},
+            {"path": "18-eighteenth", "multilevel": False, "spell": False, "coalescing_repeating": True, "coalescing_hidden": False, "tf": True},
+            {"path": "19-nineteenth", "multilevel": False, "spell": False, "coalescing_repeating": False, "coalescing_hidden": True, "tf": True},
+            {"path": "20-twentieth", "multilevel": False, "spell": False, "coalescing_repeating": False, "coalescing_hidden": False, "tf": True},
+
+            {"path": "21-twenty_first", "multilevel": True, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "tf": True},
+            {"path": "22-twenty_second", "multilevel": True, "spell": True, "coalescing_hidden": False, "coalescing_repeating": False, "tf": True},
+            {"path": "23-twenty_third", "multilevel": False, "spell": True, "coalescing_hidden": True, "coalescing_repeating": False, "tf": True},
+            {"path": "24-twenty_fourth", "multilevel": False, "spell": True, "coalescing_hidden": False, "coalescing_repeating": False, "tf": True},
         ]
         for scenery in sceneries_names:
             start = time.time()
@@ -514,8 +379,11 @@ def test_main(params: dict):
             params["coalescing_repeating"] = scenery["coalescing_repeating"]
             params["coalescing_hidden"] = scenery["coalescing_hidden"]
             params["spell"] = scenery["spell"]
-            params["path"] = f"sceneries/{params["activity"]}/{scenery['path']}"
             params["tf"] = scenery["tf"]
+            if params["split_grade"]:
+                params["path"] = f"sceneries/{params["activity"]}/split_grade/{scenery['path']}"
+            else:
+                params["path"] = f"sceneries/{params["activity"]}/{scenery['path']}"
 
             if params["grade_path"]:
                 grade_df = pd.read_csv(params["grade_path"])
@@ -526,14 +394,26 @@ def test_main(params: dict):
 
             os.makedirs("./sceneries/" + str(params["activity"]), exist_ok=True)
 
-            with open("./" + params["path"] + ".json", "w+") as file:
-                json.dump(events_by_user, file, indent=2, default=lambda o: str(o))
+            os.makedirs("./sceneries/" + str(params["activity"]) + "/split_grade", exist_ok=True)
+
+            if params["split_grade"]:
+                print(f"Splitting dataset into high-grade and low-grade, {params["path"]}")
+                high_grade, low_grade = split_by_grade(events_by_user)
+
+                with open(params["path"] + "_high.json", "w+") as file:
+                    json.dump(high_grade, file, indent=2, default=lambda o: str(o))
+
+                with open(params["path"] + "_low.json", "w+") as file:
+                    json.dump(low_grade, file, indent=2, default=lambda o: str(o))
+            else:
+                with open(params["path"] + ".json", "w+") as file:
+                    json.dump(events_by_user, file, indent=2, default=lambda o: str(o))
             print(f"Execution time, {params["path"]}: {(time.time() - start):.2f}")
         print()
 
 
 if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1] == "test":
-        test_main({})
+        ready_main({})
     else:
         main(read_params(sys.argv))
