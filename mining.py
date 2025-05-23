@@ -37,7 +37,8 @@ sceneries_names = [
     "24-twenty_fourth",
 ]
 
-activity = 4
+use_split = True
+activity = 1
 
 
 def generate_data(data):
@@ -108,7 +109,7 @@ def format_tf_data(s) -> list:
 
 
 def read_params(file: str) -> str:
-    return f"./sceneries/{activity}/{file}.json"
+    return f"./sceneries/{activity}/split_grade/{file}.json" if use_split else f"./sceneries/{activity}/{file}.json"
 
 
 def write_result(data, file_name, path="sceneries_results/activity", save_csv=False):
@@ -118,9 +119,9 @@ def write_result(data, file_name, path="sceneries_results/activity", save_csv=Fa
             return {k: convert_to_python_types(v) for k, v in obj.items()}
         elif isinstance(obj, list):
             return [convert_to_python_types(i) for i in obj]
-        elif isinstance(obj, (np.integer, np.int64)):  # Handle numpy integer types
+        elif isinstance(obj, (np.integer, np.int64)):  # type: ignore # Handle numpy integer types
             return int(obj)
-        elif isinstance(obj, (np.floating, np.float64)):  # Handle numpy float types
+        elif isinstance(obj, (np.floating, np.float64)):  # type: ignore # Handle numpy float types
             return float(obj)
         elif isinstance(obj, np.ndarray):  # Handle numpy arrays
             return obj.tolist()
@@ -304,7 +305,6 @@ def get_supports_by_scenery():
     general_info = general_info.drop(columns=["i_support", "s_support"])
     general_info = general_info.rename(columns={"i_support_new": "i_support", "s_support_new": "s_support"})
 
-    print(general_info)
     general_info.to_csv(f"sceneries_results/{activity}/general_info.csv", sep=";", index=False)
 
 
@@ -332,8 +332,25 @@ def alter_support_to_percentage():
             top_k.to_csv(f"sceneries_results/{activity}/top_k.csv", sep=";", index=False)
 
 
+def load_data(file_path):
+    global use_split
+    if use_split:
+        if os.path.exists(file_path):
+            with open(file_path, "r") as f:
+                data = json.load(f)
+        else:
+            print(f"Warning: {file_path} not found")
+
+        return generate_data(data)  # Cria e retorna o dataframe combinado
+    else:
+        with open(file_path, "r") as f:
+            data = json.load(f)
+        return generate_data(data)
+
+
 # noinspection PyTypedDict
 def main():
+    global use_split, sceneries_names
     sceneries = {}
     g = {
         "scenery": [],
@@ -343,7 +360,7 @@ def main():
         "time_span_in_days": [],
         "longest_pattern_length": [],
         "shortest_pattern_length": [],
-        "average_pattern_length": [],
+        "" "average_pattern_length": [],
         "longest_sequence_length": [],
         "shortest_sequence_length": [],
         "average_sequence_length": [],
@@ -364,15 +381,16 @@ def main():
     if not os.path.exists(f"sceneries_results/{activity}"):
         os.makedirs(f"sceneries_results/{activity}")
 
+    if use_split:
+        sceneries_names = [f"{scenery}_{suffix}" for scenery in sceneries_names for suffix in ["high", "low"]]
+
     new_lines = []
     for index, scenery in enumerate(sceneries_names):
         begin = time.time()
         print(f"[{datetime.datetime.now().strftime("%H:%M:%S")}] Processing {scenery}", end=" | ")
         minsup = 0.08
         file_name = read_params(scenery)
-        with open(file_name) as file:
-            data = json.load(file)
-        all_sequences = generate_data(data)
+        all_sequences = load_data(file_name)
         original_seq = all_sequences.copy()
         max_grade = int(all_sequences["max_grade"].iloc[0])
         get_sequences_length(original_seq)
@@ -457,7 +475,6 @@ def main():
                 "s_support": "",
             }
         )
-        print(f"Chegou aqui {scenery} | ", end="")
 
         sceneries[scenery] = final_result
         write_result(final_result, scenery, f"sceneries_results/{activity}", True)
